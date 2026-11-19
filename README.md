@@ -1,5 +1,9 @@
 # TT Note
 
+Editor pessoal de notas e código: Sublime Text + Obsidian. Windows · Electron + CodeMirror 6 · notas compartilhadas por servidor próprio.
+
+Sugestões e problemas: [abra uma issue](../../issues/new/choose). Quer contribuir? Leia o [CONTRIBUTING](CONTRIBUTING.md). Licença: MIT com Commons Clause ([resumo](LICENCA-RESUMO.md)).
+
 Editor pessoal: Sublime Text + Obsidian. Electron + CodeMirror 6.
 
     npm start        # compila e abre
