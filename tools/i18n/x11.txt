@@ -1,0 +1,25 @@
+⬇ Baixar {0}§⬇ Download {0}§⬇ Descargar {0}
+Nova versão {0} no servidor (você está na {1}). Clique para BAIXAR: o app continua aberto. Depois aparece o botão para instalar, quando você quiser. Botão direito esconde.§New version {0} on the server (you are on {1}). Click to DOWNLOAD: the app stays open. Then a button to install appears, whenever you like. Right-click hides it.§Nueva versión {0} en el servidor (estás en la {1}). Haz clic para DESCARGAR: la aplicación sigue abierta. Después aparece el botón para instalar, cuando quieras. Clic derecho lo oculta.
+⚡ Reiniciar e atualizar para {0}§⚡ Restart and update to {0}§⚡ Reiniciar y actualizar a la {0}
+✔ Instalar {0} e reiniciar§✔ Install {0} and restart§✔ Instalar {0} y reiniciar
+A atualização {0} já está pronta. Ao clicar: o app fecha e abre de novo em poucos segundos (suas abas e rascunhos são guardados). Reinicie quando for bom para você. Botão direito esconde.§Update {0} is ready. When you click: the app closes and reopens in a few seconds (your tabs and drafts are saved). Restart whenever it suits you. Right-click hides it.§La actualización {0} ya está lista. Al hacer clic: la aplicación se cierra y se abre de nuevo en pocos segundos (tus pestañas y borradores se guardan). Reinicia cuando te convenga. Clic derecho lo oculta.
+A atualização {0} já está baixada. Ao clicar: o app fecha, instala e abre de novo sozinho (suas abas e rascunhos são guardados). Instale quando for bom para você. Botão direito esconde.§Update {0} is already downloaded. When you click: the app closes, installs and reopens by itself (your tabs and drafts are saved). Install whenever it suits you. Right-click hides it.§La actualización {0} ya está descargada. Al hacer clic: la aplicación se cierra, se instala y se abre sola (tus pestañas y borradores se guardan). Instala cuando te convenga. Clic derecho lo oculta.
+Baixando… {0}%§Downloading… {0}%§Descargando… {0}%
+faltam ~{0} s§~{0} s left§faltan ~{0} s
+Atualização {0} pronta. Clique em "Reiniciar e atualizar" quando quiser (o app só fecha quando você clicar).§Update {0} is ready. Click "Restart and update" whenever you like (the app only closes when you click).§Actualización {0} lista. Haz clic en "Reiniciar y actualizar" cuando quieras (la aplicación solo se cierra cuando hagas clic).
+Atualização {0} baixada. Clique em "Instalar e reiniciar" quando quiser (o app só fecha quando você clicar).§Update {0} downloaded. Click "Install and restart" whenever you like (the app only closes when you click).§Actualización {0} descargada. Haz clic en "Instalar y reiniciar" cuando quieras (la aplicación solo se cierra cuando hagas clic).
+Atualização {0} pronta. Clique em "Instalar e reiniciar" quando quiser (o app só fecha quando você clicar).§Update {0} is ready. Click "Install and restart" whenever you like (the app only closes when you click).§Actualización {0} lista. Haz clic en "Instalar y reiniciar" cuando quieras (la aplicación solo se cierra cuando hagas clic).
+Reiniciando para {0}…§Restarting to {0}…§Reiniciando a la {0}…
+Instalando {0}…§Installing {0}…§Instalando {0}…
+Preparando {0}…§Preparing {0}…§Preparando {0}…
+Baixar de novo§Download again§Descargar de nuevo
+Clique em Baixar para obter de novo.§Click Download to get it again.§Haz clic en Descargar para obtenerla de nuevo.
+Baixando {0}… 0%§Downloading {0}… 0%§Descargando {0}… 0%
+Baixando a versão {0} em segundo plano. Quando terminar, aparece o botão para instalar — só instala quando você clicar.§Downloading version {0} in the background. When it finishes, the install button appears — it only installs when you click.§Descargando la versión {0} en segundo plano. Al terminar aparece el botón para instalar; solo se instala cuando hagas clic.
+Você já está na versão mais nova ({0}).§You are already on the latest version ({0}).§Ya tienes la versión más reciente ({0}).
+A versão {0} já está baixada: use o botão verde "Instalar e reiniciar" quando quiser.§Version {0} is already downloaded: use the green "Install and restart" button whenever you like.§La versión {0} ya está descargada: usa el botón verde "Instalar y reiniciar" cuando quieras.
+Versão {0} disponível: use o botão ⬇ Baixar no canto superior direito.§Version {0} available: use the ⬇ Download button at the top right.§Versión {0} disponible: usa el botón ⬇ Descargar en la esquina superior derecha.
+O servidor ainda não tem nenhuma atualização publicada.§The server has no update published yet.§El servidor aún no tiene ninguna actualización publicada.
+Entre em um servidor (☁ Compartilhado) para verificar atualizações§Join a server (☁ Shared) to check for updates§Entra en un servidor (☁ Compartido) para buscar actualizaciones
+Não consegui consultar o servidor§I couldn't query the server§No pude consultar el servidor
+Instalador não encontrado§Installer not found§Instalador no encontrado

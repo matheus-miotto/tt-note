@@ -1,0 +1,17 @@
+Traduzir§Translate§Traducir
+Traduzir a seleção…§Translate selection…§Traducir la selección…
+Traduzindo…§Translating…§Traduciendo…
+Copiar tradução§Copy translation§Copiar traducción
+Substituir a seleção§Replace selection§Reemplazar la selección
+O texto era longo: só o começo foi traduzido.§The text was long: only the beginning was translated.§El texto era largo: solo se tradujo el comienzo.
+Nada para traduzir§Nothing to translate§Nada que traducir
+Idioma inválido§Invalid language§Idioma no válido
+O serviço não devolveu tradução§The service returned no translation§El servicio no devolvió ninguna traducción
+Sem conexão com o serviço de tradução§No connection to the translation service§Sin conexión con el servicio de traducción
+Sem conexão com o serviço de tradução (demorou demais)§No connection to the translation service (timed out)§Sin conexión con el servicio de traducción (tardó demasiado)
+Selecione um texto para traduzir.§Select some text to translate.§Selecciona un texto para traducir.
+A tradução está desligada nas configurações.§Translation is turned off in the settings.§La traducción está desactivada en la configuración.
+Selecione um texto no editor para traduzir.§Select some text in the editor to translate.§Selecciona un texto en el editor para traducir.
+Para traduzir, o texto selecionado será enviado a um serviço online de tradução (Google). Não use com dados sensíveis. Continuar?§To translate, the selected text will be sent to an online translation service (Google). Don't use it with sensitive data. Continue?§Para traducir, el texto seleccionado se enviará a un servicio de traducción en línea (Google). No lo uses con datos sensibles. ¿Continuar?
+Traduzir o texto selecionado§Translate selected text§Traducir el texto seleccionado
+Traduzir texto selecionado (botão direito; envia o texto a um serviço online)§Translate selected text (right-click; sends the text to an online service)§Traducir el texto seleccionado (clic derecho; envía el texto a un servicio en línea)

@@ -1,0 +1,350 @@
+New tab group…§Nuevo grupo de pestañas…
+New project group…§Nuevo grupo de proyectos…
+New group…§Nuevo grupo…
+New name ([[...]] links will be updated)…§Nuevo nombre (los enlaces [[...]] se actualizarán)…
+New folder name…§Nuevo nombre de la carpeta…
+New canvas name…§Nuevo nombre del canvas…
+New group name§Nuevo nombre del grupo
+New group name…§Nuevo nombre del grupo…
+New project name§Nuevo nombre del proyecto
+New project (create folder)§Nuevo proyecto (crear carpeta)
+New project in this group…§Nuevo proyecto en este grupo…
+New project…§Nuevo proyecto…
+New subgroup in "{0}"… (use / to create several levels)§Nuevo subgrupo en «{0}»… (usa / para crear varios niveles)
+New subgroup…§Nuevo subgrupo…
+New title§Nuevo título
+New note title§Nuevo título de la nota
+New user§Nuevo usuario
+NULL inside IN never matches (use IS NULL)§NULL dentro de IN nunca coincide (usa IS NULL)
+NULL inside NOT IN makes the query return nothing§NULL dentro de NOT IN hace que la consulta no devuelva nada
+Never (normal Markdown, ⌗ off)§Nunca (Markdown normal, ⌗ desactivado)
+the file§el archivo
+The downloaded file doesn't match the server's. Try again.§El archivo descargado no coincide con el del servidor. Inténtalo de nuevo.
+The canvas is still empty.§El canvas sigue vacío.
+The upload stopped at {0}% ({1}). Try again: it resumes where it left off.§El envío se detuvo en el {0}% ({1}). Inténtalo de nuevo: continúa donde se quedó.
+The trigger can only have letters, numbers, : . - and _§El disparador solo puede tener letras, números, : . - y _
+The GIF is still larger than 4 MB even when reduced. Use a GIF with fewer frames or uncheck "keep the animation".§El GIF sigue siendo mayor de 4 MB incluso reducido. Usa un GIF con menos fotogramas o desmarca «mantener la animación».
+The chosen role applies to all projects in this group (including ones created later). If the person also has a direct role in a project, the highest of the two applies. Server administrators always have full access.§El rol elegido vale para todos los proyectos de este grupo (incluso los que se creen después). Si la persona también tiene un rol directo en un proyecto, vale el más alto de los dos. Los administradores del servidor siempre tienen acceso total.
+chunk {0} failed 6 times ({1})§el fragmento {0} falló 6 veces ({1})
+The project "{0}"§El proyecto «{0}»
+What changed in each version§Qué cambió en cada versión
+The server doesn't have any published update yet.§El servidor aún no tiene ninguna actualización publicada.
+the server closed the connection§el servidor cerró la conexión
+The server is running an old version of the program. Restart it (File → Server on this computer → Restart) and try again.§El servidor tiene una versión antigua del programa. Reinícialo (Archivo → Servidor en este equipo → Reiniciar) e inténtalo de nuevo.
+The server is already running (port {0}).§El servidor ya está en marcha (puerto {0}).
+The server was already stopped.§El servidor ya estaba detenido.
+The server isn't running. Use ▶ Start server first.§El servidor no está en marcha. Usa ▶ Iniciar servidor primero.
+The server no longer starts with Windows.§El servidor ya no se inicia con Windows.
+The server didn't respond in time. See the log (server.log) in the data folder.§El servidor no respondió a tiempo. Mira el registro (server.log) en la carpeta de datos.
+the server refused§el servidor rechazó
+The server refused the sticker (error§El servidor rechazó el sticker (error
+The server refused the file.§El servidor rechazó el archivo.
+The server will start with Windows.§El servidor se iniciará con Windows.
+The sticker must be up to 4 MB§El sticker debe pesar hasta 4 MB
+the text§el texto
+The text can't be empty (use delete)§El texto no puede quedar vacío (usa eliminar)
+Windows didn't let us read the clipboard here: click the window and use Ctrl+V.§Windows no permitió leer el portapapeles aquí: haz clic en la ventana y usa Ctrl+V.
+Hide this message and the replies to it§Ocultar este mensaje y las respuestas a él
+Hide this message and the replies to it (only the name stays; it comes back by itself if someone interacts)§Ocultar este mensaje y las respuestas a él (queda solo el nombre; vuelve solo si alguien interactúa)
+offline now§sin conexión ahora
+online now§en línea ahora
+Online now:§En línea ahora:
+Option§Opción
+optional in IN; required in LIKE (default: column)§opcional en IN; obligatorio en LIKE (predeterminado: columna)
+Options§Opciones
+Sort (case-sensitive)§Ordenar (distingue mayúsculas)
+Sort (ignores case)§Ordenar (ignora mayúsculas)
+Sort lines§Ordenar líneas
+Sort lines (case-sensitive)§Ordenar líneas (distingue mayúsculas y minúsculas)
+Sort lines (ignores case)§Ordenar líneas (ignora mayúsculas y minúsculas)
+Connected apps will be able to download. Click to close this bar.§Las apps conectadas podrán descargar. Haz clic para cerrar esta barra.
+or an emoji: 😎§o un emoji: 😎
+Another base folder…§Otra carpeta base…
+Someone else took over the edit and saved.§Otra persona tomó la edición y guardó.
+Default (Segoe UI)§Predeterminada (Segoe UI)
+Command palette§Paleta de comandos
+To vote, the server needs to be updated.§Para votar, hay que actualizar el servidor.
+Stop recording (Ctrl+Q) before repeating§Detén la grabación (Ctrl+Q) antes de repetir
+incomplete chunk ({0} of {1} bytes)§fragmento incompleto ({0} de {1} bytes)
+entry point§punto de entrada
+by§por
+preferences:§preferencias:
+Preferences: open settings.json§Preferencias: abrir settings.json
+Preparing the server (first time: copies ~265 MB, takes a few seconds)…§Preparando el servidor (primera vez: copia ~265 MB, tarda unos segundos)…
+Preview only available for Markdown.§Vista previa disponible solo para Markdown.
+First time: enter the administrator's name and password§Primera vez: introduce el nombre y la contraseña del administrador
+First time: server administrator's name (you)§Primera vez: nombre del administrador del servidor (tú)
+Project "{0}" deleted§Proyecto «{0}» eliminado
+Project created:§Proyecto creado:
+Projects§Proyectos
+Next tab§Siguiente pestaña
+Next tab (Ctrl+Tab)§Siguiente pestaña (Ctrl+Tab)
+Next difference§Siguiente diferencia
+Next ↓§Siguiente ↓
+Next error (F4)§Siguiente error (F4)
+§
+Publishing {0} · checking on the server…§Publicando {0} · comprobando en el servidor…
+Publish to which server?§¿En qué servidor publicar?
+Publish installer to the server… (administrator)§Publicar instalador en el servidor… (administrador)
+Which group to save to folders?§¿Qué grupo guardar en carpetas?
+Which image to put on the board?§¿Qué imagen poner en el tablero?
+Which note to put on the board?§¿Qué nota poner en el tablero?
+When someone uses "📳 Get attention" on you, the app window flashes in the taskbar, shakes and plays a sound. It only happens if you allow it here, and you can change or turn it off at any time. To keep it from becoming annoying: each person can only get your attention once every 15 seconds (and 6 per minute in total).§Cuando alguien usa «📳 Llamar la atención» contigo, la ventana de la app parpadea en la barra de tareas, tiembla y reproduce un sonido. Solo ocurre si lo permites aquí, y puedes cambiarlo o desactivarlo en cualquier momento. Para que no moleste: cada persona solo puede llamar tu atención 1 vez cada 15 segundos (y 6 por minuto en total).
+Automatic line wrapping (click to turn off)§Ajuste automático de línea (clic para desactivar)
+Automatic wrapping off§Ajuste automático desactivado
+Automatic wrapping on: {0} columns§Ajuste automático activado: {0} columnas
+Word wrap (this tab only)§Ajuste de línea (solo esta pestaña)
+Word wrap turned off in this tab§Ajuste de línea desactivado en esta pestaña
+Word wrap turned on in this tab§Ajuste de línea activado en esta pestaña
+Line ending: CRLF (Windows)§Salto de línea: CRLF (Windows)
+Line ending: LF§Salto de línea: LF
+Git-style column wrapping (on/off)§Ajuste por columnas estilo Git (activar/desactivar)
+Who has access to this group…§Quién tiene acceso a este grupo…
+Who has access to this project…§Quién tiene acceso a este proyecto…
+Who edits other people's messages§Quién edita los mensajes de otras personas
+Who is online§Quién está en línea
+Who is online…§Quién está en línea…
+Who can edit other people's messages in this note§Quién puede editar los mensajes de otras personas en esta nota
+Reopen with {0}§Reabrir con {0}
+Reopening discards this file's unsaved changes. Continue?§Reabrir descarta los cambios sin guardar de este archivo. ¿Continuar?
+React with emoji or sticker§Reaccionar con emoji o sticker
+Reload project§Recargar proyecto
+Reload projects§Recargar proyectos
+Cut§Cortar
+Indentation when formatting (XML, SQL, JSON…)§Sangría al formatear (XML, SQL, JSON…)
+Redo§Rehacer
+Reformatted to {0} columns§Reformateado a {0} columnas
+Reformat paragraph Git-style (to the column width)§Reformatear párrafo estilo Git (al ancho de las columnas)
+Update upload/download log§Registro de envío/descarga de actualización (log)
+Note rule updated§Regla de la nota actualizada
+Rules for the note "{0}"§Reglas de la nota «{0}»
+Restarting the server…§Reiniciando el servidor…
+Removes the user (what they wrote stays in the notes)§Elimina al usuario (lo que escribió permanece en las notas)
+Remove this sticker from the list§Quitar este sticker de la lista
+Remove the user "{0}"? They lose access and leave all projects. What they wrote stays in the notes, with their name.§¿Eliminar al usuario «{0}»? Pierde el acceso y sale de todos los proyectos. Lo que escribió permanece en las notas, con su nombre.
+Rename current file…§Renombrar el archivo actual…
+Rename this server…§Renombrar este servidor…
+Rename group…§Renombrar grupo…
+Rename note (updates links)§Renombrar nota (actualiza los enlaces)
+Rename note…§Renombrar nota…
+Rename project…§Renombrar proyecto…
+Rename…§Renombrar…
+Repeat the last one (Ctrl+Shift+Q)§Repetir la última (Ctrl+Shift+Q)
+Reply in this thread…§Responder en este hilo…
+Reply in this thread… (Enter sends · Ctrl+Enter breaks the line)§Responder en este hilo… (Enter envía · Ctrl+Enter salta de línea)
+restored by§restaurado por
+Restored by§Restaurado por
+Restore the version from {0}? The current state stays in the history.§¿Restaurar la versión de {0}? El estado actual queda en el historial.
+Restore this version§Restaurar esta versión
+Reset font size§Restablecer el tamaño de la fuente
+Results for "{0}"§Resultados para «{0}»
+Results for “{0}” ({1})§Resultados para «{0}» ({1})
+Run this file§Ejecutar este archivo
+Quit (keeps everything for next time)§Salir (conserva todo para la próxima vez)
+Exit comparison§Salir de la comparación
+Exit comparison (keep side by side)§Salir de la comparación (mantener lado a lado)
+Leave this server{0}§Salir de este servidor{0}
+Quit and discard unsaved changes…§Salir y descartar los cambios sin guardar…
+Quit and discard unsaved…§Salir y descartar lo no guardado…
+Quit and DISCARD drafts and unsaved changes? Files already saved are not affected. Whatever isn't saved will be lost.§¿Salir y DESCARTAR borradores y cambios sin guardar? Los archivos ya guardados no se ven afectados. Lo que no se guardó se perderá.
+Saves and lets others edit§Guarda y permite que otros editen
+Saving…§Guardando…
+Save§Guardar
+Save "{0}" from group "{1}"§Guardar «{0}» del grupo «{1}»
+Save {0} tab(s) from group "{1}"§Guardar {0} pestaña(s) del grupo «{1}»
+Save changes to "{0}"?§¿Guardar los cambios en «{0}»?
+Save here§Guardar aquí
+Save automatically§Guardar automáticamente
+Save with a name…§Guardar con un nombre…
+Save as…§Guardar como…
+Save group to folders…§Guardar grupo en carpetas…
+Save password§Guardar contraseña
+Save all§Guardar todo
+Save a group to folders…§Guardar un grupo en carpetas…
+Save the file first (Ctrl+S) so it can run§Guarda el archivo antes (Ctrl+S) para poder ejecutarlo
+Save a code file first§Guarda un archivo de código primero
+Saved ✓§Guardado ✓
+Saved outside the project folder:§Guardado fuera de la carpeta del proyecto:
+Saved:§Guardado:
+Saved: {0}§Guardado: {0}
+if the accents are wrong§si las tildes están mal
+Follow each person's role in the project (only those with "Edits everything")§Seguir el rol de cada persona en el proyecto (solo quien tiene «Edita todo»)
+Select line§Seleccionar línea
+Select the contents of brackets / parentheses / braces (repeating expands)§Seleccionar el contenido de corchetes / paréntesis / llaves (repetir expande)
+Select next occurrence§Seleccionar la siguiente aparición
+Select all occurrences§Seleccionar todas las apariciones
+Select all occurrences of the word (Sublime)§Seleccionar todas las apariciones de la palabra (Sublime)
+Select the lines that become tasks§Selecciona las líneas que se convierten en tareas
+Select the text that will become the snippet§Selecciona el texto que será el snippet
+Select a note§Selecciona una nota
+§
+no access§sin acceso
+No access§Sin acceso
+no access through the group§sin acceso por el grupo
+No access through the group§Sin acceso por el grupo
+No connection — showing the last saved version§Sin conexión — mostrando la última versión guardada
+No connection — reconnecting…§Sin conexión — reconectando…
+No connection to the server§Sin conexión con el servidor
+No connection to the server — trying to reconnect. What you type stays saved here.§Sin conexión con el servidor — intentando reconectar. Lo que escribas queda guardado aquí.
+No connection to the server (§Sin conexión con el servidor (
+No connection: trying again…§Sin conexión: reintentando…
+no edits§sin ediciones
+No group§Sin grupo
+no data for {0} s (watchdog)§sin ningún dato durante {0} s (vigilancia)
+No active note§Sin nota activa
+No notes§Sin notas
+no permission to edit§sin permiso para editar
+No response from the server§Sin respuesta del servidor
+no response in {0} s§sin respuesta en {0} s
+No selection: using the whole document.§Sin selección: usando todo el documento.
+Untitled§Sin título
+Always quoted§Siempre con comillas
+Always preserve spaces and breaks (⌗ on)§Preservar siempre espacios y saltos (⌗ activado)
+Password§Contraseña
+Password (minimum 8)§Contraseña (mínimo 8)
+{0}'s password (minimum 8 characters)§Contraseña de {0} (mínimo 8 caracteres)
+Password changed (old sessions were dropped)§Contraseña cambiada (se cerraron las sesiones antiguas)
+Password changed. Sign in again.§Contraseña cambiada. Entra de nuevo.
+Server on this computer§Servidor en este equipo
+Server on this computer: start§Servidor en este equipo: iniciar
+Server on this computer: start with Windows (on/off)§Servidor en este equipo: iniciar con Windows (activar/desactivar)
+Server on this computer: show the address to join§Servidor en este equipo: mostrar la dirección para entrar
+Server on this computer: stop§Servidor en este equipo: detener
+Server on this computer: restart (applies the new app version)§Servidor en este equipo: reiniciar (aplica la nueva versión de la app)
+Server stopped.§Servidor detenido.
+Server running on port {0}. See the address in File → Server on this computer → Show the address.§Servidor en marcha en el puerto {0}. Mira la dirección en Archivo → Servidor en este equipo → Mostrar la dirección.
+Session ended§Sesión finalizada
+Session expired§Sesión caducada
+Invalid settings.json:§settings.json no válido:
+your username§tu nombre de usuario
+This .md's syntax went back to Markdown (automatic)§La sintaxis de este .md volvió a Markdown (automático)
+current status§situación actual
+Snippet "{0}" saved. Type {1} and Tab. (In the text use $1, $2 and {2} for the Tab stops.)§Snippet «{0}» guardado. Escribe {1} y Tab. (En el texto usa $1, $2 y {2} para las paradas del Tab.)
+Snippet… (type the trigger and press Tab in the text to use it directly)§Snippet… (escribe el disparador y pulsa Tab en el texto para usarlo directamente)
+Snippets: create a snippet from the selected text…§Snippets: crear un snippet con el texto seleccionado…
+Only {0}§Solo {0}
+Just the list§Solo la lista
+It only appears here in the sidebar, so you can tell the servers apart.§Solo aparece aquí en la barra lateral, para que distingas los servidores.
+Only the people I choose§Solo las personas que yo elija
+only in {0}§solo en {0}
+There are only {0} open tab(s)§Solo hay {0} pestaña(s) abierta(s)
+read only§solo lee
+Read only§Solo lee
+only in the others§solo en las demás
+Only in the selected text (Sublime default)§Solo en el texto seleccionado (predeterminado de Sublime)
+only the author edits§solo el autor edita
+Only the author edits their own message (nobody edits others')§Solo el autor edita su propio mensaje (nadie edita los de los demás)
+Only who you choose can get your attention§Solo quien tú elijas puede llamar tu atención
+Sticker added for the whole team§Sticker añadido para todo el equipo
+Your new password (minimum 8)§Tu nueva contraseña (mínimo 8)
+your password§tu contraseña
+Your session on {0} expired: sign in again (＋ in the Shared block)§Tu sesión en {0} caducó: entra de nuevo (＋ en el bloque Compartido)
+Your session ended. Sign in again.§Tu sesión terminó. Entra de nuevo.
+Replace§Reemplazar
+Replace all§Reemplazar todo
+Tailscale (VPN) — this is the address for colleagues, from anywhere§Tailscale (VPN) — es la dirección para los compañeros, desde cualquier lugar
+Font size§Tamaño de la fuente
+Tab size§Tamaño del tabulador
+Theme§Tema
+Theme copied§Tema copiado
+Dark theme (adjusts the light/dark of controls)§Tema oscuro (ajusta lo claro/oscuro de los controles)
+Custom theme§Tema personalizado
+Theme saved§Tema guardado
+Theme: switch to the next one§Tema: cambiar al siguiente
+Theme: edit colors / paste theme JSON…§Tema: editar colores / pegar JSON del tema…
+Real time unavailable — the server responds and the conversation updates every few seconds.§Tiempo real no disponible — el servidor responde y la conversación se actualiza cada pocos segundos.
+Try now§Probar ahora
+Finish editing§Terminar edición
+ended with an error (code§terminó con error (código
+Text§Texto
+Sample text (Lorem ipsum)§Texto de ejemplo (Lorem ipsum)
+Text and code§Texto y código
+Plain text§Texto sin formato
+Takes the edit away from that person (what they haven't saved is lost)§Quita la edición a esa persona (lo que no guardó se pierde)
+Remove the preview§Quitar la vista previa
+Remove current tab from the group§Quitar la pestaña actual del grupo
+Remove tab from the group§Quitar la pestaña del grupo
+Remove from the group§Quitar del grupo
+Remove this option§Quitar esta opción
+Title of the new note§Título de la nueva nota
+All§Todas
+everyone§todos
+Everyone§Todos
+All files§Todos los archivos
+Everyone can get your attention§Todos pueden llamar tu atención
+Everyone who shares projects with me§Todos los que comparten proyectos conmigo
+everyone who writes can edit§todos los que escriben editan
+Everyone who writes can edit everyone's messages§Todos los que escriben pueden editar los mensajes de todos
+Turn selected lines into tasks ☑§Convertir las líneas seleccionadas en tareas ☑
+Locks the board so you can edit; others see it live§Bloquea el tablero para que lo edites; los demás lo ven en vivo
+froze (no data for§se bloqueó (sin datos durante
+Passage from§Fragmento de
+Three columns§Tres columnas
+Change the password§Cambiar la contraseña
+Swap the two letters around the cursor§Intercambiar las dos letras alrededor del cursor
+Swap the two letters around the cursor (Transpose)§Intercambiar las dos letras alrededor del cursor (Transpose)
+Everything on one line§Todo en una línea
+Last change: {0}§Último cambio: {0}
+last edit by§última edición de
+Last request: {0} ms · average {1} ms · worst {2} ms (last {3}) Failures: {4} · reconnections: {5} Click to test now.§Última petición: {0} ms · media {1} ms · peor {2} ms (últimas {3}) Fallos: {4} · reconexiones: {5} Haz clic para probar ahora.
+An administrator took over editing this canvas.§Un administrador tomó la edición de este canvas.
+One value per line§Un valor por línea
+One column§Una columna
+One column (close the side-by-side panels)§Una columna (cerrar los paneles lado a lado)
+one choice§una opción
+One choice§Una opción
+§
+Using the selected text.§Usando el texto seleccionado.
+Use the address, user and password the server administrator gave you.§Usa la dirección, el usuario y la contraseña que te dio el administrador del servidor.
+Use the format 1.20.2 (three numbers separated by dots)§Usa el formato 1.20.2 (tres números separados por puntos)
+User§Usuario
+User {0} created§Usuario {0} creado
+User {0} removed§Usuario {0} eliminado
+Regular user§Usuario común
+removed user§usuario eliminado
+Removed user§Usuario eliminado
+Users§Usuarios
+Server users§Usuarios del servidor
+Users…§Usuarios…
+UTF-8 with BOM§UTF-8 con BOM
+Only applies to this note (tab). The owner of each message can always edit their own, and whoever manages the project edits any. The old version is always kept.§Solo vale para esta nota (pestaña). El dueño de cada mensaje siempre puede editar el suyo, y quien administra el proyecto edita cualquiera. La versión antigua siempre se conserva.
+Apply only to "{0}" or to all languages?§¿Aplicar solo a «{0}» o a todos los lenguajes?
+value% (starts with)§valor% (empieza por)
+several choices§varias opciones
+Several choices§Varias opciones
+arrived incomplete ({0} of {1})§llegó incompleto ({0} de {1})
+see§ver
+see the {0} pinned§ver las {0} fijadas
+see the {0} marks§ver las {0} marcas
+View the log (server.log)§Ver el registro (server.log)
+See only this conversation§Ver solo esta conversación
+See only this conversation (the message and the replies)§Ver solo esta conversación (el mensaje y las respuestas)
+See all pinned messages§Ver todos los mensajes fijados
+Check for app update (via the server)§Buscar actualización de la app (por el servidor)
+Version§Versión
+Version {0}§Versión {0}
+Version {0} available: use the ⬇ Download button in the top right corner.§Versión {0} disponible: usa el botón ⬇ Descargar en la esquina superior derecha.
+Version {0} published ({1}). Connected apps will notify.§Versión {0} publicada ({1}). Las apps conectadas avisarán.
+Current version§Versión actual
+Version being published (e.g.: 1.20.2) — Enter confirms§Versión que se está publicando (p. ej.: 1.20.2) — Enter confirma
+Version restored§Versión restaurada
+video§vídeo
+Graph view§Vista de grafo
+seen a moment ago§visto hace un momento
+seen {0} day(s) ago§visto hace {0} día(s)
+seen {0} h ago§visto hace {0} h
+seen {0} min ago§visto hace {0} min
+you§tú
+You don't have access to any project yet.§Aún no tienes acceso a ningún proyecto.
+You don't have any stickers yet. Click ＋ Create to make the first one — it stays saved here forever.§Aún no tienes stickers. Haz clic en ＋ Crear para hacer el primero — queda guardado aquí para siempre.
+You are editing {0}'s text. Their version is kept.§Estás editando el texto de {0}. Su versión se conserva.
+You are on version {0}§Estás en la versión {0}
+You're already on the newest version ({0})§Ya estás en la versión más reciente ({0})
+You're already on the newest version ({0}).§Ya estás en la versión más reciente ({0}).
+You lost the edit of this canvas.§Perdiste la edición de este canvas.
+You can only read this note§Solo puedes leer esta nota
+Go back to viewing the canvas as a board§Volver a ver el canvas como tablero
+Anonymous vote§Voto anónimo
+Anonymous vote (nobody sees who voted for what)§Voto anónimo (nadie ve quién votó qué)
+§
+Wrap: toggle word wrap (this tab only)§Wrap: alternar el ajuste de línea (solo esta pestaña)

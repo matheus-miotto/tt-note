@@ -1,0 +1,83 @@
+{
+  "name": "tt-note",
+  "version": "1.50.1",
+  "description": "Editor pessoal: Sublime Text + Obsidian",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/renderer.js src/note.js src/spell-worker.js --bundle --minify --legal-comments=none --outdir=dist --target=chrome124 --log-level=warning && esbuild src/i18n-web.js --bundle --minify --format=iife --legal-comments=none --outfile=server/web/i18n.js --target=es2019 --log-level=warning",
+    "start": "npm run build && electron .",
+    "dist": "npm run build && electron-packager . \"TT Note\" --platform=win32 --arch=x64 --out=release --overwrite --icon=assets/icon.ico --ignore=\"^/(node_modules|src|release|tools|README.md)|\\.(zip|rar|7z|log)$\"",
+    "installer": "npm run build && electron-packager . \"TT Note\" --platform=win32 --arch=x64 --out=release-build --overwrite --icon=assets/icon.ico --ignore=\"^/(node_modules|src|release|installer|tools|README.md|CHANGELOG.md|support.config.json)|\\.(zip|rar|7z|log)$\" && node tools/slim.js \"release-build/TT Note-win32-x64\" && node tools/harden.js \"release-build/TT Note-win32-x64\" && electron-builder --prepackaged \"release-build/TT Note-win32-x64\" --win nsis && node tools/hash.js",
+    "melhoria": "node tools/version.js melhoria",
+    "ajuste": "node tools/version.js ajuste",
+    "versao": "node tools/version.js",
+    "servidor": "node server/index.js",
+    "servidor:teste": "node server/test.js && node server/test-permissoes.js && node server/test-updates.js && node server/test-linkpreview.js && node server/test-enquete.js && node server/test-fixar.js"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.20.4",
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-markdown": "^6.5.2",
+    "@codemirror/language": "^6.13.1",
+    "@codemirror/language-data": "^6.5.2",
+    "@codemirror/legacy-modes": "^6.5.5",
+    "@codemirror/search": "^6.7.2",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/theme-one-dark": "^6.1.3",
+    "@codemirror/view": "^6.43.15",
+    "@replit/codemirror-minimap": "^0.5.2",
+    "codemirror": "^6.0.2",
+    "emojibase-data": "^18.0.0",
+    "js-beautify": "^2.0.3",
+    "marked": "^18.1.3",
+    "xml-formatter": "^3.7.0"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0",
+    "esbuild": "^0.28.2",
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.35.5"
+  },
+  "author": "Matheus M Perondi",
+  "license": "SEE LICENSE IN LICENSE",
+  "build": {
+    "appId": "br.matheus.ttnote",
+    "productName": "TT Note",
+    "copyright": "Matheus M Perondi",
+    "directories": {
+      "output": "installer"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "TT Note",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "installerLanguages": [
+        "pt_BR"
+      ],
+      "language": "1046",
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "TT Note Setup ${version}.exe"
+    },
+    "compression": "maximum"
+  }
+}

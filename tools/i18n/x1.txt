@@ -1,0 +1,114 @@
+Arquivo§File§Archivo
+Editar§Edit§Editar
+Seleção§Selection§Selección
+Localizar§Find§Buscar
+Exibir§View§Ver
+Ir para§Go to§Ir a
+Projeto§Project§Proyecto
+Ferramentas§Tools§Herramientas
+Preferências§Preferences§Preferencias
+Ajuda§Help§Ayuda
+Novidades§What's new§Novedades
+✨ Novidades§✨ What's new§✨ Novedades
+Compartilhado§Shared§Compartido
+Aba anterior§Previous tab§Pestaña anterior
+Administra§Manages§Administra
+Administrador§Administrator§Administrador
+Ajuste§Fix§Ajuste
+Alternar minimap§Toggle minimap§Alternar minimapa
+Anexo pronto§Attachment ready§Adjunto listo
+Aplicar§Apply§Aplicar
+Aplicar JSON colado§Apply pasted JSON§Aplicar JSON pegado
+Arrastar§Drag§Arrastrar
+Aspas§Quotes§Comillas
+Assumir§Take over§Asumir
+Atual§Current§Actual
+Atualizar§Update§Actualizar
+Aumentar fonte§Increase font size§Aumentar fuente
+Barra lateral§Sidebar§Barra lateral
+Base§Base§Base
+Build interrompido§Build stopped§Build interrumpido
+Buscar§Search§Buscar
+Cantos arredondados§Rounded corners§Esquinas redondeadas
+Coluna§Column§Columna
+Conectado§Connected§Conectado
+Conectar§Connect§Conectar
+Contorno§Outline§Contorno
+Desafixar§Unpin§Desfijar
+Descartar§Discard§Descartar
+Descer§Move down§Bajar
+Desdobrar tudo§Unfold all§Desplegar todo
+Diminuir fonte§Decrease font size§Reducir fuente
+Duas colunas§Two columns§Dos columnas
+Embaixo§Below§Abajo
+Embaralhar§Shuffle§Mezclar
+Emoji grandes§Large emoji§Emoji grandes
+Entendi§Got it§Entendido
+Entrar§Sign in§Entrar
+Esconder§Hide§Ocultar
+Escreve§Writes§Escribe
+Falhou§Failed§Falló
+Filtro criado§Filter created§Filtro creado
+Fonte§Font§Fuente
+Forma§Shape§Forma
+Formatar como JSON§Format as JSON§Formatear como JSON
+Formatar como SQL§Format as SQL§Formatear como SQL
+Formatar como XML§Format as XML§Formatear como XML
+Formatar CSS§Format CSS§Formatear CSS
+Formatar HTML§Format HTML§Formatear HTML
+Formatar JavaScript§Format JavaScript§Formatear JavaScript
+Formatar SQL§Format SQL§Formatear SQL
+Formatar XML§Format XML§Formatear XML
+Formato§Format§Formato
+Fundo§Background§Fondo
+Grupo§Group§Grupo
+Grupo vazio§Empty group§Grupo vacío
+Imagens§Images§Imágenes
+Importar§Import§Importar
+Importar tudo§Import all§Importar todo
+Inserir§Insert§Insertar
+Inverter§Invert§Invertir
+Link§Link§Enlace
+Local§Local§Local
+Macros§Macros§Macros
+Melhoria§Improvement§Mejora
+Meu snippet§My snippet§Mi snippet
+Minhas figurinhas§My stickers§Mis stickers
+Minificar JSON§Minify JSON§Minificar JSON
+Modo inserir§Insert mode§Modo insertar
+Mostrar§Show§Mostrar
+Mostrar inteira§Show whole§Mostrar completa
+Negrito§Bold§Negrita
+Nome§Name§Nombre
+Nunca§Never§Nunca
+Pergunta§Question§Pregunta
+Preview Markdown lateral§Side Markdown preview§Vista previa Markdown lateral
+Quadrada§Square§Cuadrada
+Reabrir§Reopen§Reabrir
+Reabrir aba fechada§Reopen closed tab§Reabrir pestaña cerrada
+Recentes§Recent§Recientes
+Redonda§Round§Redonda
+Reenviar§Resend§Reenviar
+Remover§Remove§Quitar
+Remover repetidas§Remove duplicates§Quitar repetidas
+Remover repetidos§Remove duplicates§Quitar repetidos
+Responder§Reply§Responder
+Restaurar§Restore§Restaurar
+Restaurar fonte§Reset font§Restablecer fuente
+Resultado§Result§Resultado
+Rolagem sincronizada§Synchronized scrolling§Desplazamiento sincronizado
+Sair§Quit§Salir
+Selecionar tudo§Select all§Seleccionar todo
+Sempre§Always§Siempre
+Subir§Move up§Subir
+Substituir tudo§Replace all§Reemplazar todo
+Tamanho§Size§Tamaño
+Temas prontos§Ready-made themes§Temas prediseñados
+Tipo§Type§Tipo
+Tirar§Remove§Quitar
+Tirar foto§Take photo§Tomar foto
+Palavra inteira§Whole word§Palabra completa
+abrir arquivo§open file§abrir archivo
+adicionar pasta§add folder§añadir carpeta
+ir para arquivo§go to file§ir a archivo
+comandos§commands§comandos

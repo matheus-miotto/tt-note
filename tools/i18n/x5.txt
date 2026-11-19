@@ -1,0 +1,28 @@
+Comando…§Command…§Comando…
+ex.: Equipe, Cliente X§e.g.: Team, Client X§p. ej.: Equipo, Cliente X
+Filtrar…§Filter…§Filtrar…
+→ seta§→ arrow§→ flecha
+✓ Copiado§✓ Copied§✓ Copiado
+Copiado ✓§Copied ✓§Copiado ✓
+Tirar a imagem§Remove the image§Quitar la imagen
+Emoji e stickers§Emoji and stickers§Emoji y stickers
+Votaram:§Voted:§Votaron:
+Copiar§Copy§Copiar
+Colar§Paste§Pegar
+Recortar§Cut§Cortar
+Selecionar tudo§Select all§Seleccionar todo
+Desfazer§Undo§Deshacer
+Refazer§Redo§Rehacer
+Sim§Yes§Sí
+Não§No§No
+OK§OK§Aceptar
+Fechar§Close§Cerrar
+Cancelar§Cancel§Cancelar
+Voltar§Back§Volver
+Salvar§Save§Guardar
+Abrir§Open§Abrir
+Novo§New§Nuevo
+Excluir§Delete§Eliminar
+Renomear§Rename§Renombrar
+Copiar link§Copy link§Copiar enlace
+Responder§Reply§Responder

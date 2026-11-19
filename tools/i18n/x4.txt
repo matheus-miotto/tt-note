@@ -1,0 +1,8 @@
+Recolher / expandir§Collapse / expand§Contraer / expandir
+Parar (Ctrl+Pause)§Stop (Ctrl+Pause)§Detener (Ctrl+Pause)
+Tecla Insert: inserir / sobrescrever§Insert key: insert / overwrite§Tecla Insert: insertar / sobrescribir
+Ligar/desligar minimap§Turn minimap on/off§Activar/desactivar minimapa
+Definir sintaxe (Ctrl+K Ctrl+S)§Set syntax (Ctrl+K Ctrl+S)§Definir sintaxis (Ctrl+K Ctrl+S)
+0 = não dividir. Oracle aceita no máximo 1000 itens por IN.§0 = don't split. Oracle accepts at most 1000 items per IN.§0 = no dividir. Oracle acepta como máximo 1000 elementos por IN.
+Minimap: ligado§Minimap: on§Minimapa: activado
+Minimap: desligado§Minimap: off§Minimapa: desactivado

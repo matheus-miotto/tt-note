@@ -1,0 +1,88 @@
+@ para você§@ for you§@ para ti
+Sem permissão§No permission§Sin permiso
+Não encontrado§Not found§No encontrado
+Nome inválido§Invalid name§Nombre no válido
+Já existe um usuário com esse nome§A user with that name already exists§Ya existe un usuario con ese nombre
+Usuário não encontrado§User not found§Usuario no encontrado
+Precisa existir pelo menos um administrador§There must be at least one administrator§Debe existir al menos un administrador
+Você não pode desativar a si mesmo§You can't deactivate yourself§No puedes desactivarte a ti mismo
+Você não pode remover a si mesmo§You can't remove yourself§No puedes eliminarte a ti mismo
+Você não pode chamar a sua própria atenção§You can't get your own attention§No puedes llamar tu propia atención
+Vocês não participam de nenhum projeto em comum§You don't share any project§No participan en ningún proyecto en común
+{0} não aceita chamadas de atenção suas§{0} doesn't accept attention calls from you§{0} no acepta llamadas de atención tuyas
+{0} não está online agora§{0} is not online right now§{0} no está en línea ahora
+Aguarde {0} s para chamar a atenção de {1} de novo§Wait {0} s to get {1}'s attention again§Espera {0} s para llamar la atención de {1} de nuevo
+Muitas chamadas de atenção seguidas. Aguarde um minuto.§Too many attention calls in a row. Wait a minute.§Demasiadas llamadas de atención seguidas. Espera un minuto.
+Muitas tentativas. Aguarde um minuto.§Too many attempts. Wait a minute.§Demasiados intentos. Espera un minuto.
+Usuário ou senha inválidos§Invalid username or password§Usuario o contraseña no válidos
+Projeto não encontrado§Project not found§Proyecto no encontrado
+Só o administrador cria projetos§Only the administrator creates projects§Solo el administrador crea proyectos
+Nome do projeto inválido§Invalid project name§Nombre de proyecto no válido
+Só o administrador do servidor muda o grupo de um projeto§Only the server administrator changes a project's group§Solo el administrador del servidor cambia el grupo de un proyecto
+Esse grupo não existe§That group doesn't exist§Ese grupo no existe
+Só o administrador cria grupos§Only the administrator creates groups§Solo el administrador crea grupos
+Nome do grupo inválido§Invalid group name§Nombre de grupo no válido
+Já existe um grupo com esse nome§A group with that name already exists§Ya existe un grupo con ese nombre
+Só o administrador muda grupos§Only the administrator changes groups§Solo el administrador cambia grupos
+Grupo não encontrado§Group not found§Grupo no encontrado
+Lista de acesso inválida§Invalid access list§Lista de acceso no válida
+Só o administrador apaga grupos§Only the administrator deletes groups§Solo el administrador elimina grupos
+Esta nota não é um canvas§This note is not a canvas§Esta nota no es un canvas
+{0} está editando este canvas§{0} is editing this canvas§{0} está editando este canvas
+O canvas não é um JSON válido§The canvas is not valid JSON§El canvas no es un JSON válido
+O canvas precisa ter "nodes" e "edges" em lista§The canvas must have "nodes" and "edges" as lists§El canvas debe tener «nodes» y «edges» como listas
+O canvas foi alterado por outra pessoa (versão {0}). Recarregue.§The canvas was changed by someone else (version {0}). Reload.§El canvas fue modificado por otra persona (versión {0}). Recarga.
+Clique em Editar antes de restaurar uma versão§Click Edit before restoring a version§Haz clic en Editar antes de restaurar una versión
+Versão não encontrada§Version not found§Versión no encontrada
+Nota não encontrada§Note not found§Nota no encontrada
+Nova nota§New note§Nueva nota
+Só quem administra o projeto muda essa regra§Only whoever manages the project changes this rule§Solo quien administra el proyecto cambia esta regla
+Regra inválida§Invalid rule§Regla no válida
+Você não tem permissão para editar mensagens de outras pessoas nesta nota§You don't have permission to edit other people's messages in this note§No tienes permiso para editar mensajes de otras personas en esta nota
+Este trecho não é uma enquete§This passage is not a poll§Este fragmento no es una encuesta
+A enquete está encerrada§The poll is closed§La encuesta está cerrada
+Opções inválidas§Invalid options§Opciones no válidas
+Opção inválida§Invalid option§Opción no válida
+Esta enquete aceita uma escolha só§This poll accepts only one choice§Esta encuesta acepta una sola opción
+No máximo {0} mensagens fixadas por nota: desafixe alguma antes§At most {0} pinned messages per note: unpin one first§Como máximo {0} mensajes fijados por nota: desfija alguno antes
+Só quem criou a enquete (ou o administrador) pode encerrar§Only whoever created the poll (or the administrator) can close it§Solo quien creó la encuesta (o el administrador) puede cerrarla
+Esta enquete já tem votos: só dá para mudar a pergunta (não as opções nem o tipo)§This poll already has votes: only the question can be changed (not the options or the type)§Esta encuesta ya tiene votos: solo se puede cambiar la pregunta (no las opciones ni el tipo)
+Trecho não encontrado§Passage not found§Fragmento no encontrado
+Esta nota é um canvas: abra no app para editar§This note is a canvas: open it in the app to edit§Esta nota es un canvas: ábrela en la app para editar
+A mensagem que você quer responder não existe mais§The message you want to reply to no longer exists§El mensaje que quieres responder ya no existe
+Sticker inválido§Invalid sticker§Sticker no válido
+Sticker não pode ser editado (apague e envie outro)§A sticker can't be edited (delete it and send another)§Un sticker no se puede editar (elimínalo y envía otro)
+versão {0}§version {0}§versión {0}
+Essa linha não é uma tarefa§That line is not a task§Esa línea no es una tarea
+Figurinha inválida§Invalid sticker§Sticker no válido
+Emoji inválido§Invalid emoji§Emoji no válido
+Reações demais neste trecho§Too many reactions on this passage§Demasiadas reacciones en este fragmento
+Arquivo não encontrado§File not found§Archivo no encontrado
+Sticker precisa ser uma imagem§A sticker must be an image§Un sticker debe ser una imagen
+Sticker não encontrado§Sticker not found§Sticker no encontrado
+Só quem enviou (ou o administrador) remove o sticker§Only whoever sent it (or the administrator) removes the sticker§Solo quien lo envió (o el administrador) elimina el sticker
+JSON inválido§Invalid JSON§JSON no válido
+Versão inválida (use o formato 1.19.2)§Invalid version (use the format 1.19.2)§Versión no válida (usa el formato 1.19.2)
+Instalador maior que 600 MB§Installer larger than 600 MB§Instalador de más de 600 MB
+Identificador de envio inválido§Invalid upload identifier§Identificador de envío no válido
+Deslocamento inválido§Invalid offset§Desplazamiento no válido
+Parte maior que 16 MB§Part larger than 16 MB§Parte de más de 16 MB
+Deslocamento diferente do recebido§Offset different from the one received§Desplazamiento distinto del recibido
+Parte incompleta ({0} de {1} bytes)§Incomplete part ({0} of {1} bytes)§Parte incompleta ({0} de {1} bytes)
+Envio não encontrado no servidor (recomece)§Upload not found on the server (start over)§Envío no encontrado en el servidor (empieza de nuevo)
+Sticker maior que 4 MB§Sticker larger than 4 MB§Sticker de más de 4 MB
+Arquivo maior que o limite de {0} MB§File larger than the {0} MB limit§Archivo mayor que el límite de {0} MB
+Não autorizado§Not authorized§No autorizado
+Página web não encontrada neste servidor§Web page not found on this server§Página web no encontrada en este servidor
+Entre com seu usuário e senha§Sign in with your username and password§Entra con tu usuario y contraseña
+Nenhuma atualização publicada§No update published§Ninguna actualización publicada
+Só o administrador publica atualizações§Only the administrator publishes updates§Solo el administrador publica actualizaciones
+Endereço não permitido§Address not allowed§Dirección no permitida
+Tipo sem prévia§Type without preview§Tipo sin vista previa
+Protocolo não permitido§Protocol not allowed§Protocolo no permitido
+Esse arquivo é pequeno demais para ser o instalador§That file is too small to be the installer§Ese archivo es demasiado pequeño para ser el instalador
+Esse arquivo não é um programa do Windows (.exe)§That file is not a Windows program (.exe)§Ese archivo no es un programa de Windows (.exe)
+Defina a senha do backup (config.json → backup.passphrase)§Set the backup password (config.json → backup.passphrase)§Define la contraseña de la copia de seguridad (config.json → backup.passphrase)
+Arquivo de backup inválido§Invalid backup file§Archivo de copia de seguridad no válido
+Senha do backup incorreta ou arquivo corrompido§Wrong backup password or corrupted file§Contraseña de la copia de seguridad incorrecta o archivo dañado
+Backup não configurado (config.json → backup.dir e backup.passphrase)§Backup not set up (config.json → backup.dir and backup.passphrase)§Copia de seguridad no configurada (config.json → backup.dir y backup.passphrase)

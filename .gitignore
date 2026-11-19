@@ -1,0 +1,35 @@
+# dependências e arquivos gerados
+node_modules/
+dist/
+release-build/
+release/
+installer/
+*.exe
+*.zip
+*.log
+*.part
+*.part.json
+
+# dados e configurações locais (nunca publicar)
+settings.json
+drafts.json*
+pins.json
+shared.json
+notes.json
+window.json
+config.json
+.env
+*.pem
+*.key
+data/
+imagens-coladas/
+
+# ferramentas e anotações pessoais
+.claude/
+.vscode/
+Thumbs.db
+desktop.ini
+
+# documentos internos de planejamento e instruções pessoais de infraestrutura
+docs/servidor-colaborativo.md
+docs/prompt-claude-code-*.md

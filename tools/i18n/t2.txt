@@ -1,0 +1,360 @@
+Can write (edits only their own)§Escribe (edita solo lo suyo)
+writes (edits only their own)§escribe (edita solo lo suyo)
+Writes and edits others'§Escribe y edita lo de los demás
+writes and edits others'§escribe y edita lo de los demás
+Spaces§Espacios
+Spaces: don't show§Espacios: no mostrar
+Spaces: always (● space, → tab)§Espacios: siempre (● espacio, → tab)
+Spaces: only in selected text§Espacios: solo en el texto seleccionado
+That tab is already open§Esa pestaña ya está abierta
+That file already exists; opening it§Ese archivo ya existe; abriéndolo
+That file is not an image (use PNG, JPG, GIF or WebP).§Ese archivo no es una imagen (usa PNG, JPG, GIF o WebP).
+That file is larger than 4 MB, the sticker limit.§Ese archivo supera los 4 MB, el límite de los stickers.
+is editing now§está editando ahora
+This image may be animated. With “keep the animation” checked, the text, shape and background go into every frame and the sticker comes out as an animated GIF. The button below sends the original file, unchanged.§Esta imagen puede ser animada. Con «mantener la animación» marcado, el texto, la forma y el fondo entran en todos los fotogramas y el sticker sale como GIF animado. El botón de abajo envía el archivo original, sin cambios.
+This person already gets that role through the project's group. The highest of the group's and the project's applies.§Esta persona ya tiene ese rol por el grupo del proyecto. Vale el más alto entre el del grupo y el del proyecto.
+This is a canvas (a board of cards). Here you can only view; to edit, use the TT Note app on Windows. Last change: {0} · {1}{2}.§Esto es un canvas (un tablero de tarjetas). Aquí solo puedes verlo; para editar, usa la app TT Note en Windows. Último cambio: {0} · {1}{2}.
+This server is no longer in the list. Sign in again in ☁ Shared.§Este servidor ya no está en la lista. Entra de nuevo en ☁ Compartido.
+§
+§
+§
+e.g.: 100.64.0.5:8787 (Tailscale) · 192.168.0.10:8787 (same network) · https://name.trycloudflare.com (tunnel)§Ej.: 100.64.0.5:8787 (Tailscale) · 192.168.0.10:8787 (misma red) · https://nombre.trycloudflare.com (túnel)
+Delete (Recycle Bin)…§Eliminar (Papelera)…
+Delete current file (Recycle Bin)§Eliminar el archivo actual (Papelera)
+Delete group§Eliminar grupo
+Delete group (tabs stay ungrouped)§Eliminar grupo (las pestañas quedan sin grupo)
+Delete the group "{0}"{1}? The {2} tab(s) will not be closed: they go back to "no group". No file is deleted.§¿Eliminar el grupo «{0}»{1}? Las {2} pestaña(s) no se cerrarán: vuelven a «sin grupo». No se elimina ningún archivo.
+Run a saved one…§Ejecutar una guardada…
+Expand selection to block (scope)§Expandir la selección al bloque (ámbito)
+Expand to block§Expandir al bloque
+Export the tab§Exportar la pestaña
+Export the tab as PDF…§Exportar la pestaña como PDF…
+Export the tab as Word (.docx)…§Exportar la pestaña como Word (.docx)…
+Export works for text/Markdown tabs, not for the canvas.§Exportar sirve para pestañas de texto/Markdown, no para el canvas.
+Failed to download the update:§Error al descargar la actualización:
+Upload failed§Error en el envío
+Shakes a person's window (like in MSN). Only works with those who allowed it.§Hace temblar la ventana de una persona (como en MSN). Solo funciona con quien lo permitió.
+Close§Cerrar
+Close (the note stays saved)§Cerrar (la nota queda guardada)
+Close (Esc)§Cerrar (Esc)
+Close tab§Cerrar pestaña
+Close group tabs§Cerrar pestañas del grupo
+Close the {0} tabs§Cerrar las {0} pestañas
+Close and keep for later§Cerrar y conservar para después
+Close this panel (the tab stays open)§Cerrar este panel (la pestaña sigue abierta)
+Close the panel§Cerrar el panel
+Close project§Cerrar proyecto
+Close current project§Cerrar el proyecto actual
+Close without asking (keeps the session)§Cerrar sin preguntar (guarda la sesión)
+Close without saving§Cerrar sin guardar
+Sticker "{0}" saved (animation kept).§Sticker «{0}» guardado (animación conservada).
+Sticker "{0}" saved to your collection. Open 🏷 Stickers to use it.§Sticker «{0}» guardado en tu colección. Abre 🏷 Stickers para usarlo.
+Sticker added to the collection.§Sticker añadido a la colección.
+Animated sticker "{0}" saved to your collection.§Sticker animado «{0}» guardado en tu colección.
+Stickers: use, create and keep§Stickers: usar, crear y guardar
+SQL filter from the list§Filtro SQL a partir de la lista
+SQL filter from the list… (IN, LIKE, NOT LIKE…)§Filtro SQL a partir de la lista… (IN, LIKE, NOT LIKE…)
+SQL filter: turn the list into IN (direct)§Filtro SQL: convertir la lista en IN (directo)
+SQL filter: turn the list into LIKE (direct)§Filtro SQL: convertir la lista en LIKE (directo)
+SQL filter: turn the list into NOT IN (direct)§Filtro SQL: convertir la lista en NOT IN (directo)
+Pinned at the top — click to release§Fijada arriba — clic para soltar
+pinned by {0} · {1}§fijada por {0} · {1}
+Pinned by {0} · {1}§Fijada por {0} · {1}
+Pin / unpin the line (📌)§Fijar / desfijar la línea (📌)
+Pin this message at the top of the conversation§Fijar este mensaje arriba en la conversación
+Pin at the top of the conversation§Fijar arriba en la conversación
+Pin at the top (always visible)§Fijar arriba (siempre visible)
+Format the selection (detects the type)§Formatear la selección (detecta el tipo)
+Format JSON (selection, line or file)§Formatear JSON (selección, línea o archivo)
+Format JSON when pasting into .md§Formatear JSON al pegar en .md
+Format log (SQL and JSON in blocks)§Formatear log (SQL y JSON en bloques)
+Format log (SQL and JSON in blocks) — selection or document§Formatear log (SQL y JSON en bloques) — selección o documento
+form§formulario
+function§función
+async function§función async
+Snippet trigger (you type this and press Tab). Enter confirms§Disparador del snippet (lo escribes y pulsas Tab). Enter confirma
+Georgia (serif)§Georgia (con serifa)
+Generating {0}… (images may take a moment)§Generando {0}… (las imágenes pueden tardar un instante)
+Save to {0}§Guardar en {0}
+Record a macro first (Ctrl+Q)§Graba una macro primero (Ctrl+Q)
+Group "{0}": {1} file(s) saved§Grupo «{0}»: {1} archivo(s) guardado(s)
+Group {0} — {1} project(s)§Grupo {0} — {1} proyecto(s)
+Tab groups§Grupos de pestañas
+tab§pestaña
+Some characters don't exist in Windows-1252: saved as UTF-8§Hay caracteres que no existen en Windows-1252: guardé en UTF-8
+There are repeated options.§Hay opciones repetidas.
+History§Historial
+History ({0} version(s))§Historial ({0} versión/es)
+History ({0})§Historial ({0})
+Canvas history§Historial del canvas
+Canvas history (to restore, click Edit first)§Historial del canvas (para restaurar, haz clic en Editar antes)
+History of the passage by§Historial del fragmento de
+today§hoy
+Current time§Hora actual
+§
+§
+§
+§
+§
+image from any folder§imagen de cualquier carpeta
+Image, file or video§Imagen, archivo o vídeo
+Images: optimized (faster upload)§Imágenes: optimizadas (envío más rápido)
+Blocks login without deleting anything§Impide el acceso sin borrar nada
+Imported from Sublime: {0} file(s), {1} untitled tab(s)§Importado de Sublime: {0} archivo(s), {1} pestaña(s) sin título
+Import from Obsidian (open vault)…§Importar de Obsidian (abrir bóveda)…
+Import from Sublime Text? {0} Sublime is not changed (read only).§¿Importar de Sublime Text? {0} Sublime no se modifica (solo lectura).
+Import from Sublime Text…§Importar de Sublime Text…
+Indentation§Sangría
+Indent with spaces§Sangrar con espacios
+Enter the password.§Introduce la contraseña.
+Enter the version in the format 1.20.2§Introduce la versión en el formato 1.20.2
+Enter the server address§Introduce la dirección del servidor
+Enter the server address.§Introduce la dirección del servidor.
+Enter the name and a password of at least 8 characters§Introduce el nombre y una contraseña de al menos 8 caracteres
+Enter your username.§Introduce tu usuario.
+Starting the server…§Iniciando el servidor…
+Start with Windows§Iniciar con Windows
+Insert poll… (one or several choices)§Insertar encuesta… (una o varias opciones)
+Insert line below§Insertar línea debajo
+Insert line above§Insertar línea encima
+§
+§
+§
+TT Note installer (.exe)§Instalador de TT Note (.exe)
+Installer not found§Instalador no encontrado
+Swap uppercase and lowercase§Invertir mayúsculas y minúsculas
+Go to§Ir a
+Go to tab {0}§Ir a la pestaña {0}
+Go to tab number§Ir a la pestaña número
+Go to message§Ir al mensaje
+Go to the pinned message§Ir al mensaje fijado
+Go to the original message§Ir al mensaje original
+Go to open tab…§Ir a pestaña abierta…
+Go to open tab… ({0})§Ir a pestaña abierta… ({0})
+Go to file (Goto Anything)§Ir a archivo (Goto Anything)
+Go to file…§Ir a archivo…
+Go to file… (file:line)§Ir a archivo… (archivo:línea)
+Go to line§Ir a la línea
+Go to line…§Ir a la línea…
+Go to matching bracket§Ir al corchete correspondiente
+Go to symbol…§Ir a símbolo…
+Go to heading / symbol…§Ir a título / símbolo…
+Go to heading…§Ir a título…
+Go to heading/symbol§Ir a título/símbolo
+Italic§Cursiva
+It's already on one line§Ya está en una línea
+It's already formatted§Ya está formateado
+A file with that name already exists§Ya existe un archivo con ese nombre
+An item with that name already exists§Ya existe un elemento con ese nombre
+A tab with that name already exists§Ya existe una pestaña con ese nombre
+A build is already running (Ctrl+Pause to stop)§Ya hay un build en ejecución (Ctrl+Pause para detener)
+A publication is already in progress.§Ya hay una publicación en curso.
+JSON pasted and formatted in a block§JSON pegado y formateado en un bloque
+Invalid JSON:§JSON no válido:
+Invalid JSON: not saved yet§JSON no válido: aún sin guardar
+Read-only JSON: click ✏️ Edit on the canvas to change it.§JSON de solo lectura: haz clic en ✏️ Editar en el canvas para poder cambiarlo.
+Join lines§Unir líneas
+Latency: {0} — average {1} ms§Latencia: {0} — media {1} ms
+Turn on automatically for commit files§Activar automáticamente en archivos de commit
+LIKE (several, with OR)§LIKE (varios, con OR)
+Flatten XML (one line)§Linealizar XML (una línea)
+Line§Línea
+Line {0}, Column {1}§Línea {0}, Columna {1}
+Line unpinned§Línea desfijada
+Line pinned§Línea fijada
+Pinned line — click to unpin§Línea fijada — clic para desfijar
+pinned lines§líneas fijadas
+Pinned lines (Ctrl+Alt+Shift+P): see all§Líneas fijadas (Ctrl+Alt+Shift+P): ver todas
+Pinned lines: see all…§Líneas fijadas: ver todas…
+Pinned lines: see all… (Ctrl+Alt+Shift+P)§Líneas fijadas: ver todas… (Ctrl+Alt+Shift+P)
+Selected lines → tasks (checkbox)§Líneas seleccionadas → tareas (casilla)
+Lines: shuffle§Líneas: mezclar
+Lines: reverse the order§Líneas: invertir el orden
+Lines: remove duplicates§Líneas: quitar repetidas
+Outgoing links§Enlaces salientes
+Find / replace…§Buscar / reemplazar…
+Formatted log: {0} SQL and {1} JSON in blocks (Ctrl+Z undoes)§Log formateado: {0} SQL y {1} JSON en bloques (Ctrl+Z deshace)
+§
+Macro: delete a saved one…§Macro: eliminar una guardada…
+Macro: run a saved one…§Macro: ejecutar una guardada…
+Macro: record / stop recording§Macro: grabar / dejar de grabar
+Macro: repeat the last recorded§Macro: repetir la última grabada
+Macro: save the last one with a name…§Macro: guardar la última con un nombre…
+More than 1000 items: Oracle refuses. Turn on "split into batches".§Más de 1000 elementos: Oracle lo rechaza. Activa «dividir en lotes».
+Match case§May./min.
+Capitalize Each Word§Mayúscula En Cada Palabra
+Capitalize Initial Of Each Word (Title Case)§Mayúscula Inicial En Cada Palabra (Title Case)
+Uppercase§Mayúsculas
+UPPERCASE§MAYÚSCULAS
+Uppercase / lowercase§Mayúsculas / minúsculas
+keeps the panels side by side§mantiene los paneles lado a lado
+keep the animation (text, shape and background apply to all frames)§mantener la animación (texto, forma y fondo valen para todos los fotogramas)
+Keep in the tray when closing (notes and Ctrl+Alt+N stay active)§Mantener en la bandeja al cerrar (las notas y Ctrl+Alt+N siguen activas)
+Markdown: italic · outside Markdown: incremental search§Markdown: cursiva · fuera de Markdown: búsqueda incremental
+Markdown: bold · outside Markdown: build (run the file)§Markdown: negrita · fuera de Markdown: build (ejecutar el archivo)
+Pinned messages§Mensajes fijados
+Messages for you (mentions and replies) you haven't read yet§Mensajes para ti (menciones y respuestas) que aún no has leído
+Messages for you in this project§Mensajes para ti en este proyecto
+Same font as the editor§La misma fuente del editor
+Same network ({0}) — only works for people on the same Wi-Fi/network§Misma red ({0}) — solo funciona para quien está en el mismo Wi-Fi/red
+Minimap: off§Minimapa: desactivado
+Minimap: on§Minimapa: activado
+Minimum of 8 characters§Mínimo de 8 caracteres
+lowercase§minúsculas
+Lowercase§Minúsculas
+Distraction-free mode§Modo sin distracciones
+Distraction-free mode (full screen, text only)§Modo sin distracciones (pantalla completa, solo el texto)
+Distraction-free mode: Shift+F11 returns to normal§Modo sin distracciones: Shift+F11 vuelve a la normalidad
+Overwrite mode (Insert key returns to normal)§Modo sobrescribir (la tecla Insert vuelve a la normalidad)
+Show / hide notes§Mostrar / ocultar notas
+Show / hide all§Mostrar / ocultar todas
+Show the message again§Mostrar el mensaje de nuevo
+Show spaces (●) and tabs (→)§Mostrar espacios (●) y tabulaciones (→)
+Show spaces and tabs: toggle (never → selection only → always)§Mostrar espacios y tabulaciones: alternar (nunca → solo en la selección → siempre)
+Show in Explorer§Mostrar en el Explorador
+Show/hide the password§Mostrar/ocultar la contraseña
+Move "{0}" to which group?§¿A qué grupo mover «{0}»?
+Move {0} "{1}" to the Recycle Bin?§¿Mover {0} «{1}» a la Papelera?
+Move the tab to group…§Mover la pestaña al grupo…
+Move line down§Mover línea hacia abajo
+Move line up§Mover línea hacia arriba
+Move to the Recycle Bin§Mover a la Papelera
+Move down§Mover hacia abajo
+Move up§Mover hacia arriba
+Move to group…§Mover al grupo…
+Move to the group…§Mover al grupo…
+Moved to the Recycle Bin:§Movido a la Papelera:
+Change the color§Cambiar el color
+Nothing to compare (or no differences)§Nada que comparar (o sin diferencias)
+Nothing to convert: already spaces§Nada que convertir: ya son espacios
+Nothing to convert: already tabs§Nada que convertir: ya son tabulaciones
+Nothing to filter§Nada que filtrar
+Nothing to format here (select the passage)§Nada que formatear aquí (selecciona el fragmento)
+Nothing to save in the group "{0}"§Nada que guardar en el grupo «{0}»
+doesn't accept attention calls§no acepta llamadas de atención
+I found no log passages ([query](…): select…, SQL (…): update…, [request](…): {…}) to format§No encontré fragmentos de log ([consulta](…): select…, SQL (…): update…, [requisicao](…): {…}) para formatear
+Couldn't open§No pude abrir
+Couldn't open that image.§No pude abrir esa imagen.
+Couldn't open:§No pude abrir:
+Couldn't change the poll§No pude cambiar la encuesta
+Couldn't get their attention§No pude llamar la atención
+Couldn't query the server§No pude consultar el servidor
+Couldn't sign in§No pude entrar
+Couldn't send§No pude enviar
+Couldn't send "{0}"§No pude enviar «{0}»
+Couldn't send the image§No pude enviar la imagen
+Couldn't send the file§No pude enviar el archivo
+Couldn't send the sticker§No pude enviar el sticker
+Couldn't send an image:§No pude enviar una imagen:
+Couldn't send:§No pude enviar:
+Couldn't delete:§No pude eliminar:
+Couldn't export: {0}§No pude exportar: {0}
+Couldn't reach the server (§No pude comunicarme con el servidor (
+Couldn't pin§No pude fijar
+Couldn't generate the sticker image.§No pude generar la imagen del sticker.
+couldn't generate the PDF§no pude generar el PDF
+Couldn't save the note§No pude guardar la nota
+Couldn't write to settings.json§No pude escribir en settings.json
+Couldn't start: {0}§No pude iniciar: {0}
+Couldn't read§No pude leer
+Couldn't read that image.§No pude leer esa imagen.
+Couldn't mark§No pude marcar
+Couldn't stop the server§No pude detener el servidor
+Couldn't take over the edit§No pude tomar la edición
+Couldn't react§No pude reaccionar
+Couldn't register the vote§No pude registrar el voto
+Couldn't restore§No pude restaurar
+Couldn't save§No pude guardar
+Couldn't save the pasted image§No pude guardar la imagen pegada
+Couldn't save the canvas§No pude guardar el canvas
+I found no Obsidian vaults on this computer.§No encontré bóvedas de Obsidian en este equipo.
+I couldn't find Sublime Text on this computer.§No encontré Sublime Text en este equipo.
+I couldn't find Tailscale on this computer. For colleagues to join from outside the house, install Tailscale here and on theirs: the address appears in this list (100.x.x.x). If you're using a Cloudflare tunnel, the address is the https://….trycloudflare.com that cloudflared shows.§No encontré Tailscale en este equipo. Para que los compañeros entren desde fuera de casa, instala Tailscale aquí y en los suyos: la dirección aparece en esta lista (100.x.x.x). Si usas un túnel de Cloudflare, la dirección es el https://….trycloudflare.com que muestra cloudflared.
+not sent§no enviada
+There are no foldable blocks at level {0}§No hay bloques plegables en el nivel {0}
+There's no image on the clipboard. Copy an image and try again.§No hay imagen en el portapapeles. Copia una imagen e inténtalo de nuevo.
+There's no other tab to open beside§No hay otra pestaña para abrir al lado
+There are no other people in this project.§No hay otras personas en este proyecto.
+There are no values in the selection§No hay valores en la selección
+I didn't recognize the format. Select the passage or use Edit → Format as…§No reconocí el formato. Selecciona el fragmento o usa Editar → Formatear como…
+Don't save§No guardar
+I don't know how to run .{0} files. Set it in settings.json: "builds": { "ext": "command with $file" } (Ctrl+Shift+B also accepts a typed command)§No sé ejecutar archivos .{0}. Defínelo en settings.json: "builds": { "ext": "comando con $file" } (Ctrl+Shift+B también acepta un comando escrito)
+No [[link]] under the cursor§Ningún [[enlace]] bajo el cursor
+No open files§Ningún archivo abierto
+No recent files yet§Aún no hay archivos recientes
+No emoji found. Try another word, in Portuguese or English.§No se encontró ningún emoji. Prueba con otra palabra, en portugués o inglés.
+No errors with file:line in the build output§Ningún error con archivo:línea en la salida del build
+No JSON under the cursor (or select the passage)§Ningún JSON bajo el cursor (o selecciona el fragmento)
+No project open. Use the File menu → "New project…" to create one or "Add folder as project…" to open a folder.§Ningún proyecto abierto. Usa el menú Archivo → «Nuevo proyecto…» para crear uno o «Añadir carpeta como proyecto…» para abrir una carpeta.
+No projects yet. Right-click the server → New project…§Aún no hay proyectos. Clic derecho en el servidor → Nuevo proyecto…
+No recent projects yet§Aún no hay proyectos recientes
+No passages yet. Write below to start — your name appears above what you write.§Aún no hay fragmentos. Escribe abajo para empezar — tu nombre aparece encima de lo que escribas.
+No passages yet. Write below to start.§Aún no hay fragmentos. Escribe abajo para empezar.
+No open tabs§Ninguna pestaña abierta
+No closed tab to reopen§Ninguna pestaña cerrada para reabrir
+No sticker with that name.§Ningún sticker con ese nombre.
+No pinned lines yet. Put the cursor on a line and use Ctrl+Alt+P (or right-click → Pin this line).§Aún no hay líneas fijadas. Pon el cursor en una línea y usa Ctrl+Alt+P (o clic derecho → Fijar esta línea).
+No macro recorded: Ctrl+Q to record§Ninguna macro grabada: Ctrl+Q para grabar
+No saved macro yet§Aún no hay macros guardadas
+No pinned messages. Use the 📌 in the corner of a message to pin.§Ningún mensaje fijado. Usa el 📌 en la esquina de un mensaje para fijarlo.
+No pinned messages. Use the 📌 on a message to pin.§Ningún mensaje fijado. Usa el 📌 en un mensaje para fijarlo.
+no preferences§ninguna preferencia
+On this computer (for your own TT Note)§En este equipo (para tu propio TT Note)
+Nobody (default)§Nadie (predeterminado)
+Nobody online right now§Nadie en línea ahora
+Nobody can get your attention§Nadie puede llamar tu atención
+In the middle§En el medio
+on this computer's server§en el servidor de este equipo
+At the top§Arriba
+Name (as it will appear in the notes)§Nombre (como aparecerá en las notas)
+Name (caption) below the images: show/hide in this tab§Nombre (leyenda) debajo de las imágenes: mostrar/ocultar en esta pestaña
+Sticker name§Nombre del sticker
+Macro name. Enter confirms§Nombre de la macro. Enter confirma
+Image names hidden in this tab§Nombre de las imágenes oculto en esta pestaña
+Image names shown in this tab§Nombre de las imágenes visible en esta pestaña
+Name of the new canvas§Nombre del nuevo canvas
+Name of the new project group (e.g.: Clients, Personal)§Nombre del nuevo grupo de proyectos (p. ej.: Clientes, Personal)
+Name of the new group… (use / for subgroups: Clients/Alinare)§Nombre del nuevo grupo… (usa / para subgrupos: Clientes/Alinare)
+Name of the new project§Nombre del nuevo proyecto
+Name of the new project (a folder will be created)…§Nombre del nuevo proyecto (se creará una carpeta)…
+Name below the images (in this tab)§Nombre debajo de las imágenes (en esta pestaña)
+Name for this server§Nombre para este servidor
+Name for this server (optional)§Nombre para este servidor (opcional)
+NOT LIKE (several, with AND)§NOT LIKE (varios, con AND)
+Note§Nota
+note from any folder§nota de cualquier carpeta
+Daily note§Nota diaria
+Floating note: open…§Nota flotante: abrir…
+Floating note: send the selection (or the tab) to a note§Nota flotante: enviar la selección (o la pestaña) a una nota
+Floating note: show / hide all§Nota flotante: mostrar / ocultar todas
+Floating note: new (global shortcut Ctrl+Alt+N)§Nota flotante: nueva (atajo global Ctrl+Alt+N)
+Notes§Notas
+Notes ({0})§Notas ({0})
+Floating notes§Notas flotantes
+Floating notes… ({0})§Notas flotantes… ({0})
+New tab in this group§Nueva pestaña en este grupo
+New note (Ctrl+Alt+N)§Nueva nota (Ctrl+Alt+N)
+New floating note§Nueva nota flotante
+New note in the project folder§Nueva nota en la carpeta del proyecto
+New note in the project folder…§Nueva nota en la carpeta del proyecto…
+New note…§Nueva nota…
+New folder§Nueva carpeta
+New folder in {0}/§Nueva carpeta en {0}/
+New folder…§Nueva carpeta…
+New password for {0} (minimum 8)§Nueva contraseña de {0} (mínimo 8)
+New version {0} on the server (you're on {1}). Click to DOWNLOAD: the app stays open. Then the install button appears, whenever you want. Right-click hides this.§Nueva versión {0} en el servidor (estás en la {1}). Haz clic para DESCARGAR: la app sigue abierta. Después aparece el botón de instalar, cuando quieras. Clic derecho lo oculta.
+What's new (what changed in each version)§Novedades (qué cambió en cada versión)
+What's new in this version§Novedades de esta versión
+new§nuevo
+New§Nuevo
+New file§Nuevo archivo
+New file (untitled)§Nuevo archivo (sin título)
+New file in {0}/ (e.g.: note.md, folder/other.md)§Nuevo archivo en {0}/ (p. ej.: nota.md, carpeta/otra.md)
+New file in the project…§Nuevo archivo en el proyecto…
+New file…§Nuevo archivo…
+New canvas§Nuevo canvas
+New canvas (board of cards)§Nuevo canvas (tablero de tarjetas)
+New canvas in this group§Nuevo canvas en este grupo
+New canvas…§Nuevo canvas…
+New group with this tab…§Nuevo grupo con esta pestaña…
+New group with these tabs…§Nuevo grupo con estas pestañas…

@@ -1,0 +1,363 @@
+1§— {0} already open or empty§— {0} ya abierta(s) o vacía(s)
+2§— click to restore§— clic para restaurar
+3§— click to view§— clic para ver
+4§— the tunnel may be limiting the size; it works with the server on the same computer or over the VPN§— el túnel puede estar limitando el tamaño; funciona con el servidor en el mismo equipo o por VPN
+5§— No group —§— Sin grupo —
+6§, RESUMING from {0}§, REANUDANDO desde {0}
+8§… and {0} more§… y {0} más
+9§…(older output cut off)…§…(salida antigua cortada)…
+10§· {0} for you§· {0} para ti
+11§· anonymous§· anónima
+12§· this file§· este archivo
+13§· hidden message{0}§· mensaje oculto{0}
+14§· no real time§· sin tiempo real
+15§· read only§· solo lectura
+16§· last one you saw: {0}§· la última que viste: {0}
+17§"{0}" is not an image§"{0}" no es una imagen
+18§"{0}" is larger than 4 MB (sticker limit)§"{0}" supera los 4 MB (límite de los stickers)
+19§({0} unread{1}{2})§({0} sin leer{1}{2})
+20§(blank line)§(línea en blanco)
+21§(empty line)§(línea vacía)
+22§(message deleted)§(mensaje eliminado)
+23§(none)§(ninguna)
+24§(on this computer)§(en este equipo)
+25§(new)§(nueva)
+26§(what already arrived is kept; trying again resumes where it left off)§(lo que ya llegó se conserva; al reintentar continúa donde se quedó)
+27§(no login)§(sin sesión)
+28§(no suggestions)§(sin sugerencias)
+29§(no text)§(sin texto)
+30§(read only)§(solo lectura)
+31§(last saved)§(última guardada)
+32§); continuing with a single connection§); sigo con una sola conexión
+33§). Check the address and whether Tailscale is on.§). Revisa la dirección y si Tailscale está activado.
+34§{0} file(s) with unsaved changes: {1} What would you like to do?§{0} archivo(s) con cambios sin guardar: {1} ¿Qué quieres hacer?
+35§{0} Click to close. If you try again, the upload resumes where it left off.§{0} Haz clic para cerrar. Si lo intentas de nuevo, el envío continúa donde se quedó.
+36§{0} wrote to you§{0} te escribió
+37§{0} stickers added to the collection.§{0} stickers añadidos a la colección.
+38§{0} invalid: {1}§{0} no válido: {1}
+39§{0} line(s) became tasks§{0} línea(s) se convirtieron en tareas
+40§{0} notes · {1} links · click to open · Esc to close§{0} notas · {1} enlaces · clic para abrir · Esc para cerrar
+41§{0} What you changed after that was not saved.§{0} Lo que cambiaste después no se guardó.
+42§{0} online now§{0} en línea ahora
+43§{0} Base folder: {1} (the group's folders are created inside it)§{0} Carpeta base: {1} (las carpetas del grupo se crean dentro de ella)
+44§{0} spot(s) with file:line in the output: F4 goes to the next (clicking the line also opens it)§{0} punto(s) con archivo:línea en la salida: F4 va al siguiente (hacer clic en la línea también lo abre)
+45§{0} by {1} · {2}§{0} por {1} · {2}
+46§{0} selections§{0} selecciones
+47§{0} task(s) went back to text§{0} tarea(s) volvieron a texto
+48§{0} has {1} file(s) with unsaved changes: {2} What would you like to do?§{0} tiene {1} archivo(s) con cambios sin guardar: {2} ¿Qué quieres hacer?
+49§{0}: has no one-line version§{0}: no tiene versión en una línea
+50§{0}{1} Last change: {2}{3}§{0}{1} Último cambio: {2}{3}
+51§%value (ends with)§%valor (termina con)
+52§%value% (contains)§%valor% (contiene)
+53§• {0} unsaved / untitled tab(s) ({1} KB of text)§• {0} pestaña(s) sin título / sin guardar ({1} KB de texto)
+54§• {0} file(s) that were open§• {0} archivo(s) que estaban abiertos
+55§• {0} .sublime-project project(s), {1} recent file(s) and {2} folder(s)§• {0} proyecto(s) .sublime-project, {1} archivo(s) y {2} carpeta(s) recientes
+56§← All§← Todas
+57§← Back to all messages§← Volver a todos los mensajes
+58§↓ Next§↓ Siguiente
+59§↩ message deleted§↩ mensaje eliminado
+60§＋ Add option§＋ Añadir opción
+61§＋ Create§＋ Crear
+62§＋ Create user§＋ Crear usuario
+63§＋ Join a server…§＋ Entrar en un servidor…
+64§+ New floating note§+ Nueva nota flotante
+65§＋ New group…§＋ Nuevo grupo…
+66§＋ New subgroup in…§＋ Nuevo subgrupo en…
+67§＋ Option§＋ Opción
+68§⏱ no connection§⏱ sin conexión
+69§⏺ Recording macro — Ctrl+Q to stop§⏺ Grabando macro — Ctrl+Q para detener
+70§■ Stop server§■ Detener servidor
+71§▦ Back to board§▦ Volver al tablero
+72§▲ Show {0} more earlier messages ({1} hidden)§▲ Mostrar {0} mensajes anteriores más ({1} ocultos)
+73§▶ Start server§▶ Iniciar servidor
+74§▶ Server running — start (already running)§▶ Servidor en marcha — iniciar (ya lo está)
+75§✎ edited by§✎ editado por
+76§✏️ Edit§✏️ Editar
+77§✏️ You are editing§✏️ Estás editando
+78§✔ Version {0} published{1}§✔ Versión {0} publicada{1}
+79§✕ Remove from group§✕ Quitar del grupo
+80§⟳ Restart (applies the new app version)§⟳ Reiniciar (aplica la nueva versión de la app)
+81§🌐 Show the address to join§🌐 Mostrar la dirección para entrar
+82§🎞 Save the original GIF (keeps the animation)§🎞 Guardar el GIF original (mantiene la animación)
+83§💬 Only this conversation§💬 Solo esta conversación
+84§💾 Create and save to my collection§💾 Crear y guardar en mi colección
+85§📊 Create poll§📊 Crear encuesta
+86§📋 Paste§📋 Pegar
+87§📌 {0} — see all in the 📌 on the bottom bar§📌 {0} — ver todas en el 📌 de la barra inferior
+88§📌 Unpin this line§📌 Desfijar esta línea
+89§📌 pinned by {0}§📌 fijada por {0}
+90§📌 Pinned§📌 Fijadas
+91§📌 Pinned ({0})§📌 Fijadas ({0})
+92§📌 Pin this line§📌 Fijar esta línea
+93§📌 Pinned lines§📌 Líneas fijadas
+94§📌 Pinned lines…§📌 Líneas fijadas…
+95§📌 Pinned messages§📌 Mensajes fijados
+96§📳 {0} got your attention§📳 {0} llamó tu atención
+97§📳 Get attention§📳 Llamar la atención
+98§📳 I got {0}'s attention§📳 Llamé la atención de {0}
+99§🔑 Password§🔑 Contraseña
+100§🔒 {0} is editing§🔒 {0} está editando
+101§🔒 closed by {0}§🔒 cerrada por {0}
+102§🔒 You are editing in another window§🔒 Estás editando en otra ventana
+103§🕘 Versions§🕘 Versiones
+108§Update {0} is already downloaded. When you click: the app closes, installs and reopens by itself (your tabs and drafts are kept). Install whenever suits you. Right-click hides this.§La actualización {0} ya está descargada. Al hacer clic: la app se cierra, se instala y se abre sola (tus pestañas y borradores se conservan). Instálala cuando te venga bien. Clic derecho la oculta.
+109§The tab is empty.§La pestaña está vacía.
+110§the folder and everything inside it§la carpeta y todo lo que hay dentro
+111§The password must be at least 8 characters§La contraseña debe tener al menos 8 caracteres
+112§Version {0} is already downloaded: use the green "Install and restart" button whenever you want.§La versión {0} ya está descargada: usa el botón verde «Instalar y reiniciar» cuando quieras.
+113§Open or create a project first§Abre o crea un proyecto primero
+114§Open at least two tabs to compare§Abre al menos dos pestañas para comparar
+115§Open a code file to run (Ctrl+B)§Abre un archivo de código para ejecutar (Ctrl+B)
+116§Open a file to insert a snippet§Abre un archivo para insertar un snippet
+117§Open a tab to group§Abre una pestaña para agrupar
+118§Open a text or Markdown tab to export.§Abre una pestaña de texto o Markdown para exportar.
+119§Open a folder first§Abre una carpeta primero
+121§Open [[link]] under the cursor§Abrir [[enlace]] bajo el cursor
+122§Open {0} tabs side by side (no diff)§Abrir {0} pestañas lado a lado (sin comparar)
+123§Open the conversation§Abrir la conversación
+124§Open the data folder§Abrir la carpeta de datos
+125§Open tab beside…§Abrir pestaña al lado…
+126§Open beside§Abrir al lado
+127§Open beside…§Abrir al lado…
+128§Open recent file…§Abrir archivo reciente…
+129§Open file…§Abrir archivo…
+130§Open file(s)…§Abrir archivo(s)…
+131§Open note…§Abrir nota…
+132§Open TT Note§Abrir TT Note
+133§Open recent project…§Abrir proyecto reciente…
+134§Open recent…§Abrir reciente…
+135§Open settings.json§Abrir settings.json
+136§Hardware acceleration (turning it off saves ~50 MB of memory; takes effect when the app is reopened)§Aceleración de vídeo (desactivarla ahorra ~50 MB de memoria; se aplica al reabrir la app)
+137§Hardware acceleration off: saves memory; takes effect next time you open the app§Aceleración de vídeo desactivada: ahorra memoria; se aplica la próxima vez que abras la app
+138§Hardware acceleration on: takes effect next time you open the app§Aceleración de vídeo activada: se aplica la próxima vez que abras la app
+139§Added to the dictionary§Añadida al diccionario
+140§Add “{0}” to the dictionary§Añadir «{0}» al diccionario
+141§Add more files§Añadir más archivos
+142§Add folder as project§Añadir carpeta como proyecto
+143§Add folder as project…§Añadir carpeta como proyecto…
+144§manages the project§administra el proyecto
+145§Manages the project§Administra el proyecto
+146§Manages the group's projects§Administra los proyectos del grupo
+147§server administrator: full access§administrador del servidor: acceso total
+148§There are no groups yet§Aún no hay grupos
+149§There are no other users yet. Create them in ☁ Shared → Users…§Aún no hay otros usuarios. Créalos en ☁ Compartido → Usuarios…
+150§There are no image stickers yet. Add the first one!§Aún no hay stickers de imagen. ¡Añade el primero!
+151§Someone§Alguien
+152§Change my password…§Cambiar mi contraseña…
+153§Toggle Live Preview (rendered Markdown) · outside Markdown: use the selection in search§Alternar Live Preview (Markdown renderizado) · fuera de Markdown: usar la selección en la búsqueda
+154§Attach a photo, video or file§Adjuntar foto, vídeo o archivo
+155§Attachment ready: tap Send.§Adjunto listo: toca Enviar.
+156§before connecting§antes de conectar
+157§deleted by§eliminado por
+158§Delete§Eliminar
+159§Delete (can be restored)§Eliminar (se puede restaurar)
+160§Delete the sticker "{0}" from the collection? Messages that already use it keep showing the image.§¿Eliminar el sticker «{0}» de la colección? Los mensajes que ya lo usan seguirán mostrando la imagen.
+161§Delete the note "{0}" for everyone?§¿Eliminar la nota «{0}» para todos?
+162§Delete to start of line§Borrar hasta el inicio de la línea
+163§Delete to end of line§Borrar hasta el final de la línea
+164§Delete this sticker from the collection§Eliminar este sticker de la colección
+165§Delete this note§Eliminar esta nota
+166§Delete this note?§¿Eliminar esta nota?
+167§Delete this passage? It can be restored later.§¿Eliminar este fragmento? Se puede restaurar después.
+168§Delete this passage? It stays in the history and can be restored.§¿Eliminar este fragmento? Queda en el historial y se puede restaurar.
+169§Delete group§Eliminar grupo
+170§Delete group…§Eliminar grupo…
+171§Delete line§Eliminar línea
+172§Delete note§Eliminar nota
+173§Delete the group "{0}"? The projects inside it are NOT deleted: they just leave the group.§¿Eliminar el grupo «{0}»? Los proyectos que contiene NO se eliminan: solo salen del grupo.
+174§Delete the project "{0}" and all its notes for everyone? The data stays stored on the server, but the project disappears for everyone.§¿Eliminar el proyecto «{0}» y todas sus notas para todos? Los datos quedan guardados en el servidor, pero el proyecto desaparece para todos.
+175§Delete project…§Eliminar proyecto…
+176§Delete which macro?§¿Eliminar qué macro?
+177§Delete a saved one…§Eliminar una guardada…
+178§file§archivo
+179§Open files§Archivos abiertos
+180§Drag to make bigger or smaller · double-click returns to automatic§Arrastra para agrandar o reducir · doble clic vuelve a automático
+181§Drag to make the Shared block bigger or smaller · double-click returns to automatic§Arrastra para agrandar o reducir el bloque Compartido · doble clic vuelve a automático
+182§Drag to move (the image or the text, depending on the option) · mouse wheel zooms · Ctrl+V pastes an image · or drop a file here§Arrastra para mover (la imagen o el texto, según la opción) · la rueda del ratón hace zoom · Ctrl+V pega una imagen · o suelta un archivo aquí
+183§Drag to resize§Arrastra para redimensionar
+184§The images took too long to load§Las imágenes tardaron demasiado en cargar
+185§Keyboard shortcuts (list)§Atajos de teclado (lista)
+186§Update {0} downloaded. Click "Install and restart" whenever you want (the app only closes when you click).§Actualización {0} descargada. Haz clic en «Instalar y reiniciar» cuando quieras (la app solo se cierra cuando haces clic).
+187§Update {0} ready. Click "Install and restart" whenever you want (the app only closes when you click).§Actualización {0} lista. Haz clic en «Instalar y reiniciar» cuando quieras (la app solo se cierra cuando haces clic).
+188§App update: open the upload and download log§Actualización de la app: abrir el registro (log) de envío y descarga
+189§App update: download automatically (only installs when I click)§Actualización de la app: descargar sola (solo instala cuando yo haga clic)
+190§App update: publish an installer to the server (administrator)§Actualización de la app: publicar un instalador en el servidor (administrador)
+191§App update: check on the server§Actualización de la app: comprobar en el servidor
+192§automatic§automática
+193§Automatic (1st ruler)§Automática (1.ª regla)
+194§Automatic (detects when spaces must be preserved)§Automático (detecta cuándo hay que preservar espacios)
+195§Automatic (numbers without quotes)§Automático (números sin comillas)
+196§Automatic (by file extension)§Automático (por la extensión del archivo)
+197§notifies the whole project§avisa a todo el proyecto
+198§Downloading version {0} in the background. When it finishes, the install button appears — it only installs when you click.§Descargando la versión {0} en segundo plano. Al terminar aparece el botón de instalar — solo instala cuando hagas clic.
+199§Download again§Descargar de nuevo
+200§Tab bar at the top§Barra de pestañas arriba
+201§BETWEEN needs exactly 2 values (there are§BETWEEN necesita exactamente 2 valores (hay
+202§"Open files" block§Bloque «Archivos abiertos»
+203§"Projects" block§Bloque «Proyectos»
+204§code block§bloque de código
+205§Build with…§Build con…
+206§Build with… (choose or type the command)§Build con… (elige o escribe el comando)
+207§Build: go to previous error§Build: ir al error anterior
+208§Build: go to next error§Build: ir al siguiente error
+209§Build: run this file (Ctrl+B)§Build: ejecutar este archivo (Ctrl+B)
+210§Build: run this file (outside Markdown)§Build: ejecutar este archivo (fuera de Markdown)
+211§Search in Portuguese and English (ignores accents; "gat" already finds gato). Also filters by category: faces, gestures, party…§Búsqueda en portugués e inglés (ignora tildes; «gat» ya encuentra gato). También filtra por categoría: caras, gestos, fiesta…
+212§Search: “{0}” (F3 finds the next, Shift+F3 the previous)§Búsqueda: «{0}» (F3 encuentra la siguiente, Shift+F3 la anterior)
+213§Find / replace in file§Buscar / reemplazar en el archivo
+214§Find in files§Buscar en archivos
+215§Find in files (Enter to search)…§Buscar en archivos (Enter para buscar)…
+216§Find in files…§Buscar en archivos…
+217§Find in all notes…§Buscar en todas las notas…
+218§Find in all projects (Enter to search)…§Buscar en todos los proyectos (Enter para buscar)…
+219§Search emoji: cat, heart, happy, pizza…§Buscar emoji: gato, corazón, feliz, pizza…
+220§Search sticker by name…§Buscar sticker por nombre…
+221§header§encabezado
+222§Cancel§Cancelar
+223§Cancel the reply (Esc)§Cancelar la respuesta (Esc)
+224§Canvas: paste text (⌗)§Canvas: pegar texto (⌗)
+225§Canvas: text size§Canvas: tamaño del texto
+226§Get {0}'s attention§Llamar la atención de {0}
+227§Get whose attention? (only shows "accepts" for those who allowed it)§¿La atención de quién? (solo aparece «acepta» para quien lo permitió)
+228§Get my attention (shake the screen)§Llamar mi atención (hacer temblar la pantalla)
+229§Get attention: who can shake my screen…§Llamar la atención: quién puede hacer temblar mi pantalla…
+230§new chip§chip nueva
+231§Click Download to get it again.§Haz clic en Descargar para obtenerlo de nuevo.
+232§Click Edit to be able to restore a version.§Haz clic en Editar para poder restaurar una versión.
+233§Click to enlarge§Clic para ampliar
+234§Click to edit the displayed name (the file is not renamed)§Clic para editar el nombre mostrado (el archivo no se renombra)
+235§Click to rename§Clic para renombrar
+236§Click to rename (Enter saves)§Clic para renombrar (Enter guarda)
+237§Encoding / line endings§Codificación / saltos de línea
+238§Encoding / line endings…§Codificación / saltos de línea…
+239§Paste§Pegar
+240§Paste the image from the clipboard (or use Ctrl+V)§Pegar la imagen del portapapeles (o usa Ctrl+V)
+241§Insert an image (or paste a screenshot into the field)§Poner una imagen (o pega una captura en el campo)
+242§Place the cursor in a paragraph or select the passage§Coloca el cursor en un párrafo o selecciona el fragmento
+243§Place the cursor on a word or select a passage§Coloca el cursor en una palabra o selecciona un fragmento
+244§Add at least 2 options (text and/or image).§Añade al menos 2 opciones (texto y/o imagen).
+245§with {0} note(s) that were open§con {0} nota(s) que estaban abiertas
+246§Block comment§Comentario de bloque
+247§As they are§Como están
+248§Compact into one line§Compactar en una línea
+249§Compact into one line (JSON, XML or SQL)§Compactar en una línea (JSON, XML o SQL)
+250§Compact SQL (one line)§Compactar SQL (una línea)
+251§Comparing {0} tabs · {1} difference(s)§Comparando {0} pestañas · {1} diferencia(s)
+252§Compare "{0}" with… (or Ctrl+click several tabs in the sidebar)§Comparar «{0}» con… (o Ctrl+clic en varias pestañas en la barra lateral)
+253§Compare with the current tab§Comparar con la pestaña actual
+254§Shared: notify me in Windows when I'm mentioned or replied to§Compartido: avisar en Windows cuando me mencionen o respondan
+255§Shared: join the server…§Compartido: entrar en el servidor…
+256§Connect to a server§Conectar a un servidor
+257§Connect to a team's shared projects§Conectar con los proyectos compartidos de un equipo
+258§Display settings§Configuración de pantalla
+259§Consolas (code)§Consolas (código)
+260§Developer console (Ctrl+`)§Consola de desarrollador (Ctrl+`)
+261§Developer console (app errors and messages)§Consola de desarrollador (errores y mensajes de la app)
+263§Contents of brackets / parentheses§Contenido de corchetes / paréntesis
+264§Continues the edit in this window§Continúa la edición en esta ventana
+265§Convert indentation to spaces§Convertir la sangría a espacios
+266§Convert indentation to tabs§Convertir la sangría a tabulaciones
+267§Convert to spaces§Convertir a espacios
+268§Convert to tabs§Convertir a tabulaciones
+269§Copy§Copiar
+270§Copy this block's code§Copiar el código de este bloque
+271§Copy color theme§Copiar tema de colores
+272§Copy and paste to share the color theme (also accepts the Mattermost theme JSON):§Copia y pega para compartir el tema de colores (también acepta el JSON de tema de Mattermost):
+273§Text color§Color de la letra
+274§Note color§Color de la nota
+275§background color§color de fondo
+276§Outline color§Color del contorno
+277§Name color§Color del nombre
+278§Interface colors§Colores de la interfaz
+279§Syntax colors (editor)§Colores de la sintaxis (editor)
+280§fix§corrección
+281§Fix§Corrección
+282§Spellchecker§Corrector ortográfico
+283§Spellchecker off§Corrector ortográfico desactivado
+284§Spellchecker on (Portuguese and English)§Corrector ortográfico activado (portugués e inglés)
+285§Spellchecker: turn on / off§Corrector ortográfico: activar / desactivar
+286§created by§creado por
+287§Created by§Creado por
+288§created by {0}§creado por {0}
+289§Created by {0}.§Creado por {0}.
+290§Create poll§Crear encuesta
+291§Create sticker§Crear sticker
+292§Create snippet from the selection…§Crear snippet con la selección…
+293§Create a poll (one or several choices)§Crear una encuesta (una o varias opciones)
+294§Create a new sticker and keep it saved§Crear un sticker nuevo y dejarlo guardado
+295§LIKE wildcard§Comodín del LIKE
+296§Team's§Del equipo
+297§Team's (images)§Del equipo (imágenes)
+298§Today's date§Fecha de hoy
+299§Current date and time§Fecha y hora actuales
+300§Set syntax (language) of the file§Definir la sintaxis (lenguaje) del archivo
+301§Set syntax for this file… (e.g.: JSON, SQL, Markdown)§Definir la sintaxis de este archivo… (p. ej.: JSON, SQL, Markdown)
+302§Set syntax: Automatic (by extension)§Definir sintaxis: Automático (por la extensión)
+303§Set syntax: Plain text§Definir sintaxis: Texto sin formato
+304§Let in again§Dejar entrar de nuevo
+306§after {0} s live§después de {0} s en el aire
+307§Unpin this message§Desfijar este mensaje
+308§Discard and close§Descartar y cerrar
+309§Undo§Deshacer
+310§Previous difference§Diferencia anterior
+311§Type a message§Escribe un mensaje
+312§Split into batches of (0 = no)§Dividir en lotes de (0 = no)
+313§Split selection into lines§Dividir la selección en líneas
+314§from group: {0}§del grupo: {0}
+315§From Obsidian (open vault)…§De Obsidian (abrir bóveda)…
+316§From Sublime Text…§De Sublime Text…
+317§Fold code§Plegar código
+318§Fold level {0}§Plegar nivel {0}
+319§Fold code level {0}§Plegar el nivel {0} del código
+320§Word document§Documento de Word
+331§Duplicate line§Duplicar línea
+332§Edits everything§Edita todo
+333§edited by§editado por
+334§Edited by§Editado por
+335§Edit§Editar
+336§Edit (the old version is kept)§Editar (la versión anterior se conserva)
+337§Edit someone else's message (the old version is kept)§Editar el mensaje de otra persona (la versión anterior se conserva)
+338§Edit here§Editar aquí
+339§Edit the poll text§Editar el texto de la encuesta
+340§Text editor created by Matheus. Agility and organization in one place.§Editor de texto creado por Matheus. Agilidad y organización en un solo lugar.
+341§They need to allow it in ☁ Shared → Get attention…§Esa persona debe permitirlo en ☁ Compartido → Llamar la atención…
+342§In ☁ Shared, type the address, user and password. The server is running.§En ☁ Compartido, escribe la dirección, el usuario y la contraseña. El servidor está en marcha.
+343§In which group should the subgroup be created?§¿En qué grupo crear el subgrupo?
+344§on one line§en una línea
+345§Server address§Dirección del servidor
+346§Server addresses§Direcciones del servidor
+347§Sign in again…§Entrar de nuevo…
+348§Join another server§Entrar en otro servidor
+349§Join the server§Entrar en el servidor
+350§Sign in with the user and password the administrator created for you.§Entra con el usuario y la contraseña que el administrador creó para ti.
+351§Join a server (☁ Shared) to check for updates§Entra en un servidor (☁ Compartido) para buscar actualizaciones
+352§Sign in to the server as administrator first§Entra primero en el servidor como administrador
+353§Sign in to the server first§Entra primero en el servidor
+354§sent to the server§enviada al servidor
+355§Uploading {0} of {1} · {2} ({3})…§Enviando {0} de {1} · {2} ({3})…
+356§Uploading {0} of {1}…§Enviando {0} de {1}…
+357§Uploading version {0} to the server. It may take a few minutes; if the connection drops, the next attempt resumes where it left off.§Enviando la versión {0} al servidor. Puede tardar unos minutos; si la conexión se cae, el siguiente intento continúa donde se quedó.
+358§Uploading image {0} of {1}…§Enviando imagen {0} de {1}…
+359§Send§Enviar
+360§Send (Enter)§Enviar (Enter)
+361§Send poll§Enviar encuesta
+362§Send selection / tab to a note§Enviar selección / pestaña a una nota
+363§Send a GIF (animated) or a ready-made image as a sticker, without changing the file§Enviar un GIF (animado) o una imagen lista como sticker, sin modificar el archivo
+382§error§error
+383§Error§Error
+384§Previous error (Shift+F4)§Error anterior (Shift+F4)
+385§Error saving§Error al guardar
+386§unknown error§error desconocido
+387§ERROR:§ERROR:
+388§Choose the canvas version to restore§Elige la versión del canvas que quieres restaurar
+389§Choose the installer file§Elige el archivo del instalador
+390§Choose the Obsidian vault…§Elige la bóveda de Obsidian…
+391§Choose what each person can do in this project. The change takes effect immediately. Server administrators always have full access.§Elige qué puede hacer cada persona en este proyecto. El cambio se aplica al instante. Los administradores del servidor siempre tienen acceso total.
+392§Choose where to create the project folder…§Elige dónde crear la carpeta del proyecto…
+393§Choose at least two tabs§Elige al menos dos pestañas
+394§Choose an image, an emoji or write a text.§Elige una imagen, un emoji o escribe un texto.
+395§Choose a note from the list.§Elige una nota de la lista.
+396§Choose another file…§Elegir otro archivo…
+397§Hides (or shows) all images and videos in this note. Each image also has its own little arrow.§Oculta (o muestra) todas las imágenes y vídeos de esta nota. Cada imagen también tiene su flechita.
+398§Write here…§Escribe aquí…
+399§Write here… (Enter sends · Ctrl+Enter breaks the line · paste an image to attach)§Escribe aquí… (Enter envía · Ctrl+Enter salta de línea · pega una imagen para adjuntar)

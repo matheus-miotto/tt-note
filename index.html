@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' file: data: http: https:; media-src 'self' http: https:">
+  <title>TT Note</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menubar"><img id="logo" src="assets/logo-128.png" alt="TT Note"></div>
+  <div id="app">
+    <aside id="sidebar">
+      <div id="openSec"><div class="side-head sec-toggle" data-sec="open" title="Recolher / expandir"><span><span class="arrow">▾</span> Arquivos abertos <span class="cnt" id="openCount"></span></span></div><div id="openFiles"></div></div>
+      <div id="secSplit" title="Arraste para aumentar ou diminuir · duplo clique volta ao automático"></div>
+      <div id="projSec"><div class="side-head sec-toggle" data-sec="proj" title="Recolher / expandir"><span><span class="arrow">▾</span> Projetos <span class="cnt" id="projCount"></span></span></div><div id="tree"></div></div>
+      <div id="secSplit2" title="Arraste para aumentar ou diminuir o bloco Compartilhado · duplo clique volta ao automático"></div>
+      <div id="sharedSec"><div class="side-head sec-toggle" data-sec="shared" title="Recolher / expandir"><span><span class="arrow">▾</span> Compartilhado <span class="cnt" id="sharedCount"></span></span><span class="side-add" id="sharedAdd" title="Entrar em outro servidor">＋</span></div><div id="sharedTree"></div></div>
+    </aside>
+    <div id="resizer" title="Arraste para redimensionar"></div>
+    <section id="main">
+      <div id="tabs"></div>
+      <div id="compareBar" hidden></div>
+      <div id="work">
+        <div id="welcome">
+          <img class="welcome-logo" src="assets/logo-128.png" alt="">
+          <h1>TT Note</h1>
+          <p><kbd>Ctrl+O</kbd> abrir arquivo &nbsp; <kbd>Ctrl+Shift+O</kbd> adicionar pasta &nbsp; <kbd>Ctrl+P</kbd> ir para arquivo &nbsp; <kbd>Ctrl+Shift+P</kbd> comandos</p>
+        </div>
+        <div id="editor" hidden></div>
+        <div id="canvasHost" hidden></div>
+        <div id="sharedHost" hidden></div>
+        <button id="cvBack" hidden title="Voltar a ver o canvas como quadro">▦ Voltar ao quadro</button>
+        <div id="preview" hidden></div>
+      </div>
+      <div id="buildPanel" hidden><div id="buildHead"><b id="buildTitle">Build</b><span class="sp"></span><button id="buildStop" title="Parar (Ctrl+Pause)">■ Parar</button><button id="buildClose" title="Fechar o painel">×</button></div><pre id="buildOut"></pre></div>
+      <div id="status"><span id="stPos"></span><span id="stSel"></span><span class="sp"></span><span id="stMsg"></span><span id="stRec" hidden></span><span id="stIns" class="btn" title="Tecla Insert: inserir / sobrescrever">INSERIR</span><span id="stPins" class="btn" hidden title="Linhas fixadas (Ctrl+Alt+Shift+P): ver todas"></span><span id="stMini" class="btn" title="Ligar/desligar minimap"></span><span id="stWrap" class="btn" title="Quebra automática de linha (clique para desligar)"></span><span id="stEnc" class="btn" title="Codificação / quebra de linha"></span><span id="stVer" class="btn" title="Novidades desta versão"></span><span id="stLang" class="btn" title="Definir sintaxe (Ctrl+K Ctrl+S)"></span></div>
+    </section>
+    <aside id="right" hidden></aside>
+  </div>
+  <div id="overlay" hidden>
+    <div id="palette"><input id="pIn" spellcheck="false" autocomplete="off"><div id="pList"></div></div>
+  </div>
+  <div id="news" hidden>
+    <div id="newsPanel">
+      <div class="news-head"><div><h2>Novidades</h2><div id="newsSub"></div></div><button id="newsX" title="Fechar (Esc)">×</button></div>
+      <div id="newsBody"></div>
+      <div class="news-foot"><button id="newsOk">Entendi</button></div>
+    </div>
+  </div>
+  <div id="ctx" hidden></div>
+  <div id="menu" hidden></div>
+  <div id="submenu" hidden></div>
+  <canvas id="graph" hidden></canvas>
+  <script src="dist/renderer.js"></script>
+</body>
+</html>

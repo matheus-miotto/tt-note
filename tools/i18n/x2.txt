@@ -1,0 +1,98 @@
+TT Escuro (padrão)§TT Dark (default)§TT Oscuro (predeterminado)
+Gruvbox Escuro§Gruvbox Dark§Gruvbox Oscuro
+Solarized Escuro§Solarized Dark§Solarized Oscuro
+Solarized Claro§Solarized Light§Solarized Claro
+Meia-noite (alto contraste)§Midnight (high contrast)§Medianoche (alto contraste)
+Mariana (estilo Sublime)§Mariana (Sublime style)§Mariana (estilo Sublime)
+Celeste (estilo Sublime)§Celeste (Sublime style)§Celeste (estilo Sublime)
+Sixteen (estilo Sublime)§Sixteen (Sublime style)§Sixteen (estilo Sublime)
+Breakers (estilo Sublime, claro)§Breakers (Sublime style, light)§Breakers (estilo Sublime, claro)
+Office 2016 Black (estilo DevExpress)§Office 2016 Black (DevExpress style)§Office 2016 Black (estilo DevExpress)
+WXI (estilo DevExpress, Windows 11)§WXI (DevExpress style, Windows 11)§WXI (estilo DevExpress, Windows 11)
+Estilo DevExpress§DevExpress style§Estilo DevExpress
+Estilo DevExpress Escuro§DevExpress Dark style§Estilo DevExpress Oscuro
+Neon Sakura Claro§Neon Sakura Light§Neon Sakura Claro
+Claro (GitHub)§Light (GitHub)§Claro (GitHub)
+Claro (One Light)§Light (One Light)§Claro (One Light)
+Fundo do editor§Editor background§Fondo del editor
+Fundo da barra lateral§Sidebar background§Fondo de la barra lateral
+Fundo de cartões e campos§Card and field background§Fondo de tarjetas y campos
+Texto apagado§Dimmed text§Texto atenuado
+Destaque (botões, seleção)§Accent (buttons, selection)§Destacado (botones, selección)
+Linhas e divisórias§Lines and dividers§Líneas y divisores
+Links§Links§Enlaces
+Marcações / títulos§Markers / headings§Marcas / títulos
+Positivo (verde)§Positive (green)§Positivo (verde)
+Alerta (vermelho)§Alert (red)§Alerta (rojo)
+Palavras-chave§Keywords§Palabras clave
+Textos (strings)§Text (strings)§Textos (strings)
+Números§Numbers§Números
+Comentários§Comments§Comentarios
+Funções§Functions§Funciones
+Tipos e tags§Types and tags§Tipos y etiquetas
+Rostos§Faces§Caras
+Gestos§Gestures§Gestos
+Festa§Party§Fiesta
+Comida§Food§Comida
+Bichos§Animals§Animales
+Esportes§Sports§Deportes
+Símbolos§Symbols§Símbolos
+Trabalho§Work§Trabajo
+Personalizado§Custom§Personalizado
+Auto§Auto§Auto
++ Nota§+ Note§+ Nota
++ Texto§+ Text§+ Texto
+🖼 imagem não encontrada:§🖼 image not found:§🖼 imagen no encontrada:
+Abrir a nota numa aba§Open the note in a tab§Abrir la nota en una pestaña
+Agrupar pelas áreas do quadro§Group by the board's areas§Agrupar por las áreas del tablero
+Ao colar texto: detecta sozinho quando precisa preservar espaços (calendário, código, tabela)§When pasting text: detects by itself when spaces must be preserved (calendar, code, table)§Al pegar texto: detecta solo cuándo hay que preservar espacios (calendario, código, tabla)
+Ao colar texto: Markdown normal, sem bloco de código automático (⌗ desligado por padrão)§When pasting text: normal Markdown, no automatic code block (⌗ off by default)§Al pegar texto: Markdown normal, sin bloque de código automático (⌗ desactivado por defecto)
+Ao colar texto: sempre preserva espaços e quebras exatamente (⌗ ligado por padrão)§When pasting text: always preserves spaces and line breaks exactly (⌗ on by default)§Al pegar texto: siempre preserva espacios y saltos exactamente (⌗ activado por defecto)
+Apagar (Delete)§Delete (Delete)§Eliminar (Delete)
+Área para agrupar cartões§Area to group cards§Área para agrupar tarjetas
+Árvore com tudo o que tem no quadro (lado direito, dá para fixar)§Tree with everything on the board (right side, can be pinned)§Árbol con todo lo que hay en el tablero (lado derecho, se puede fijar)
+Aumentar o texto§Increase the text§Aumentar el texto
+Diminuir o texto§Decrease the text§Reducir el texto
+Buscar no canvas (Ctrl+F)§Search the canvas (Ctrl+F)§Buscar en el canvas (Ctrl+F)
+Buscar no canvas…§Search the canvas…§Buscar en el canvas…
+Canvas vazio — dê dois cliques para criar um cartão de texto, ou arraste notas e imagens para cá.§Empty canvas — double-click to create a text card, or drag notes and images here.§Canvas vacío — haz doble clic para crear una tarjeta de texto, o arrastra notas e imágenes aquí.
+Clique em Editar para mexer neste canvas§Click Edit to work on this canvas§Haz clic en Editar para trabajar en este canvas
+Clique para renomear o canvas§Click to rename the canvas§Clic para renombrar el canvas
+Colocar uma imagem no quadro§Put an image on the board§Poner una imagen en el tablero
+Colocar uma nota do projeto no quadro§Put a project note on the board§Poner una nota del proyecto en el tablero
+Como colar texto§How to paste text§Cómo pegar texto
+Cor§Color§Color
+Criado por {0}{1}§Created by {0}{1}§Creado por {0}{1}
+Editado por {0}{1}§Edited by {0}{1}§Editado por {0}{1}
+Duplo clique para escrever…§Double-click to write…§Doble clic para escribir…
+Editar (Enter)§Edit (Enter)§Editar (Enter)
+Editar a nota aqui (Enter)§Edit the note here (Enter)§Editar la nota aquí (Enter)
+Enquadrar§Fit to view§Encuadrar
+Este app não consegue ler GIF animado§This app can't read animated GIFs§Esta app no puede leer GIF animados
+Este arquivo não é um JSON válido (§This file is not valid JSON (§Este archivo no es un JSON válido (
+Estrutura§Structure§Estructura
+Fixada: ocupa espaço ao lado. Clique para soltar§Pinned: takes up space on the side. Click to release§Fijado: ocupa espacio al lado. Haz clic para soltar
+Fonte do texto do quadro§Board text font§Fuente del texto del tablero
+Fora de grupos§Outside groups§Fuera de grupos
+Grupos§Groups§Grupos
+Inverter sentido§Reverse direction§Invertir sentido
+Ligações§Connections§Conexiones
+Mais zoom§Zoom in§Acercar
+Menos zoom§Zoom out§Alejar
+Mostrar o texto do arquivo .canvas§Show the text of the .canvas file§Mostrar el texto del archivo .canvas
+No canvas só entram notas (.md, .txt) e imagens§Only notes (.md, .txt) and images can go on the canvas§En el canvas solo entran notas (.md, .txt) e imágenes
+Nota não encontrada:§Note not found:§Nota no encontrada:
+Novo cartão de texto (ou dois cliques no fundo)§New text card (or double-click the background)§Nueva tarjeta de texto (o doble clic en el fondo)
+Novo cartão ligado (Tab)§New linked card (Tab)§Nueva tarjeta enlazada (Tab)
+o arquivo não é um canvas§the file is not a canvas§el archivo no es un canvas
+O quadro está vazio.§The board is empty.§El tablero está vacío.
+Preservar espaços e quebras exatamente (liga/desliga o bloco de código)§Preserve spaces and line breaks exactly (turns the code block on/off)§Preservar espacios y saltos exactamente (activa/desactiva el bloque de código)
+Rótulo da seta§Arrow label§Etiqueta de la flecha
+Seguir as setas (bom para mapa mental)§Follow the arrows (good for mind maps)§Seguir las flechas (bueno para mapas mentales)
+Sem cor§No color§Sin color
+Seta nas duas pontas§Arrow on both ends§Flecha en ambos extremos
+Solta: fica por cima e some ao clicar no quadro. Clique para fixar§Loose: stays on top and disappears when you click the board. Click to pin§Suelto: queda encima y desaparece al hacer clic en el tablero. Haz clic para fijar
+Ver JSON§View JSON§Ver JSON
+). Use "Ver JSON" para corrigir.§). Use "View JSON" to fix it.§). Usa «Ver JSON» para corregirlo.
+confira se todas as tags foram fechadas e se os nomes batem§check that all tags were closed and that the names match§comprueba que todas las etiquetas se cerraron y que los nombres coinciden
+Idioma do aplicativo§App language§Idioma de la aplicación

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' file: data: https:">
+  <title>Nota</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="note.css">
+</head>
+<body class="note">
+  <div id="nbar">
+    <button id="nPin" class="nb" title="Fixar no topo (sempre visível)">📌</button>
+    <button id="nColor" class="nb" title="Cor da nota">●</button>
+    <span id="nTitle"></span>
+    <button id="nNew" class="nb" title="Nova nota (Ctrl+Alt+N)">+</button>
+    <button id="nMain" class="nb" title="Abrir o TT Note">↗</button>
+    <button id="nDel" class="nb" title="Apagar esta nota">🗑</button>
+    <button id="nClose" class="nb" title="Fechar (a nota fica guardada)">×</button>
+  </div>
+  <div id="nColors" hidden></div>
+  <div id="ned"></div>
+  <script src="dist/note.js"></script>
+</body>
+</html>

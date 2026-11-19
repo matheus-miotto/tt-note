@@ -1,0 +1,3 @@
+Tipo das novas guias§New tab type§Tipo de las pestañas nuevas
+Markdown (.md)§Markdown (.md)§Markdown (.md)
+Texto (.txt)§Text (.txt)§Texto (.txt)

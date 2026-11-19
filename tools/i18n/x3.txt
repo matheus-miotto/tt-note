@@ -1,0 +1,40 @@
+■ Parar§■ Stop§■ Detener
+INSERIR§INSERT§INSERTAR
+SOBRESCREVER§OVERWRITE§SOBRESCRIBIR
+Agrupar aba atual…§Group current tab…§Agrupar la pestaña actual…
+Agrupar abas selecionadas…§Group selected tabs…§Agrupar las pestañas seleccionadas…
+Comentar / descomentar§Comment / uncomment§Comentar / descomentar
+Formatar (detecta o tipo)§Format (detects the type)§Formatear (detecta el tipo)
+Formatar como…§Format as…§Formatear como…
+Inverter a ordem§Reverse the order§Invertir el orden
+Inserir snippet…§Insert snippet…§Insertar snippet…
+Bloco "Compartilhado"§"Shared" block§Bloque «Compartido»
+Bloco "Arquivos abertos"§"Open files" block§Bloque «Archivos abiertos»
+Bloco "Projetos"§"Projects" block§Bloque «Proyectos»
+Backlinks e links§Backlinks and links§Backlinks y enlaces
+Lado a lado / comparar§Side by side / compare§Lado a lado / comparar
+Minimap§Minimap§Minimapa
+Live Preview (Markdown renderizado)§Live Preview (rendered Markdown)§Live Preview (Markdown renderizado)
+Sintaxe…§Syntax…§Sintaxis…
+Comparar abas…§Compare tabs…§Comparar pestañas…
+Aba {0}§Tab {0}§Pestaña {0}
+Parar o build§Stop the build§Detener el build
+Filtro SQL (lista → IN / LIKE…)§SQL filter (list → IN / LIKE…)§Filtro SQL (lista → IN / LIKE…)
+Gravar / parar (Ctrl+Q)§Record / stop (Ctrl+Q)§Grabar / detener (Ctrl+Q)
+Escolher o tipo…§Choose the type…§Elegir el tipo…
+IN (direto)§IN (direct)§IN (directo)
+NOT IN (direto)§NOT IN (direct)§NOT IN (directo)
+LIKE (direto)§LIKE (direct)§LIKE (directo)
+Quebra estilo Git (colunas)§Git-style wrapping (columns)§Ajuste estilo Git (columnas)
+SQL: palavras-chave§SQL: keywords§SQL: palabras clave
+Canvas: fonte§Canvas: font§Canvas: fuente
+Personalizado (cores e JSON)…§Custom (colors and JSON)…§Personalizado (colores y JSON)…
+Novidades…§What's new…§Novedades…
+Sobre o TT Note§About TT Note§Acerca de TT Note
+seu nome de usuário§your username§tu nombre de usuario
+Nome do novo projeto (será criada uma pasta)…§Name of the new project (a folder will be created)…§Nombre del nuevo proyecto (se creará una carpeta)…
+atual§current§actual
+Codificação / quebra de linha…§Encoding / line endings…§Codificación / saltos de línea…
+Build… (ou digite um comando; use $file, $file_path, $file_base_name…)§Build… (or type a command; use $file, $file_path, $file_base_name…)§Build… (o escribe un comando; usa $file, $file_path, $file_base_name…)
+Espaços: {0}§Spaces: {0}§Espacios: {0}
+Aba {0} de {1}§Tab {0} of {1}§Pestaña {0} de {1}

@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1e2227">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>TT Note</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f7de1'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3ETT%3C/text%3E%3C/svg%3E">
+<style>
+:root { --bg:#fff; --panel:#f5f6f8; --fg:#1f2328; --dim:#6b7280; --line:#e2e5ea; --accent:#2f7de1; --on:#fff; --hover:#eceff3; --new:#fff7d6; --danger:#d1344b; --code:#eef0f3; }
+@media (prefers-color-scheme: dark) { :root { --bg:#1e2227; --panel:#252a31; --fg:#e4e7eb; --dim:#98a1ad; --line:#363c45; --hover:#2d333b; --new:#3a3520; --code:#2a2f37; } }
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-text-size-adjust: 100%; }
+button { font: inherit; color: inherit; cursor: pointer; }
+input, textarea { font: inherit; color: inherit; }
+[hidden] { display: none !important; }
+#login { min-height: 100%; display: grid; place-items: center; padding: 20px 16px; }
+.card { width: 100%; max-width: 360px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+.card h1 { margin: 0 0 4px; font-size: 22px; }
+.card p { margin: 0 0 16px; color: var(--dim); font-size: 13px; }
+.card label { display: block; font-size: 12px; color: var(--dim); margin: 10px 0 4px; }
+.card input { width: 100%; padding: 10px 12px; border-radius: 9px; border: 1px solid var(--line); background: var(--bg); font-size: 16px; }
+.btn { background: var(--accent); color: var(--on); border: 0; border-radius: 9px; padding: 10px 16px; font-weight: 600; }
+.card .btn { width: 100%; margin-top: 16px; }
+.err { color: var(--danger); font-size: 13px; margin-top: 10px; min-height: 18px; }
+#app { height: 100%; display: grid; grid-template-columns: 320px 1fr; grid-template-rows: 100%; }
+#side { border-right: 1px solid var(--line); background: var(--panel); display: flex; flex-direction: column; min-height: 0; }
+#main { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.top { display: flex; align-items: center; gap: 8px; padding: 10px 12px; padding-top: max(10px, env(safe-area-inset-top)); border-bottom: 1px solid var(--line); }
+.top h2 { margin: 0; font-size: 16px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ib { background: transparent; border: 0; border-radius: 8px; padding: 6px 9px; color: var(--dim); }
+.ib:hover { background: var(--hover); color: var(--fg); }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #2fb344; margin-right: 5px; }
+.dot.off { background: #c9a227; }
+#search { margin: 10px 12px 6px; padding: 9px 12px; border-radius: 9px; border: 1px solid var(--line); background: var(--bg); width: calc(100% - 24px); font-size: 16px; }
+#tree { overflow: auto; flex: 1; padding-bottom: 20px; }
+.proj { padding: 9px 14px; font-weight: 600; display: flex; gap: 8px; align-items: center; cursor: pointer; user-select: none; }
+.proj:hover, .note:hover, .hit:hover { background: var(--hover); }
+.note { padding: 8px 14px 8px 34px; display: flex; gap: 8px; align-items: center; cursor: pointer; }
+.note.act { background: var(--hover); box-shadow: inset 3px 0 var(--accent); }
+.note .t, .hit .t { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.badge { background: var(--accent); color: var(--on); border-radius: 10px; font-size: 11px; padding: 1px 7px; font-weight: 700; }
+.empty { padding: 20px 16px; color: var(--dim); font-size: 13px; text-align: center; }
+.hit { padding: 9px 14px; cursor: pointer; border-bottom: 1px solid var(--line); }
+.hit .p { font-size: 12px; color: var(--dim); }
+.hit .s { font-size: 13px; color: var(--dim); margin-top: 2px; word-break: break-word; }
+mark { background: #ffe066; color: #000; border-radius: 3px; }
+#list { flex: 1; overflow: auto; padding: 12px 12px 8px; }
+.seg { border-left: 3px solid var(--uc, var(--accent)); padding: 4px 0 4px 12px; margin: 0 0 14px; }
+.seg.new { background: var(--new); border-radius: 0 8px 8px 0; }
+.sh { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: 13px; }
+.sh .n { font-weight: 700; color: var(--uc); }
+.sh .tm, .sh .ed { color: var(--dim); font-size: 12px; }
+.sh .sp { flex: 1; }
+.sh .ib { padding: 0 6px; font-size: 14px; }
+.md p { margin: 4px 0; word-break: break-word; }
+.md h3, .md h4, .md h5 { margin: 8px 0 4px; }
+.md h3 { font-size: 18px; } .md h4 { font-size: 16px; } .md h5 { font-size: 15px; }
+.md code { background: var(--code); border-radius: 4px; padding: 1px 5px; font-family: Consolas, monospace; font-size: 13px; }
+.md pre { background: var(--code); border-radius: 8px; padding: 10px 12px; overflow: auto; margin: 6px 0; position: relative; }
+.cpbtn { position: sticky; float: right; top: 0; margin: -4px -6px 0 8px; font-size: 11px; padding: 2px 9px; background: var(--panel); color: var(--dim); border: 1px solid var(--line); border-radius: 6px; }
+.md pre code { background: none; padding: 0; white-space: pre; }
+.md blockquote { margin: 6px 0; padding: 2px 12px; border-left: 3px solid var(--line); color: var(--dim); }
+.md hr { border: 0; border-top: 1px solid var(--line); margin: 10px 0; }
+.md a { color: var(--accent); }
+.md .li { display: flex; gap: 8px; margin: 2px 0; }
+.md .li .b { min-width: 14px; color: var(--dim); }
+.md .li input { margin: 4px 0 0; width: 17px; height: 17px; }
+.md .li .x { text-decoration: line-through; color: var(--dim); }
+.md table { border-collapse: collapse; margin: 6px 0; display: block; overflow: auto; }
+.md td, .md th { border: 1px solid var(--line); padding: 4px 9px; }
+.md img.pic { max-width: min(100%, 460px); max-height: 380px; border-radius: 8px; display: block; margin: 6px 0; cursor: zoom-in; }
+.md video { max-width: min(100%, 460px); border-radius: 8px; display: block; margin: 6px 0; }
+.stk img { width: 120px; height: 120px; object-fit: contain; }
+.stk .big { font-size: 64px; line-height: 1.1; }
+.rx { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+.rx button { border: 1px solid var(--line); background: var(--panel); border-radius: 12px; padding: 1px 9px; font-size: 13px; }
+.rx button.me { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, transparent); }
+.rx img { width: 18px; height: 18px; vertical-align: middle; }
+.del { color: var(--dim); font-size: 13px; margin: 0 0 14px 15px; font-style: italic; }
+.link { background: none; border: 0; color: var(--accent); padding: 0; text-decoration: underline; }
+.log { font-size: 12px; color: var(--dim); margin-top: 4px; }
+#comp { border-top: 1px solid var(--line); padding: 8px 10px; padding-bottom: max(8px, env(safe-area-inset-bottom)); background: var(--bg); }
+#comp .row { display: flex; gap: 6px; align-items: flex-end; }
+#msg { flex: 1; resize: none; max-height: 160px; min-height: 42px; padding: 9px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); font-size: 16px; }
+#comp .ib { font-size: 20px; padding: 7px 8px; }
+textarea.edta { width: 100%; min-height: 90px; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); font-size: 16px; }
+#send { padding: 10px 14px; }
+#status { font-size: 12px; color: var(--dim); min-height: 16px; padding: 0 4px 4px; }
+.sheet { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: flex; align-items: flex-end; justify-content: center; z-index: 20; }
+.sheet > div { background: var(--bg); width: 100%; max-width: 560px; max-height: 80%; overflow: auto; border-radius: 16px 16px 0 0; padding: 16px; }
+@media (min-width: 700px) { .sheet { align-items: center; } .sheet > div { border-radius: 16px; } }
+.sheet h3 { margin: 0 0 10px; }
+.ver { border-top: 1px solid var(--line); padding: 8px 0; font-size: 13px; }
+.ver pre { white-space: pre-wrap; word-break: break-word; background: var(--code); border-radius: 8px; padding: 8px; margin: 4px 0 0; font: 13px Consolas, monospace; }
+.lc { display: flex; gap: 10px; margin-top: 6px; max-width: 460px; border-left: 3px solid var(--accent); background: var(--hover); border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; }
+.lc[hidden] { display: none; }
+.lc img { width: 88px; min-height: 68px; object-fit: cover; flex: none; background: var(--panel); }
+.lc .tx { padding: 7px 10px 7px 8px; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.lc .st { font-size: 11px; color: var(--dim); text-transform: uppercase; }
+.lc .tt { font-weight: 600; color: var(--accent); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.lc .ds { font-size: 12.5px; color: var(--dim); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+#att-ov { position: fixed; inset: 0; z-index: 40; background: #111; color: #e9edef; display: flex; flex-direction: column; }
+#att-ov .top { padding: 12px 16px; } #att-ov .top button { background: none; border: none; color: #e9edef; font-size: 22px; padding: 4px 8px; }
+#att-ov .stage { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 6px 12px; text-align: center; }
+#att-ov .stage img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
+#att-ov .stage .ico { font-size: 64px; } #att-ov .stage .nm { word-break: break-all; margin-top: 6px; }
+#att-ov .bot { border-top: 1px solid #2a2f32; padding: 12px 14px calc(14px + env(safe-area-inset-bottom)); }
+#att-ov .cap { width: 100%; box-sizing: border-box; background: #202c33; color: #e9edef; border: none; border-radius: 10px; padding: 12px 14px; font: inherit; outline: none; margin-bottom: 12px; }
+#att-ov .foot { display: flex; align-items: center; gap: 10px; }
+#att-ov .strip { flex: 1; display: flex; gap: 8px; overflow-x: auto; align-items: center; }
+#att-ov .th { position: relative; width: 52px; height: 52px; flex: none; border-radius: 6px; border: 2px solid transparent; padding: 0; background: #202c33; color: #fff; overflow: hidden; }
+#att-ov .th.on { border-color: #00a884; } #att-ov .th img { width: 100%; height: 100%; object-fit: cover; display: block; }
+#att-ov .plus { width: 52px; height: 52px; flex: none; border-radius: 6px; border: 1px solid #3b4a54; background: none; color: #e9edef; font-size: 26px; }
+#att-ov .go { width: 56px; height: 56px; border-radius: 50%; border: none; background: #00a884; color: #fff; font-size: 22px; flex: none; }
+#att-ov .go:disabled { opacity: .5; }
+#att-ov .am { text-align: center; color: #8696a0; font-size: 13px; min-height: 18px; margin-top: 8px; }
+.seg.pinned { box-shadow: inset 0 0 0 1px color-mix(in srgb, #e5c07b 50%, transparent); } .pinbadge { font-size: 11px; background: color-mix(in srgb, #e5c07b 20%, transparent); border-radius: 8px; padding: 1px 7px; } .sh .ib.on { color: #d19a22; }
+#pinsheet .pinrow { padding: 10px; margin: 8px 0; background: var(--hover); border-left: 3px solid #e5c07b; border-radius: 8px; } #pinsheet .pinrow .pt2 { margin: 4px 0 8px; white-space: pre-wrap; word-break: break-word; } #pinsheet .pinrow .pby { font-size: 12px; color: var(--dim); } #pinsheet .pinrow button { margin-right: 8px; }
+.poll { margin: 4px 0; padding: 10px 12px; background: var(--hover); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; max-width: 520px; }
+.poll.closed { opacity: .85; border-left-color: var(--dim); }
+.poll .ph { display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; } .poll .pq { font-weight: 600; flex: 1; } .poll .pk { font-size: 11px; color: var(--dim); text-transform: uppercase; }
+.poll .po { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; width: 100%; margin: 4px 0; padding: 10px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; text-align: left; font: inherit; overflow: hidden; }
+.poll .po.mine { border-color: var(--accent); } .poll .po:disabled { opacity: 1; }
+.poll .pb { position: absolute; inset: 0 auto 0 0; background: color-mix(in srgb, var(--accent) 24%, transparent); z-index: 0; transition: width .25s; }
+.poll .po > :not(.pb) { position: relative; z-index: 1; } .poll .pm { color: var(--accent); width: 18px; text-align: center; } .poll .pt { flex: 1; min-width: 0; } .poll .pn { font-size: 12px; color: var(--dim); } .poll .pw { flex-basis: 100%; padding-left: 26px; font-size: 12px; color: var(--dim); }
+.poll .pqi { display: block; max-width: 100%; max-height: 220px; border-radius: 8px; margin: 2px 0 8px; } .poll .poi { width: 84px; height: 62px; object-fit: cover; border-radius: 6px; flex: none; }
+.poll.grid { max-width: 640px; } .poll.grid .pos { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; } .poll.grid .po { flex-direction: column; align-items: stretch; margin: 0; padding: 6px; } .poll.grid .poi { width: 100%; height: 110px; }
+#pollsheet .pimg { position: relative; width: 44px; height: 38px; flex: none; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); } #pollsheet .pimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.poll .pf { display: flex; gap: 12px; align-items: center; margin-top: 6px; font-size: 12px; color: var(--dim); flex-wrap: wrap; } .poll .pf button { background: none; border: 0; color: var(--accent); padding: 0; font: inherit; }
+#pollsheet input[type=text] { width: 100%; box-sizing: border-box; background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; font: inherit; margin: 4px 0; }
+#pollsheet .prow { display: flex; gap: 6px; align-items: center; } #pollsheet .prow button { background: var(--panel); border: 1px solid var(--line); color: var(--dim); border-radius: 8px; padding: 8px 10px; }
+#pollsheet label { display: flex; gap: 8px; align-items: center; margin: 8px 0; }
+#zoom { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: grid; place-items: center; z-index: 30; }
+#zoom img { max-width: 96vw; max-height: 96vh; }
+#toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); background: #222; color: #fff; padding: 9px 16px; border-radius: 20px; font-size: 13px; z-index: 40; max-width: 90vw; }
+.back { display: none; }
+@media (max-width: 760px) {
+  #app { grid-template-columns: 1fr; }
+  #app.in-note #side { display: none; }
+  #app:not(.in-note) #main { display: none; }
+  .back { display: inline-block; }
+}
+.badge.mine { background: #e5603d; color: #fff; margin-right: 3px; }
+#replybar { display: flex; align-items: center; gap: 6px; margin: 0 0 6px; padding: 4px 8px; border-left: 3px solid var(--uc, var(--accent)); background: var(--panel); border-radius: 0 6px 6px 0; font-size: 12px; color: var(--dim); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#replybar b { color: var(--uc, var(--fg)); }
+.quote { margin: 4px 0 6px; padding: 3px 8px; border-left: 3px solid var(--uc, var(--line)); background: var(--panel); border-radius: 0 6px 6px 0; font-size: 12px; color: var(--dim); cursor: pointer; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.quote b { color: var(--uc, var(--fg)); } .quote.gone { cursor: default; font-style: italic; }
+.seg.flash { animation: fl 1.6s ease; } @keyframes fl { 0%, 60% { background: color-mix(in srgb, var(--accent) 25%, transparent); } 100% { background: transparent; } }
+.forme { font-size: 11px; font-weight: 700; color: var(--on); background: var(--accent); border-radius: 9px; padding: 0 7px; }
+.mention { color: var(--uc, var(--accent)); background: color-mix(in srgb, var(--uc, var(--accent)) 14%, transparent); border-radius: 4px; padding: 0 3px; font-weight: 600; }
+.mention.me { background: color-mix(in srgb, var(--accent) 30%, transparent); color: var(--fg); }
+#mpop { position: absolute; left: 10px; bottom: 100%; min-width: 200px; max-width: 90vw; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,.3); padding: 4px; z-index: 15; }
+#mpop div { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+#mpop div.on { background: var(--hover); }
+#comp { position: relative; }
+.seg { position: relative; }
+.seg.has-cont { margin-bottom: 4px; }
+.seg.cont { margin-top: 0; padding-top: 2px; }
+.seg.cont .sh { position: absolute; top: 0; right: 4px; gap: 4px; background: var(--bg); border-radius: 8px; padding: 0 4px; }
+.seg.cont .sh .n, .seg.cont .sh .sp { display: none; }
+.seg.cont .sh .tm { opacity: 0; font-size: 11px; } .seg.cont:hover .sh .tm { opacity: 1; }
+.threadlink { margin-top: 4px; padding: 1px 9px; border: 0; border-radius: 10px; background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); font: inherit; font-size: 12px; cursor: pointer; }
+#threadbar { display: flex; align-items: center; gap: 8px; padding: 6px 12px; background: color-mix(in srgb, var(--accent) 12%, var(--bg)); border-bottom: 1px solid var(--line); font-size: 13px; overflow: hidden; white-space: nowrap; }
+#threadbar .ti { color: var(--dim); overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1; }
+#threadbar button { background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 2px 8px; flex: none; }
+.hidrow { display: flex; align-items: center; gap: 6px; padding: 4px 0 4px 12px; margin: 0 0 6px; border-left: 3px solid var(--uc, var(--line)); cursor: pointer; opacity: .8; }
+.hidrow .note-o { color: var(--dim); font-size: 12px; font-style: italic; }
+.hidrow button { margin-left: auto; background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 1px 8px; font-size: 12px; }
+@keyframes nshake { 0%, 100% { transform: translate(0, 0); } 10% { transform: translate(-10px, 3px); } 20% { transform: translate(10px, -3px); } 30% { transform: translate(-8px, 2px); } 40% { transform: translate(8px, -2px); } 50% { transform: translate(-6px, 2px); } 60% { transform: translate(6px, -2px); } 70% { transform: translate(-3px, 1px); } 80% { transform: translate(3px, -1px); } }
+body.nshake { animation: nshake .8s ease-in-out; }
+#nbanner { position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 50; display: flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 10px; background: var(--accent); color: var(--on); font-weight: 600; box-shadow: 0 6px 24px rgba(0,0,0,.4); max-width: 92vw; }
+#nbanner button { border: 0; border-radius: 7px; padding: 2px 10px; background: rgba(255,255,255,.25); color: inherit; }
+</style>
+</head>
+<body>
+<div id="login" hidden>
+  <form class="card" id="lf">
+    <h1>TT Note <button type="button" class="ib" data-lang-btn title="Idioma do aplicativo" style="float:right"></button></h1>
+    <p>Entre com o usuário e a senha que o administrador criou para você.</p>
+    <label for="ln">Usuário</label><input id="ln" autocomplete="username" autocapitalize="none" required>
+    <label for="lp">Senha</label><input id="lp" type="password" autocomplete="current-password" required>
+    <div class="err" id="le"></div>
+    <button class="btn" type="submit">Entrar</button>
+  </form>
+</div>
+<div id="app" hidden>
+  <aside id="side">
+    <div class="top"><h2><span class="dot off" id="conn"></span>TT Note</h2><button class="ib" id="onl" title="Quem está online">👥 0</button><button class="ib" id="out" title="Sair">⎋</button><button class="ib" data-lang-btn title="Idioma do aplicativo"></button></div>
+    <input id="search" type="search" placeholder="Buscar em todas as notas…" autocomplete="off">
+    <div id="tree"></div>
+  </aside>
+  <main id="main">
+    <div class="top"><button class="ib back" id="bk">←</button><h2 id="nt">Selecione uma nota</h2><button class="ib" id="pinsb" title="Mensagens fixadas">📌</button><button class="ib" id="rf" title="Atualizar">⟳</button></div>
+    <div id="threadbar" hidden></div>
+    <div id="list"><div class="empty">Escolha uma nota na lista.</div></div>
+    <div id="comp" hidden>
+      <div id="mpop" hidden></div>
+      <div id="replybar" hidden></div>
+      <div id="status"></div>
+      <div class="row">
+        <button class="ib" id="att" title="Anexar foto, vídeo ou arquivo">📎</button>
+        <button class="ib" id="cam" title="Tirar foto">📷</button>
+        <button class="ib" id="pollb" title="Criar enquete">📊</button>
+        <textarea id="msg" rows="1" placeholder="Escreva aqui…"></textarea>
+        <button class="btn" id="send">Enviar</button>
+      </div>
+      <input type="file" id="fa" multiple hidden>
+      <input type="file" id="fc" accept="image/*" capture="environment" hidden>
+    </div>
+  </main>
+</div>
+<script src="/i18n.js"></script>
+<script>
+'use strict';
+const $ = (s) => document.querySelector(s);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const S = { token: '', me: null, users: new Map(), projects: [], groups: [], gcol: new Set(), notes: new Map(), exp: new Set(), open: null, online: new Set(), q: '' };
+const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch { /* sem gravar */ } }, del: (k) => { try { localStorage.removeItem(k); } catch { /* nada */ } } };
+
+/* ───── rede ───── */
+async function api(method, path, body) {
+  const r = await fetch(path, { method, headers: { Authorization: 'Bearer ' + S.token, ...(body !== undefined ? { 'Content-Type': 'application/json' } : {}) }, body: body !== undefined ? JSON.stringify(body) : undefined });
+  const t = await r.text(); let j = null; try { j = JSON.parse(t); } catch { /* sem corpo */ }
+  if (r.status === 401) { logout(true); throw new Error('Sessão expirada'); }
+  if (!r.ok) throw new Error((j && j.error) || 'Erro ' + r.status);
+  return j;
+}
+function toast(m) { const t = el('div', null, m); t.id = 'toast'; document.body.append(t); setTimeout(() => t.remove(), 3200); }
+const guard = async (fn) => { try { return await fn(); } catch (e) { toast(e.message); return null; } };
+
+/* ───── texto ───── */
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const fileUrl = (id) => `/api/files/${encodeURIComponent(id)}?t=${encodeURIComponent(S.token)}`;
+const fmt = (ts) => { const d = new Date(ts); const hoje = new Date(); const hm = d.toLocaleTimeString((window.TT ? TT.locale() : 'pt-BR'), { hour: '2-digit', minute: '2-digit' }); return d.toDateString() === hoje.toDateString() ? (window.TT ? TT.t('hoje') : 'hoje') + ' ' + hm : d.toLocaleDateString((window.TT ? TT.locale() : 'pt-BR'), { day: '2-digit', month: '2-digit', year: d.getFullYear() === hoje.getFullYear() ? undefined : '2-digit' }) + ' ' + hm; };
+const who = (id) => S.users.get(id) || { id, name: 'usuário removido', color: '#7f848e' };
+function safeUrl(u) { u = u.trim(); const m = u.match(/^srv-file:([\w-]+)(#video)?$/); if (m) return { file: m[1], video: !!m[2] }; if (/^(https?:|mailto:)/i.test(u)) return { url: u }; return null; }
+function inline(src) {
+  const hold = []; const keep = (h) => { hold.push(h); return '\u0000' + (hold.length - 1) + '\u0000'; };
+  let s = src.replace(/`([^`\n]+)`/g, (_, c) => keep('<code>' + esc(c) + '</code>'));
+  s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (m, alt, u) => { const r = safeUrl(u); if (!r) return m; if (r.file) return keep(r.video ? `<video controls preload="metadata" src="${fileUrl(r.file)}"></video>` : `<img class="pic" alt="${esc(alt)}" src="${fileUrl(r.file)}">`); return keep(`<img class="pic" alt="${esc(alt)}" src="${esc(r.url)}">`); });
+  s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, t, u) => { const r = safeUrl(u); if (!r) return m; return keep(`<a href="${esc(r.file ? fileUrl(r.file) : r.url)}" target="_blank" rel="noopener">${esc(t)}</a>`); });
+  s = esc(s);
+  s = s.replace(/(https?:\/\/[^\s<]+[^\s<.,;:!?)\]])/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+  s = s.replace(/\*\*([^*\n]+)\*\*/g, '<b>$1</b>').replace(/(^|[\s(])\*([^*\n]+)\*(?=$|[\s).,;!?])/g, '$1<i>$2</i>').replace(/~~([^~\n]+)~~/g, '<s>$1</s>');
+  return s.replace(/\u0000(\d+)\u0000/g, (_, i) => hold[+i]);
+}
+// <poll>
+const POLL_OPT = /^\s*[-*+]\s+(?:\(([ xX•*])\)|\[([ xX])\])?\s*(.*)$/;
+const POLL_IMG_MD = /!\[([^\]]*)\]\(((?:[^()\s]|\([^()\s]*\))+)\)/;
+const POLL_IMG_WIKI = /!\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/;
+function pollTakeImage(str) {
+  const t = String(str);
+  let m = POLL_IMG_MD.exec(t);
+  if (m) return { image: { src: m[2].slice(0, 400), alt: m[1].trim().slice(0, 80), wiki: false }, rest: (t.slice(0, m.index) + t.slice(m.index + m[0].length)).replace(/\s+/g, ' ').trim() };
+  m = POLL_IMG_WIKI.exec(t);
+  if (m) return { image: { src: m[1].trim().slice(0, 400), alt: '', wiki: true }, rest: (t.slice(0, m.index) + t.slice(m.index + m[0].length)).replace(/\s+/g, ' ').trim() };
+  return { image: null, rest: t.trim() };
+}
+function pollFind(text) {
+  const out = []; const lines = String(text).split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    const m = /^```enquete(?:[ \t]+(.*))?[ \t]*$/.exec(lines[i].replace(/\r$/, ''));
+    if (m) {
+      let j = i + 1; const body = [];
+      while (j < lines.length && !/^```[ \t]*$/.test(lines[j].replace(/\r$/, ''))) { body.push(lines[j]); j++; }
+      if (j < lines.length) { out.push({ info: m[1] || '', body: body.join('\n'), startLine: i, endLine: j }); i = j; continue; }
+    }
+  }
+  return out;
+}
+function pollParse(info, body) {
+  const nz = (x) => String(x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const anonymous = /\banonim[ao]\b/.test(nz(info));
+  let question = ''; let image = null; const options = []; let multi = null;
+  for (const raw of String(body).split('\n')) {
+    const line = raw.replace(/\r$/, ''); if (!line.trim()) continue;
+    const m = POLL_OPT.exec(line);
+    if (m && (question || options.length)) {
+      const ti = pollTakeImage(m[3]);
+      let text = ti.rest.slice(0, 120);
+      if (!text && ti.image) text = (ti.image.alt || decodeURIComponent(String(ti.image.src).split(/[\\/]/).pop().split('?')[0]).replace(/\.[A-Za-z0-9]+$/, '') || 'imagem').slice(0, 120);
+      if (!text) continue;
+      if (multi === null) multi = m[2] !== undefined;
+      options.push({ text, image: ti.image });
+    } else if (!question && !options.length) question = line.trim().replace(/^#+\s*/, '').slice(0, 200);
+    else if (question && !options.length && !image) { const ti = pollTakeImage(line); if (ti.image && !ti.rest) image = ti.image; }
+  }
+  return { question, image, multi: !!multi, anonymous, options: options.slice(0, 12), ok: !!question && options.length >= 2 };
+}
+function pollFirst(text) { for (const b of pollFind(text)) { const p = pollParse(b.info, b.body); if (p.ok) return { p, startLine: b.startLine }; } return null; }
+function pollImgUrl(im) { if (!im) return ''; const m = /^srv-file:([\w-]+)/.exec(im.src); return m ? fileUrl(m[1]) : (/^https?:\/\//i.test(im.src) ? im.src : ''); }
+// </poll>
+function pollCard(seg, p) {
+  const card = el('div', 'poll');
+  const o = S.open; const myId = S.me.id;
+  const draw = () => {
+    const pv = seg.poll; const canVote = !!pv && !pv.closed && !seg.deleted && o.note.role !== 'read';
+    card.textContent = ''; card.classList.toggle('closed', !!(pv && pv.closed));
+    const head = el('div', 'ph'); head.append(el('span', 'pq', '📊 ' + p.question), el('span', 'pk', (p.multi ? 'várias escolhas' : 'uma escolha') + (p.anonymous ? ' · anônima' : ''))); card.append(head);
+    card.classList.toggle('grid', p.options.every((x) => pollImgUrl(x.image)));
+    const pimg = (im, cls) => { const i = el('img', cls); i.src = pollImgUrl(im); i.alt = im.alt || ''; i.loading = 'lazy'; i.onclick = (e) => { e.stopPropagation(); zoom(i.src); }; return i; };
+    if (p.image && pollImgUrl(p.image)) card.append(pimg(p.image, 'pqi'));
+    const obox = el('div', 'pos'); card.append(obox);
+    const counts = pv ? pv.counts : p.options.map(() => 0); const mine = new Set(pv ? pv.mine : []); const people = pv ? pv.people : 0;
+    p.options.forEach((opt, i) => {
+      const b = el('button', 'po' + (mine.has(i) ? ' mine' : '')); b.type = 'button'; b.disabled = !canVote;
+      const bar = el('span', 'pb'); bar.style.width = (people ? Math.round((counts[i] / people) * 100) : 0) + '%';
+      b.append(bar); if (opt.image && pollImgUrl(opt.image)) b.append(pimg(opt.image, 'poi')); b.append(el('span', 'pm', p.multi ? (mine.has(i) ? '☑' : '☐') : (mine.has(i) ? '◉' : '○')), el('span', 'pt', opt.text), el('span', 'pn', pv ? `${counts[i]}${people ? ' · ' + Math.round((counts[i] / people) * 100) + '%' : ''}` : ''));
+      if (pv && pv.voters && pv.voters[i] && pv.voters[i].length) { const names = pv.voters[i].map((id) => who(id).name); b.title = 'Votaram: ' + names.join(', '); b.append(el('span', 'pw', names.slice(0, 4).join(', ') + (names.length > 4 ? ` +${names.length - 4}` : ''))); }
+      b.onclick = () => { const cur = new Set(pv.mine); let next; if (p.multi) { if (cur.has(i)) cur.delete(i); else cur.add(i); next = [...cur].sort((x, y) => x - y); } else next = cur.has(i) ? [] : [i]; setVote(next); };
+      obox.append(b);
+    });
+    const foot = el('div', 'pf');
+    if (!pv) foot.append('Para votar, o servidor precisa ser atualizado.');
+    else {
+      const total = counts.reduce((a, c) => a + c, 0);
+      foot.append(`${total} voto${total === 1 ? '' : 's'} · ${people} pessoa${people === 1 ? '' : 's'}`);
+      if (pv.closed) foot.append(`🔒 encerrada por ${who(pv.closed.by).name}`);
+      if (canVote && mine.size) { const c = el('button', null, 'tirar meu voto'); c.onclick = () => setVote([]); foot.append(c); }
+      if (!seg.deleted && (seg.author === myId || o.note.role === 'admin')) { const c = el('button', null, pv.closed ? 'reabrir' : 'encerrar enquete'); c.onclick = () => guard(async () => { const r = await api('POST', `/api/notes/${o.nid}/segments/${seg.id}/poll-close`, { closed: !pv.closed }); seg.poll = r.poll; draw(); }); foot.append(c); }
+    }
+    card.append(foot);
+  };
+  const setVote = (options) => {
+    const pv = seg.poll; const before = JSON.parse(JSON.stringify(pv));
+    for (const i of pv.mine) { pv.counts[i]--; if (pv.voters && pv.voters[i]) pv.voters[i] = pv.voters[i].filter((x) => x !== myId); }
+    if (pv.mine.length) pv.people--; pv.mine = options;
+    for (const i of options) { pv.counts[i]++; if (pv.voters && pv.voters[i]) pv.voters[i] = [...pv.voters[i], myId]; }
+    if (options.length) pv.people++;
+    draw();
+    seg._vc = (seg._vc || Promise.resolve()).then(async () => { try { const r = await api('POST', `/api/notes/${o.nid}/segments/${seg.id}/vote`, { options }); seg.poll = r.poll; } catch (e) { seg.poll = before; toast(e.message); } draw(); });
+  };
+  draw(); return card;
+}
+function mdHtml(text, pollLine) {
+  const L = text.split('\n'); let out = ''; let i = 0; let para = [];
+  const flush = () => { if (para.length) { out += '<p>' + para.map(inline).join('<br>') + '</p>'; para = []; } };
+  while (i < L.length) {
+    const l = L[i]; let m;
+    if ((m = l.match(/^\s*(```|~~~)/))) { flush(); if (i === pollLine) { i++; while (i < L.length && !L[i].trimStart().startsWith(m[1])) i++; i++; out += '<div class="pollslot"></div>'; continue; } const code = []; i++; while (i < L.length && !L[i].trimStart().startsWith(m[1])) code.push(L[i++]); i++; out += '<pre><code>' + esc(code.join('\n')) + '</code></pre>'; continue; }
+    if (!l.trim()) { flush(); i++; continue; }
+    if ((m = l.match(/^(#{1,3})\s+(.*)$/))) { flush(); out += `<h${m[1].length + 2}>${inline(m[2])}</h${m[1].length + 2}>`; i++; continue; }
+    if (/^\s*([-*_])\1\1+\s*$/.test(l)) { flush(); out += '<hr>'; i++; continue; }
+    if (/^\s*>/.test(l)) { flush(); const q = []; while (i < L.length && /^\s*>/.test(L[i])) q.push(L[i++].replace(/^\s*>\s?/, '')); out += '<blockquote>' + q.map(inline).join('<br>') + '</blockquote>'; continue; }
+    if (l.includes('|') && i + 1 < L.length && /^\s*\|?\s*:?-{2,}/.test(L[i + 1]) && L[i + 1].includes('|')) {
+      flush(); const cells = (r) => r.trim().replace(/^\||\|$/g, '').split('|').map((c) => inline(c.trim()));
+      out += '<table><thead><tr>' + cells(l).map((c) => `<th>${c}</th>`).join('') + '</tr></thead><tbody>'; i += 2;
+      while (i < L.length && L[i].includes('|') && L[i].trim()) out += '<tr>' + cells(L[i++]).map((c) => `<td>${c}</td>`).join('') + '</tr>';
+      out += '</tbody></table>'; continue;
+    }
+    if ((m = l.match(/^(\s*)([-*+]|\d+[.)])\s+(.*)$/))) {
+      flush(); const depth = Math.min(4, Math.floor(m[1].replace(/\t/g, '  ').length / 2)); const tk = m[3].match(/^\[([ xX])\]\s?(.*)$/);
+      out += `<div class="li" style="margin-left:${depth * 18}px">`;
+      if (tk) out += `<input type="checkbox" data-line="${i}" ${tk[1] === ' ' ? '' : 'checked'} disabled><span class="${tk[1] === ' ' ? '' : 'x'}">${inline(tk[2])}</span>`;
+      else out += `<span class="b">${/^\d/.test(m[2]) ? m[2] : '•'}</span><span>${inline(m[3])}</span>`;
+      out += '</div>'; i++; continue;
+    }
+    para.push(l); i++;
+  }
+  flush(); return out;
+}
+
+/* ───── entrada e saída ───── */
+function showLogin(msg) { $('#app').hidden = true; $('#login').hidden = false; $('#le').textContent = msg || ''; }
+function logout(silent) {
+  if (!silent) fetch('/api/logout', { method: 'POST', headers: { Authorization: 'Bearer ' + S.token } }).catch(() => {});
+  store.del('tt.web.token'); S.token = ''; closeEvents(); showLogin(silent ? 'Sua sessão terminou. Entre de novo.' : '');
+}
+$('#lf').onsubmit = async (e) => {
+  e.preventDefault(); $('#le').textContent = '';
+  try {
+    const r = await fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: $('#ln').value.trim(), password: $('#lp').value }) });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || 'Não consegui entrar');
+    S.token = j.token; store.set('tt.web.token', j.token); $('#lp').value = '';
+    await start();
+  } catch (x) { $('#le').textContent = x.message; }
+};
+$('#out').onclick = () => logout(false);
+
+async function start() {
+  try {
+    S.me = await api('GET', '/api/me');
+    await loadUsers();
+    await loadProjects();
+  } catch (e) { if (S.token) showLogin(e.message); return; }
+  $('#login').hidden = true; $('#app').hidden = false;
+  openEvents(); route();
+}
+async function loadUsers() { S.users = new Map((await api('GET', '/api/users')).map((u) => [u.id, u])); }
+async function loadProjects() {
+  S.projects = await api('GET', '/api/projects');
+  try { S.groups = await api('GET', '/api/groups'); } catch { S.groups = []; }
+  try { S.gcol = new Set(JSON.parse(store.get('tt.web.gcol') || '[]')); } catch { S.gcol = new Set(); }
+  const saved = store.get('tt.web.exp');
+  S.exp = new Set(saved ? JSON.parse(saved) : S.projects.map((p) => p.id));
+  await Promise.all(S.projects.map((p) => loadNotes(p.id)));
+  renderTree();
+}
+async function loadNotes(pid) { try { S.notes.set(pid, await api('GET', `/api/projects/${pid}/notes`)); } catch { S.notes.set(pid, []); } }
+
+/* ───── lista de projetos e busca ───── */
+function renderTree() {
+  const box = $('#tree'); box.textContent = '';
+  if (S.q) return;
+  if (!S.projects.length) { box.append(el('div', 'empty', 'Você ainda não tem acesso a nenhum projeto.')); return; }
+  const projRow = (p, pad) => {
+    const row = el('div', 'proj'); const open = S.exp.has(p.id); row.style.paddingLeft = pad + 'px';
+    row.append(el('span', null, open ? '▾' : '▸'), el('span', null, p.name));
+    row.lastChild.style.flex = '1';
+    const un = (S.notes.get(p.id) || []).reduce((a, n) => a + n.unread, 0);
+    const mn = (S.notes.get(p.id) || []).reduce((a, n) => a + (n.mine || 0), 0);
+    if (mn) row.append(el('span', 'badge mine', '@' + mn));
+    if (un) row.append(el('span', 'badge', String(un)));
+    row.onclick = () => { if (S.exp.has(p.id)) S.exp.delete(p.id); else S.exp.add(p.id); store.set('tt.web.exp', JSON.stringify([...S.exp])); renderTree(); };
+    box.append(row);
+    if (!open) return;
+    const ns = S.notes.get(p.id) || [];
+    if (!ns.length) box.append(Object.assign(el('div', 'empty', 'Sem notas'), { style: `padding:6px ${pad + 20}px;text-align:left` }));
+    for (const n of ns) {
+      const r = el('div', 'note' + (S.open && S.open.nid === n.id ? ' act' : ''));
+      r.style.paddingLeft = (pad + 20) + 'px';
+      r.append(el('span', 't', (n.type === 'canvas' ? '▦ ' : '') + n.title)); if (n.mine) r.append(el('span', 'badge mine', '@' + n.mine)); if (n.unread) r.append(el('span', 'badge', String(n.unread)));
+      r.title = `Última alteração: ${fmt(n.updated)}`;
+      r.onclick = () => { location.hash = `#/n/${p.id}/${n.id}`; };
+      box.append(r);
+    }
+  };
+  const inGroup = (p) => p.group && S.groups.some((g) => g.id === p.group);
+  for (const g of S.groups) {
+    const list = S.projects.filter((p) => p.group === g.id);
+    if (!list.length) continue;
+    const closed = S.gcol.has(g.id);
+    const row = el('div', 'proj grp');
+    row.append(el('span', null, closed ? '▸' : '▾'), el('span', null, '▤ ' + g.name));
+    row.lastChild.style.flex = '1';
+    const un = list.reduce((a, p) => a + (S.notes.get(p.id) || []).reduce((x, n) => x + n.unread, 0), 0);
+    if (un) row.append(el('span', 'badge', String(un)));
+    row.onclick = () => { if (S.gcol.has(g.id)) S.gcol.delete(g.id); else S.gcol.add(g.id); store.set('tt.web.gcol', JSON.stringify([...S.gcol])); renderTree(); };
+    box.append(row);
+    if (!closed) for (const p of list) projRow(p, 30);
+  }
+  for (const p of S.projects) if (!inGroup(p)) projRow(p, 14);
+}
+let searchTimer = null;
+$('#search').oninput = (e) => {
+  S.q = e.target.value.trim(); clearTimeout(searchTimer);
+  if (S.q.length < 2) { S.q = ''; renderTree(); return; }
+  searchTimer = setTimeout(async () => {
+    const q = S.q; const r = await guard(() => api('GET', '/api/search?q=' + encodeURIComponent(q)));
+    if (!r || q !== S.q) return;
+    const box = $('#tree'); box.textContent = '';
+    if (!r.length) { box.append(el('div', 'empty', 'Nada encontrado.')); return; }
+    const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
+    for (const h of r) {
+      const d = el('div', 'hit'); const t = el('div', 't', h.title);
+      const p = el('div', 'p', h.project + (h.by ? ' · ' + who(h.by).name : '') + ' · ' + fmt(h.ts));
+      d.append(t, p);
+      if (h.snippet) { const s = el('div', 's'); s.innerHTML = esc(h.snippet).replace(re, '<mark>$1</mark>'); d.append(s); }
+      d.onclick = () => { $('#search').value = ''; S.q = ''; location.hash = `#/n/${h.pid}/${h.nid}`; };
+      box.append(d);
+    }
+  }, 250);
+};
+
+/* ───── nota aberta ───── */
+function route() {
+  const m = location.hash.match(/^#\/n\/([\w-]+)\/([\w-]+)$/);
+  if (!m) { S.open = null; $('#app').classList.remove('in-note'); $('#comp').hidden = true; $('#nt').textContent = 'Selecione uma nota'; $('#list').replaceChildren(el('div', 'empty', 'Escolha uma nota na lista.')); renderTree(); return; }
+  clearReply(); closeMention();
+  S.open = { pid: m[1], nid: m[2], note: null, first: true, editing: null, thread: null };
+  msg.placeholder = 'Escreva aqui…';
+  $('#app').classList.add('in-note'); renderTree(); loadNote();
+}
+window.addEventListener('hashchange', () => { if (!$('#app').hidden) route(); });
+$('#bk').onclick = () => { location.hash = ''; };
+$('#rf').onclick = () => { loadAll(); };
+async function loadAll() { await guard(async () => { await loadUsers(); await loadProjects(); if (S.open) await loadNote(); }); }
+async function loadNote() {
+  const o = S.open; if (!o) return;
+  const n = await guard(() => api('GET', `/api/notes/${o.nid}`));
+  if (!n || S.open !== o) return;
+  const first = o.first; o.first = false;
+  if (first) { o.readAt = n.readAt || 0; api('GET', `/api/projects/${o.pid}/people`).then((l) => { if (S.open === o) o.people = l; }).catch(() => {}); }
+  o.note = n; renderNote(first);
+  api('POST', `/api/notes/${o.nid}/read`, {}).then(() => { const ns = S.notes.get(o.pid) || []; const x = ns.find((k) => k.id === o.nid); if (x && (x.unread || x.mine)) { x.unread = 0; x.mine = 0; renderTree(); } }).catch(() => {});
+}
+function nameSpan(id) { const s = el('span', 'n', who(id).name); s.style.setProperty('--uc', who(id).color); return s; }
+function renderCanvas(n) {
+  const list = $('#list'); list.textContent = '';
+  $('#nt').textContent = '▦ ' + n.title; $('#comp').hidden = true;
+  const info = el('div', 'empty', `Este é um canvas (quadro de cartões). Aqui você só vê; para editar, use o app TT Note no Windows. Última alteração: ${who(n.canvas.by).name} · ${fmt(n.canvas.ts)}${n.lock ? ' · ' + who(n.lock.by).name + ' está editando agora' : ''}.`);
+  info.style.textAlign = 'left'; list.append(info);
+  if (n.by) info.append(` Criado por ${who(n.by).name}.`);
+  let cv = { nodes: [] }; try { cv = JSON.parse(n.canvas.text); } catch { /* quadro inválido */ }
+  const nodes = (cv.nodes || []).filter((x) => x.type !== 'group').sort((a, b) => (a.y - b.y) || (a.x - b.x));
+  for (const x of nodes) {
+    const blk = el('div', 'seg'); blk.style.setProperty('--uc', '#7f848e');
+    const md = el('div', 'md');
+    if (x.type === 'text') md.innerHTML = mdHtml(x.text || '');
+    else if (x.type === 'file' && /^srv-file:([\w-]+)/.test(x.file || '')) { const id = /^srv-file:([\w-]+)/.exec(x.file)[1]; md.innerHTML = /\.(png|jpe?g|gif|webp|svg|bmp|avif)$/i.test(x.file) ? `<img class="pic" alt="" src="${fileUrl(id)}">` : `<a href="${fileUrl(id)}" target="_blank" rel="noopener">${esc(x.file.split('/').pop())}</a>`; }
+    else if (x.type === 'link') md.innerHTML = inline(x.url || '');
+    else continue;
+    md.querySelectorAll('img.pic').forEach((im) => { im.onclick = () => zoom(im.src); });
+    const who2 = x.editedBy || x.by;
+    if (who2) { const t = el('div', 'log', `${x.editedBy ? '✎ editado por' : 'criado por'} ${who(who2).name}${(x.editedTs || x.ts) ? ' · ' + fmt(x.editedTs || x.ts) : ''}`); blk.append(md, t); } else blk.append(md);
+    list.append(blk);
+  }
+  if (!nodes.length) list.append(el('div', 'empty', 'O canvas ainda está vazio.'));
+}
+// ocultar/exibir (só neste aparelho): fica só o nome; as respostas somem junto; qualquer interação nova exibe de novo
+const hidMap = () => { try { return JSON.parse(store.get('tt.web.msgHide') || '{}'); } catch { return {}; } };
+const saveHid = (m) => store.set('tt.web.msgHide', JSON.stringify(m));
+function descendants(n, id) { const ids = new Set([id]); const out = []; let grew = true; while (grew) { grew = false; for (const x of n.segments) if (x.replyTo && ids.has(x.replyTo) && !ids.has(x.id)) { ids.add(x.id); if (!x.deleted) out.push(x); grew = true; } } return out; }
+const stampOf = (seg, n) => [seg.versions.length, Object.values(seg.reactions || {}).reduce((a, l) => a + l.length, 0), descendants(n, seg.id).length, seg.deleted ? 1 : 0].join('|');
+function isHidden(seg, n) { const m = hidMap(); const st = m[seg.id]; if (!st) return false; if (st !== stampOf(seg, n)) { delete m[seg.id]; saveHid(m); return false; } return true; }
+function toggleHide(seg) { const m = hidMap(); if (m[seg.id]) delete m[seg.id]; else m[seg.id] = stampOf(seg, S.open.note); saveHid(m); renderNote(); }
+function unhide(id) { const m = hidMap(); if (m[id]) { delete m[id]; saveHid(m); return true; } return false; }
+function threadOf(n, id) {
+  const by = new Map(n.segments.map((x) => [x.id, x]));
+  let root = by.get(id); const seen = new Set();
+  while (root && root.replyTo && by.has(root.replyTo) && !seen.has(root.id)) { seen.add(root.id); root = by.get(root.replyTo); }
+  if (!root) return null;
+  const ids = new Set([root.id]); let grew = true;
+  while (grew) { grew = false; for (const x of n.segments) if (x.replyTo && ids.has(x.replyTo) && !ids.has(x.id)) { ids.add(x.id); grew = true; } }
+  return { root: root.id, ids };
+}
+function openThread(seg) { const o = S.open; const t = threadOf(o.note, seg.id); if (!t) return; unhide(t.root); unhide(seg.id); o.thread = { root: t.root, ids: t.ids, back: seg.id }; msg.placeholder = 'Responder neste fio…'; renderNote(true); $('#list').scrollTop = $('#list').scrollHeight; }
+function closeThread() {
+  const o = S.open; if (!o || !o.thread) return; const back = o.thread.back; o.thread = null; msg.placeholder = 'Escreva aqui…'; renderNote();
+  const x = document.querySelector(`#list [data-sid="${back}"]`); if (x) { x.scrollIntoView({ block: 'center' }); x.classList.add('flash'); setTimeout(() => x.classList.remove('flash'), 1600); }
+}
+function drawThreadBar(n) {
+  const o = S.open; const b = $('#threadbar'); b.textContent = ''; b.hidden = !o.thread; if (!o.thread) return;
+  const root = n.segments.find((x) => x.id === o.thread.root);
+  const back = el('button', null, '← Todas'); back.onclick = closeThread;
+  b.append(el('span', null, '💬 Só esta conversa'), el('span', 'ti', root ? ` — ${who(root.author).name}: ${root.deleted ? '(apagada)' : snip(root.versions[root.versions.length - 1].text)}` : ''), el('span', null, `${o.thread.ids.size} msg`), back);
+}
+function threadTarget() {
+  const o = S.open; if (!o || !o.thread) return undefined;
+  const live = o.note.segments.filter((x) => o.thread.ids.has(x.id) && !x.deleted); return live.length ? live[live.length - 1].id : undefined;
+}
+function renderNote(first) {
+  const o = S.open; const n = o.note; const list = $('#list');
+  { const c = pinnedSegs().length; $('#pinsb').textContent = c ? '📌 ' + c : '📌'; }
+  if (n.type === 'canvas') { $('#threadbar').hidden = true; renderCanvas(n); return; }
+  const wasBottom = list.scrollHeight - list.scrollTop - list.clientHeight < 90; const prevTop = list.scrollTop;
+  $('#nt').textContent = n.title + (n.role === 'read' ? ' (só leitura)' : '');
+  $('#comp').hidden = n.role === 'read';
+  const canWrite = n.role !== 'read';
+  list.textContent = '';
+  let segs = n.segments;
+  if (o.thread) { const t = threadOf(n, o.thread.root); if (t) { o.thread.ids = t.ids; segs = n.segments.filter((x) => t.ids.has(x.id)); } else o.thread = null; }
+  drawThreadBar(n);
+  const kids = new Map(); for (const x of n.segments) if (x.replyTo && !x.deleted) kids.set(x.replyTo, (kids.get(x.replyTo) || 0) + 1);
+  const hid = new Set(); const covered = new Set();
+  for (const x of n.segments) if (!x.deleted && isHidden(x, n)) { hid.add(x.id); for (const d of descendants(n, x.id)) covered.add(d.id); }
+  let prevSeg = null; let prevBlk = null;
+  if (!n.segments.length) list.append(el('div', 'empty', 'Nenhum trecho ainda. Escreva abaixo para começar.'));
+  let firstNew = null;
+  for (const seg of segs) {
+    const cur = seg.versions[seg.versions.length - 1];
+    if (covered.has(seg.id) && !hid.has(seg.id)) continue;
+    if (seg.deleted) {
+      const d = el('div', 'del'); d.append('Trecho de ', who(seg.author).name, ' apagado por ', who(seg.deleted.by).name, ' · ' + fmt(seg.deleted.ts) + '  ');
+      if (seg.canEdit) { const b = el('button', 'link', 'Restaurar'); b.onclick = () => guard(async () => { await api('POST', `/api/notes/${o.nid}/segments/${seg.id}/restore`, { version: seg.versions.filter((v) => v.kind !== 'delete').slice(-1)[0].n }); loadNote(); }); d.append(b); }
+      list.append(d); prevSeg = null; prevBlk = null; continue;
+    }
+    if (hid.has(seg.id)) {
+      const row = el('div', 'hidrow'); row.dataset.sid = seg.id; row.style.setProperty('--uc', who(seg.author).color);
+      const k = descendants(n, seg.id).length;
+      row.append(nameSpan(seg.author), el('span', 'note-o', ` · oculta${k ? ` · ${k} resposta${k > 1 ? 's' : ''}` : ''}`));
+      const eb = el('button', null, '👁 Exibir'); eb.onclick = (e) => { e.stopPropagation(); toggleHide(seg); }; row.append(eb); row.onclick = () => toggleHide(seg);
+      list.append(row); prevSeg = null; prevBlk = null; continue;
+    }
+    const isNew = cur.ts > o.readAt && cur.by !== S.me.id;
+    const tgt = seg.replyTo && n.segments.find((x) => x.id === seg.replyTo);
+    const forMe = seg.author !== S.me.id && ((seg.mnt && seg.mnt[S.me.id] > o.readAt) || (tgt && tgt.author === S.me.id && seg.ts > o.readAt));
+    const cont = !!prevSeg && prevSeg.author === seg.author && seg.ts - prevSeg.ts <= 5 * 60 * 1000;
+    const blk = el('div', 'seg' + (isNew ? ' new' : '') + (cont ? ' cont' : '') + (seg.pinned ? ' pinned' : '')); if (cont && prevBlk) prevBlk.classList.add('has-cont'); blk.style.setProperty('--uc', who(seg.author).color); blk.dataset.sid = seg.id;
+    if (isNew && !firstNew) firstNew = blk;
+    const h = el('div', 'sh'); h.append(nameSpan(seg.author), el('span', 'tm', fmt(seg.ts)));
+    const le = [...seg.versions].reverse().find((v) => v.kind === 'edit' || v.kind === 'restore');
+    if (le) { const ed = el('span', 'ed', cont ? (le.kind === 'restore' ? '✎ restaurado' : '✎ editado') : `${le.kind === 'restore' ? 'restaurado' : 'editado'} por ${who(le.by).name} · ${fmt(le.ts)}`); ed.title = `${le.kind === 'restore' ? 'restaurado' : 'editado'} por ${who(le.by).name} · ${fmt(le.ts)}`; h.append(ed); }
+    if (forMe) h.append(el('span', 'forme', '@ para você'));
+    if (seg.pinned) h.append(el('span', 'pinbadge', cont ? '📌' : `📌 fixada por ${who(seg.pinned.by).name}`));
+    h.append(el('span', 'sp'));
+    if (canWrite) { const rp = el('button', 'ib', '↩'); rp.title = 'Responder'; rp.onclick = () => setReply(seg); h.append(rp); }
+    if (seg.replyTo || kids.get(seg.id)) { const tb = el('button', 'ib', '💬'); tb.title = 'Ver só esta conversa'; tb.onclick = () => openThread(seg); h.append(tb); }
+    if (seg.canEdit) {
+      if (seg.type !== 'sticker') { const e = el('button', 'ib', '✎'); e.title = 'Editar'; e.onclick = () => { o.editing = seg.id; renderNote(); }; h.append(e); }
+      const d = el('button', 'ib', '🗑'); d.title = 'Apagar (dá para restaurar)'; d.onclick = () => { if (confirm('Apagar este trecho? Dá para restaurar depois.')) guard(async () => { await api('DELETE', `/api/notes/${o.nid}/segments/${seg.id}`); loadNote(); }); }; h.append(d);
+    }
+    const hb = el('button', 'ib', '👁'); hb.title = 'Ocultar esta mensagem e as respostas a ela'; hb.onclick = () => toggleHide(seg); h.append(hb);
+    if (canWrite) { const pb = el('button', 'ib' + (seg.pinned ? ' on' : ''), '📌'); pb.title = seg.pinned ? 'Desafixar' : 'Fixar no alto da conversa'; pb.onclick = () => guard(async () => { const r = await api('POST', `/api/notes/${o.nid}/segments/${seg.id}/pin`, { pinned: !seg.pinned }); if (r.pinned) seg.pinned = r.pinned; else delete seg.pinned; renderNote(); }); h.append(pb); }
+    const hi = el('button', 'ib', '🕘'); hi.title = 'Histórico'; hi.onclick = () => history(seg); h.append(hi);
+    blk.append(h);
+    if (seg.replyTo) blk.append(quoteOf(seg, n));
+    if (o.editing === seg.id) {
+      const ta = el('textarea', 'edta'); ta.value = cur.text;
+      const bar = el('div'); bar.style.cssText = 'display:flex;gap:8px;justify-content:flex-end;margin-top:6px';
+      const no = el('button', 'ib', 'Cancelar'); no.onclick = () => { o.editing = null; renderNote(); };
+      const ok = el('button', 'btn', 'Salvar'); ok.onclick = () => guard(async () => { await api('PATCH', `/api/notes/${o.nid}/segments/${seg.id}`, { text: ta.value }); o.editing = null; loadNote(); });
+      bar.append(no, ok); blk.append(ta, bar); setTimeout(() => ta.focus(), 0);
+    } else if (seg.type === 'sticker') {
+      const sb = el('div', 'stk');
+      if (seg.sticker && seg.sticker.file) { const im = el('img'); im.src = fileUrl(seg.sticker.file); im.alt = 'figurinha'; sb.append(im); } else sb.append(el('div', 'big', (seg.sticker && seg.sticker.emoji) || '❔'));
+      blk.append(sb);
+    } else {
+      const md = el('div', 'md'); const pf = cur.text.includes('```enquete') ? pollFirst(cur.text) : null; md.innerHTML = mdHtml(cur.text, pf ? pf.startLine : -1); const slot = md.querySelector('.pollslot'); if (slot) slot.replaceWith(pollCard(seg, pf.p)); md.querySelectorAll('pre').forEach(addCopy); hlMentions(md, seg); addLinkCards(md);
+      md.querySelectorAll('input[type=checkbox]').forEach((cb) => {
+        cb.disabled = !canWrite;
+        cb.onchange = () => guard(async () => { try { await api('POST', `/api/notes/${o.nid}/segments/${seg.id}/check`, { line: Number(cb.dataset.line), checked: cb.checked }); } catch (e) { cb.checked = !cb.checked; throw e; } loadNote(); });
+      });
+      md.querySelectorAll('img.pic').forEach((im) => { im.onclick = () => zoom(im.src); });
+      blk.append(md);
+    }
+    blk.append(reactions(seg, canWrite));
+    if (kids.get(seg.id) && !o.thread) { const k = kids.get(seg.id); const tl = el('button', 'threadlink', `💬 ${k} resposta${k > 1 ? 's' : ''}`); tl.onclick = () => openThread(seg); blk.append(tl); }
+    const checks = seg.versions.filter((v) => v.kind === 'check');
+    if (checks.length) { const lg = el('div', 'log'); const v = checks[checks.length - 1]; lg.textContent = `● ${who(v.by).name} ${(v.label || 'marcou').replace(/[*_`~]/g, '')} · ${fmt(v.ts)}` + (checks.length > 1 ? ` (+${checks.length - 1})` : ''); blk.append(lg); }
+    list.append(blk); prevSeg = seg; prevBlk = blk;
+  }
+  if (first) list.scrollTop = firstNew ? Math.max(0, firstNew.offsetTop - 70) : list.scrollHeight;
+  else if (wasBottom) list.scrollTop = list.scrollHeight; else list.scrollTop = prevTop;
+}
+const snip = (t) => { const x = String(t || '').replace(/```enquete[^\n]*\n([^\n]*)[\s\S]*?\n```/g, '📊 $1').replace(/!\[[^\]]*\]\([^)]*\)/g, '🖼').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[`*_>#~]/g, '').replace(/\s+/g, ' ').trim(); return x.length > 90 ? x.slice(0, 90) + '…' : x; };
+function quoteOf(seg, n) {
+  const t = n.segments.find((x) => x.id === seg.replyTo);
+  const q = el('div', 'quote');
+  if (!t || t.deleted) { q.textContent = '↩ mensagem apagada'; q.classList.add('gone'); return q; }
+  q.style.setProperty('--uc', who(t.author).color);
+  const b = el('b', null, '↩ ' + who(t.author).name); q.append(b, ' ' + (t.type === 'sticker' ? '(figurinha)' : snip(t.versions[t.versions.length - 1].text)));
+  q.onclick = () => { if (unhide(t.id)) renderNote(); const x = document.querySelector(`#list [data-sid="${t.id}"]`); if (x) { x.scrollIntoView({ block: 'center', behavior: 'smooth' }); x.classList.add('flash'); setTimeout(() => x.classList.remove('flash'), 1600); } };
+  return q;
+}
+const escRe = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function hlMentions(box, seg) {
+  const names = (seg.mentions || []).map((i) => ({ name: who(i).name, color: who(i).color, me: i === S.me.id }));
+  const all = /(^|[^\p{L}\p{N}_])@(todos|everyone)(?![\p{L}\p{N}_])/iu.test(seg.versions[seg.versions.length - 1].text);
+  if (!names.length && !all) return;
+  const alt = [...names.map((x) => escRe(x.name)), ...(all ? ['todos', 'everyone'] : [])].sort((a, b) => b.length - a.length).join('|');
+  const re = new RegExp('(^|[^\\p{L}\\p{N}_])@(' + alt + ')(?![\\p{L}\\p{N}_])', 'giu');
+  const w = document.createTreeWalker(box, NodeFilter.SHOW_TEXT, { acceptNode: (n) => (n.parentElement && n.parentElement.closest('code, pre, a') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT) });
+  const nodes = []; while (w.nextNode()) nodes.push(w.currentNode);
+  for (const tn of nodes) {
+    const t = tn.nodeValue; re.lastIndex = 0; if (!re.test(t)) continue; re.lastIndex = 0;
+    const frag = document.createDocumentFragment(); let last = 0; let m;
+    while ((m = re.exec(t))) {
+      const at = m.index + m[1].length; frag.append(t.slice(last, at));
+      const hit = names.find((x) => x.name.toLowerCase() === m[2].toLowerCase());
+      const sp = el('span', 'mention' + (!hit || hit.me ? ' me' : ''), '@' + m[2]); if (hit) sp.style.setProperty('--uc', hit.color);
+      frag.append(sp); last = at + 1 + m[2].length;
+    }
+    frag.append(t.slice(last)); tn.replaceWith(frag);
+  }
+}
+let reply = null;
+function setReply(seg) {
+  const cur = seg.versions[seg.versions.length - 1];
+  reply = { id: seg.id, name: who(seg.author).name, color: who(seg.author).color, text: seg.type === 'sticker' ? '(figurinha)' : snip(cur.text) };
+  drawReply(); msg.focus();
+}
+function clearReply() { reply = null; drawReply(); }
+function drawReply() {
+  const b = $('#replybar'); b.textContent = ''; b.hidden = !reply; if (!reply) return;
+  b.style.setProperty('--uc', reply.color);
+  const x = el('button', 'ib', '✕'); x.onclick = clearReply;
+  b.append('↩ ', el('b', null, reply.name), ' — ' + reply.text); b.append(x);
+}
+// @ no campo de escrever: lista só de quem enxerga o projeto
+let mst = null;
+function closeMention() { $('#mpop').hidden = true; mst = null; }
+function mentionUpdate() {
+  const o = S.open; if (!o || !o.people) return closeMention();
+  const before = msg.value.slice(0, msg.selectionStart);
+  const m = /(^|[\s(])@([\p{L}\p{N}_]*(?: [\p{L}\p{N}_]*)?)$/u.exec(before);
+  if (!m) return closeMention();
+  const q = m[2].toLowerCase();
+  const pool = [...o.people.filter((u) => u.id !== S.me.id), { id: '*', name: 'todos', color: '#98a1ad' }];
+  const items = pool.filter((u) => { const n = u.name.toLowerCase(); return n.startsWith(q) || (!q.includes(' ') && n.split(' ').some((w) => w.startsWith(q))); }).slice(0, 6);
+  if (!items.length) return closeMention();
+  mst = { items, idx: 0, from: msg.selectionStart - m[2].length - 1, to: msg.selectionStart };
+  const box = $('#mpop'); box.textContent = ''; box.hidden = false;
+  items.forEach((u, i) => { const r = el('div', i === 0 ? 'on' : '', u.name); r.style.color = u.color; r.onmousedown = (e) => { e.preventDefault(); mst.idx = i; pickMention(); }; r.ontouchstart = (e) => { e.preventDefault(); mst.idx = i; pickMention(); }; box.append(r); });
+}
+function pickMention() {
+  if (!mst) return; const u = mst.items[mst.idx]; const ins = '@' + u.name + ' ';
+  msg.value = msg.value.slice(0, mst.from) + ins + msg.value.slice(mst.to);
+  msg.setSelectionRange(mst.from + ins.length, mst.from + ins.length); closeMention(); grow(); msg.focus();
+}
+const QUICK = ['👍', '❤️', '😂', '🎉', '👀', '✅'];
+function reactions(seg, canWrite) {
+  const row = el('div', 'rx'); const o = S.open;
+  const send = (e) => guard(async () => { await api('POST', `/api/notes/${o.nid}/segments/${seg.id}/react`, { emoji: e }); loadNote(); });
+  for (const [emoji, ids] of Object.entries(seg.reactions || {})) {
+    if (!ids.length) continue;
+    const b = el('button', ids.includes(S.me.id) ? 'me' : '');
+    if (emoji.startsWith('sticker:')) { const im = el('img'); im.src = fileUrl(emoji.slice(8)); b.append(im, ' ' + ids.length); } else b.textContent = `${emoji} ${ids.length}`;
+    b.title = ids.map((i) => who(i).name).join(', '); if (canWrite) b.onclick = () => send(emoji); else b.disabled = true; row.append(b);
+  }
+  if (canWrite) {
+    const add = el('button', null, '☺＋');
+    add.onclick = () => { if (row.querySelector('.q')) { row.querySelectorAll('.q').forEach((x) => x.remove()); return; } for (const e of QUICK) { const q = el('button', 'q', e); q.onclick = () => send(e); row.append(q); } };
+    row.append(add);
+  }
+  row.hidden = !row.children.length; return row;
+}
+function sheet(title) {
+  const bg = el('div', 'sheet'); const box = el('div'); box.append(Object.assign(el('h3', null, title)));
+  bg.append(box); bg.onclick = (e) => { if (e.target === bg) bg.remove(); }; document.body.append(bg); return { bg, box };
+}
+function history(seg) {
+  const { bg, box } = sheet(`Histórico (${seg.versions.length})`); const o = S.open;
+  const kinds = { create: 'criou', edit: 'editou', check: 'marcou', restore: 'restaurou', delete: 'apagou' };
+  for (const v of [...seg.versions].reverse()) {
+    const d = el('div', 'ver'); d.append(`${kinds[v.kind] || v.kind} · `, who(v.by).name, ` · ${fmt(v.ts)}`);
+    if (v.kind !== 'delete' && v.text) d.append(el('pre', null, v.text));
+    if (seg.canEdit && v.text && v.kind !== 'delete' && v !== seg.versions[seg.versions.length - 1]) { const b = el('button', 'link', 'Restaurar esta versão'); b.onclick = () => guard(async () => { await api('POST', `/api/notes/${o.nid}/segments/${seg.id}/restore`, { version: v.n }); bg.remove(); loadNote(); }); d.append(b); }
+    box.append(d);
+  }
+}
+const lpMemo = new Map();
+function linkCard(url) {
+  const c = el('a', 'lc'); c.hidden = true; c.href = url; c.target = '_blank'; c.rel = 'noopener noreferrer';
+  const fill = (p) => {
+    if (!p || !(p.title || p.description || p.image)) return;
+    if (p.image) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; im.src = p.image; im.onerror = () => im.remove(); c.append(im); }
+    const t = el('div', 'tx'); t.append(el('div', 'st', p.site || '')); if (p.title) t.append(el('div', 'tt', p.title)); if (p.description) t.append(el('div', 'ds', p.description));
+    c.append(t); c.hidden = false;
+  };
+  if (!lpMemo.has(url)) lpMemo.set(url, api('GET', '/api/link-preview?url=' + encodeURIComponent(url)).then((r) => (r && r.preview) || null, () => null));
+  lpMemo.get(url).then(fill);
+  return c;
+}
+function addLinkCards(md) {
+  const seen = new Set();
+  for (const a of md.querySelectorAll('a[href]')) { const h = a.href; if (!/^https?:/i.test(h) || seen.has(h) || seen.size >= 2) continue; seen.add(h); md.append(linkCard(h)); }
+}
+function addCopy(pre) {
+  const b = el('button', 'cpbtn', 'Copiar'); b.type = 'button';
+  b.onclick = async (e) => {
+    e.stopPropagation(); const code = pre.querySelector('code'); const t = code ? code.textContent : pre.textContent;
+    try { await navigator.clipboard.writeText(t); } catch { const ta = document.createElement('textarea'); ta.value = t; ta.style.cssText = 'position:fixed;opacity:0'; document.body.append(ta); ta.select(); try { document.execCommand('copy'); } catch { /* sem copiar */ } ta.remove(); }
+    window.__ttCopied = t; b.textContent = '✓ Copiado'; setTimeout(() => { b.textContent = 'Copiar'; }, 1300);
+  };
+  pre.prepend(b);
+}
+function zoom(src) { const z = el('div'); z.id = 'zoom'; const i = el('img'); i.src = src; z.append(i); z.onclick = () => z.remove(); document.body.append(z); }
+
+/* ───── escrever e anexar ───── */
+const msg = $('#msg');
+const grow = () => { msg.style.height = 'auto'; const h = Math.max(42, Math.min(160, msg.scrollHeight)); msg.style.height = h + 'px'; msg.style.overflowY = msg.scrollHeight > 160 ? 'auto' : 'hidden'; };
+msg.addEventListener('input', () => { grow(); mentionUpdate(); });
+msg.addEventListener('blur', () => setTimeout(closeMention, 150));
+const touch = matchMedia('(pointer: coarse)').matches;
+msg.addEventListener('keydown', (e) => {
+  if (mst) {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); mst.idx = (mst.idx + (e.key === 'ArrowDown' ? 1 : -1) + mst.items.length) % mst.items.length; [...$('#mpop').children].forEach((c, i) => c.classList.toggle('on', i === mst.idx)); return; }
+    if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); pickMention(); return; }
+    if (e.key === 'Escape') { e.preventDefault(); closeMention(); return; }
+  }
+  if (e.key === 'Escape' && reply) { clearReply(); return; }
+  if (e.key === 'Enter' && !e.isComposing && !e.shiftKey && !e.ctrlKey && !touch) { e.preventDefault(); sendMsg(); } else if (e.key === 'Enter' && e.ctrlKey) { e.preventDefault(); msg.setRangeText('\n', msg.selectionStart, msg.selectionEnd, 'end'); grow(); }
+});
+function pinnedSegs() { const o = S.open; return o && o.note ? o.note.segments.filter((x) => x.pinned && !x.deleted).sort((a, b) => b.pinned.ts - a.pinned.ts) : []; }
+function jumpSeg(id) { if (unhide(id)) renderNote(); const x = document.querySelector(`#list [data-sid="${id}"]`); if (x) { x.scrollIntoView({ block: 'center', behavior: 'smooth' }); x.classList.add('flash'); setTimeout(() => x.classList.remove('flash'), 1600); } }
+$('#pinsb').onclick = () => {
+  if (!S.open) return;
+  const { bg, box } = sheet('📌 Mensagens fixadas'); bg.id = 'pinsheet';
+  const draw = () => {
+    [...box.querySelectorAll('.pinrow, .empty')].forEach((x) => x.remove());
+    const pins = pinnedSegs();
+    if (!pins.length) { box.append(el('div', 'empty', 'Nenhuma mensagem fixada. Use o 📌 numa mensagem para fixar.')); return; }
+    for (const seg of pins) {
+      const cur = seg.versions[seg.versions.length - 1]; const r = el('div', 'pinrow');
+      const top = el('div'); top.append(nameSpan(seg.author), ' · ' + fmt(seg.ts)); r.append(top, el('div', 'pt2', seg.type === 'sticker' ? '(figurinha)' : snip(cur.text) || '(sem texto)'), el('div', 'pby', `fixada por ${who(seg.pinned.by).name} · ${fmt(seg.pinned.ts)}`));
+      const go = el('button', 'btn', 'Ir para a mensagem'); go.onclick = () => { bg.remove(); jumpSeg(seg.id); }; r.append(go);
+      if (S.open.note.role !== 'read') { const un = el('button', 'btn', 'Desafixar'); un.onclick = () => guard(async () => { const x = await api('POST', `/api/notes/${S.open.nid}/segments/${seg.id}/pin`, { pinned: false }); delete seg.pinned; renderNote(); draw(); }); r.append(un); }
+      box.append(r);
+    }
+  };
+  draw();
+};
+$('#send').onclick = sendMsg;
+// Fotos do celular são enormes: reduz para no máximo 1920 px e salva em WebP (só usa se ficar menor)
+async function optImg(file) {
+  if (!/^image\/(png|jpe?g|webp|bmp)$/i.test(file.type) || file.size < 150 * 1024) return file;
+  try {
+    const bmp = await createImageBitmap(file); const k = Math.min(1, 1920 / Math.max(bmp.width, bmp.height));
+    if (k === 1 && file.size < 400 * 1024) return file;
+    const c = document.createElement('canvas'); c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k); c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+    const blob = await new Promise((r) => c.toBlob(r, 'image/webp', 0.86));
+    if (!blob || blob.size >= file.size * 0.9) return file;
+    return new File([blob], (file.name || 'imagem').replace(/\.[^.]+$/, '') + '.webp', { type: 'image/webp' });
+  } catch { return file; }
+}
+async function pollUpload(file) {
+  const f = await optImg(file); const name = f.name || 'foto.png';
+  const r = await fetch(`/api/projects/${S.open.pid}/files?name=${encodeURIComponent(name)}`, { method: 'POST', headers: { Authorization: 'Bearer ' + S.token, 'Content-Type': f.type || 'application/octet-stream' }, body: f });
+  const j = await r.json(); if (!r.ok) throw new Error(j.error || 'Falha no envio');
+  return { src: 'srv-file:' + j.id, alt: name.replace(/\.[^.]+$/, '').replace(/[\[\]]/g, ' ') };
+}
+$('#pollb').onclick = () => {
+  if (!S.open || S.open.note.role === 'read') return toast('Você só pode ler esta nota');
+  const { bg, box } = sheet('📊 Criar enquete'); bg.id = 'pollsheet';
+  const pick = (row) => { // botão 🖼 + miniatura
+    const st = { file: null }; const fi = el('input'); fi.type = 'file'; fi.accept = 'image/*'; fi.hidden = true; const btn = el('button', null, '🖼'); btn.type = 'button'; const th = el('span', 'pimg'); th.hidden = true;
+    btn.onclick = () => fi.click();
+    fi.onchange = () => { const f = fi.files[0]; fi.value = ''; if (!f) return; st.file = f; th.textContent = ''; const im = el('img'); im.src = URL.createObjectURL(f); th.append(im); th.hidden = false; };
+    th.onclick = () => { st.file = null; th.hidden = true; };
+    row.append(th, btn, fi); return st;
+  };
+  let row = el('div', 'prow'); const q = el('input'); q.type = 'text'; q.placeholder = 'Pergunta'; q.maxLength = 200; row.append(q); const qimg = pick(row); box.append(row);
+  const list = el('div'); box.append(list); const rows = [];
+  const addRow = () => { if (rows.length >= 12) return; row = el('div', 'prow'); const i = el('input'); i.type = 'text'; i.placeholder = 'Opção ' + (rows.length + 1); i.maxLength = 120; row.append(i); const st = pick(row); const x = el('button', null, '✕'); row.append(x); list.append(row); const item = { i, st, r: row }; rows.push(item); x.onclick = () => { if (rows.length <= 2) { i.value = ''; st.file = null; item.r.querySelector('.pimg').hidden = true; return; } item.r.remove(); rows.splice(rows.indexOf(item), 1); rows.forEach((z, k) => { z.i.placeholder = 'Opção ' + (k + 1); }); }; };
+  addRow(); addRow();
+  const add = el('button', 'btn', '＋ Opção'); add.onclick = addRow; box.append(add);
+  const k1 = el('label'); const r1 = el('input'); r1.type = 'radio'; r1.name = 'pk'; r1.checked = true; k1.append(r1, ' Uma escolha');
+  const k2 = el('label'); const r2 = el('input'); r2.type = 'radio'; r2.name = 'pk'; k2.append(r2, ' Várias escolhas');
+  const k3 = el('label'); const an = el('input'); an.type = 'checkbox'; k3.append(an, ' Voto anônimo');
+  box.append(k1, k2, k3);
+  const err = el('div', 'err'); box.append(err);
+  const go = el('button', 'btn', 'Enviar enquete'); box.append(go);
+  let busy = false;
+  go.onclick = async () => {
+    if (busy) return;
+    const question = q.value.trim().replace(/\s+/g, ' ');
+    const items = rows.map((z) => ({ text: z.i.value.trim().replace(/\s+/g, ' '), file: z.st.file })).filter((z) => z.text || z.file);
+    if (!question) { err.textContent = 'Escreva a pergunta.'; return; }
+    if (items.length < 2) { err.textContent = 'Coloque pelo menos 2 opções (texto e/ou imagem).'; return; }
+    const named = items.filter((z) => z.text); if (new Set(named.map((z) => z.text.toLowerCase())).size !== named.length) { err.textContent = 'Há opções repetidas.'; return; }
+    busy = true; go.disabled = true; err.textContent = '';
+    try {
+      const total = items.filter((z) => z.file).length + (qimg.file ? 1 : 0); let n = 0;
+      const up = async (f) => { n++; err.textContent = `Enviando imagem ${n} de ${total}…`; return pollUpload(f); };
+      const qi = qimg.file ? await up(qimg.file) : null;
+      const mark = r2.checked ? '[ ]' : '( )'; const lines = [];
+      for (const it of items) { const im = it.file ? await up(it.file) : null; lines.push(`- ${mark} ${im ? `![${im.alt}](${im.src}) ` : ''}${it.text || im.alt || 'imagem'}`); }
+      const text = '```enquete' + (an.checked ? ' anonima' : '') + '\n' + question + '\n' + (qi ? `![${qi.alt}](${qi.src})\n` : '') + lines.join('\n') + '\n```';
+      bg.remove();
+      await api('POST', `/api/notes/${S.open.nid}/segments`, { text, replyTo: reply ? reply.id : threadTarget() });
+      clearReply(); await loadNote(); const l = $('#list'); l.scrollTop = l.scrollHeight;
+    } catch (e) { busy = false; go.disabled = false; err.textContent = e.message || 'Falhou'; }
+  };
+  q.focus();
+};
+let sending = false; // Enter/toque repetido não duplica a mensagem
+async function sendMsg() {
+  const o = S.open; const text = msg.value.replace(/\s+$/, ''); if (!o || !text.trim() || sending) return;
+  sending = true; $('#send').disabled = true;
+  const replyTo = reply ? reply.id : threadTarget();
+  msg.value = ''; grow(); closeMention(); // esvazia na hora; volta se falhar
+  let r = null;
+  try { r = await guard(() => api('POST', `/api/notes/${o.nid}/segments`, { text, replyTo })); }
+  finally { sending = false; $('#send').disabled = false; }
+  if (r) { clearReply(); await loadNote(); const l = $('#list'); l.scrollTop = l.scrollHeight; }
+  else { msg.value = msg.value ? text + '\n' + msg.value : text; grow(); }
+}
+$('#att').onclick = () => $('#fa').click();
+$('#cam').onclick = () => $('#fc').click();
+$('#fa').onchange = (e) => { attachModal([...e.target.files]); e.target.value = ''; };
+$('#fc').onchange = (e) => { attachModal([...e.target.files]); e.target.value = ''; };
+msg.addEventListener('paste', (e) => { const hasText = !!((e.clipboardData && e.clipboardData.getData('text/plain')) || '').trim(); const fs = hasText ? [] : [...(e.clipboardData ? e.clipboardData.files : [])]; if (fs.length) { e.preventDefault(); attachModal(fs); } });
+function attachModal(files) {
+  const o = S.open; if (!o || !files.length || $('#att-ov')) return;
+  const items = []; let cur = 0; let busy = false;
+  const pre = msg.value;
+  const ov = el('div'); ov.id = 'att-ov';
+  const top = el('div', 'top'); const x = el('button', null, '✕'); top.append(x);
+  const stage = el('div', 'stage'); const bot = el('div', 'bot');
+  const cap = el('input', 'cap'); cap.placeholder = 'Digite uma mensagem'; cap.value = pre;
+  const foot = el('div', 'foot'); const strip = el('div', 'strip'); const go = el('button', 'go', '➤'); foot.append(strip, go);
+  const am = el('div', 'am'); bot.append(cap, foot, am); ov.append(top, stage, bot);
+  const fi = document.createElement('input'); fi.type = 'file'; fi.multiple = true; fi.hidden = true;
+  const add = (list) => { const first = items.length; for (const f of list) { const it = { f, name: f.name || (f.type.startsWith('image/') ? 'foto.png' : 'arquivo'), img: f.type.startsWith('image/'), url: '' }; items.push(it); if (it.img) { const r = new FileReader(); r.onload = () => { it.url = String(r.result); draw(); }; r.readAsDataURL(f); } } if (list.length) cur = first; draw(); };
+  fi.onchange = () => { add([...fi.files]); fi.value = ''; };
+  function draw() {
+    stage.textContent = ''; strip.textContent = '';
+    const it = items[cur];
+    if (it) { if (it.img && it.url) { const im = el('img'); im.src = it.url; im.alt = ''; stage.append(im); } else { const b = el('div'); b.append(el('div', 'ico', it.img ? '🖼' : it.f.type.startsWith('video/') ? '🎞' : '📎'), el('div', 'nm', it.name)); stage.append(b); } }
+    items.forEach((m, i) => { const t = el('button', 'th' + (i === cur ? ' on' : '')); if (m.img && m.url) { const im = el('img'); im.src = m.url; im.alt = ''; t.append(im); } else t.textContent = m.img ? '🖼' : '📎'; t.onclick = () => { cur = i; draw(); }; strip.append(t); });
+    const plus = el('button', 'plus', '+'); plus.onclick = () => fi.click(); strip.append(plus);
+  }
+  const close = () => { ov.remove(); fi.remove(); };
+  x.onclick = () => { if (!busy) close(); };
+  async function doSend() {
+    if (busy || !items.length) return; busy = true; go.disabled = true;
+    try {
+      const lines = [];
+      for (let i = 0; i < items.length; i++) {
+        const f = items[i].f; const name = items[i].name; am.textContent = `Enviando ${i + 1} de ${items.length}…`;
+        const r = await fetch(`/api/projects/${o.pid}/files?name=${encodeURIComponent(name)}`, { method: 'POST', headers: { Authorization: 'Bearer ' + S.token, 'Content-Type': f.type || 'application/octet-stream' }, body: f });
+        const j = await r.json(); if (!r.ok) throw new Error(j.error || 'Falha no envio');
+        lines.push(f.type.startsWith('image/') ? `![${name}](srv-file:${j.id})` : f.type.startsWith('video/') ? `![${name}](srv-file:${j.id}#video)` : `[${name}](srv-file:${j.id})`);
+      }
+      const text = lines.join('\n') + (cap.value.trim() ? '\n\n' + cap.value.trim() : '');
+      await api('POST', `/api/notes/${o.nid}/segments`, { text, replyTo: reply ? reply.id : threadTarget() });
+      if (msg.value === pre) { msg.value = ''; grow(); }
+      clearReply(); close(); await loadNote(); const l = $('#list'); l.scrollTop = l.scrollHeight;
+    } catch (e) { busy = false; go.disabled = false; am.textContent = e.message || 'Falhou'; }
+  }
+  go.onclick = doSend;
+  cap.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.isComposing && !touch) { e.preventDefault(); doSend(); } else if (e.key === 'Escape' && !busy) close(); });
+  document.body.append(ov, fi); add(files); if (!touch) cap.focus();
+}
+async function upload(files) {
+  const o = S.open; if (!o || !files.length) return;
+  for (const f of files) {
+    $('#status').textContent = `Enviando ${f.name || 'arquivo'} (${Math.max(1, Math.round(f.size / 1024))} KB)…`;
+    try {
+      const name = f.name || (f.type.startsWith('image/') ? 'foto.png' : 'arquivo');
+      const r = await fetch(`/api/projects/${o.pid}/files?name=${encodeURIComponent(name)}`, { method: 'POST', headers: { Authorization: 'Bearer ' + S.token, 'Content-Type': f.type || 'application/octet-stream' }, body: f });
+      const j = await r.json(); if (!r.ok) throw new Error(j.error || 'Falha no envio');
+      const t = f.type.startsWith('image/') ? `![${name}](srv-file:${j.id})` : f.type.startsWith('video/') ? `![${name}](srv-file:${j.id}#video)` : `[${name}](srv-file:${j.id})`;
+      msg.value = (msg.value ? msg.value + '\n' : '') + t;
+    } catch (x) { toast(x.message); }
+  }
+  $('#status').textContent = 'Anexo pronto: toque em Enviar.'; grow(); msg.focus();
+  setTimeout(() => { if ($('#status').textContent.startsWith('Anexo pronto')) $('#status').textContent = ''; }, 5000);
+}
+
+/* ───── tempo real ───── */
+// Alguém (que você permitiu no app) chamou a sua atenção: a página treme, o celular vibra e aparece um aviso
+function webNudge(ev) {
+  const name = who(ev.from).name;
+  document.body.classList.remove('nshake'); void document.body.offsetWidth; document.body.classList.add('nshake');
+  setTimeout(() => document.body.classList.remove('nshake'), 900);
+  try { if (navigator.vibrate) navigator.vibrate([200, 80, 200, 80, 300]); } catch { /* sem vibrar */ }
+  document.getElementById('nbanner')?.remove();
+  const d = el('div'); d.id = 'nbanner'; d.append(el('span', null, `📳 ${name} chamou a sua atenção`));
+  if (ev.nid && ev.pid) { const b = el('button', null, 'Abrir'); b.onclick = () => { location.hash = `#/n/${ev.pid}/${ev.nid}`; d.remove(); }; d.append(b); }
+  const x = el('button', null, '×'); x.onclick = () => d.remove(); d.append(x);
+  document.body.append(d); setTimeout(() => d.remove(), 12000);
+}
+let es = null; let evTimer = null;
+function closeEvents() { if (es) { es.close(); es = null; } }
+function openEvents() {
+  closeEvents();
+  es = new EventSource('/api/events?t=' + encodeURIComponent(S.token));
+  es.onopen = () => { $('#conn').classList.remove('off'); };
+  es.onerror = () => { $('#conn').classList.add('off'); };
+  es.onmessage = (m) => {
+    let ev; try { ev = JSON.parse(m.data); } catch { return; }
+    if (ev.type === 'presence') { S.online = new Set(ev.online); $('#onl').textContent = '👥 ' + S.online.size; return; }
+    if (ev.type === 'nudge') { webNudge(ev); return; }
+    if (ev.type === 'note' || ev.type === 'project') {
+      clearTimeout(evTimer);
+      evTimer = setTimeout(async () => {
+        if (ev.type === 'project') { await guard(loadProjects); } else if (ev.pid) { await loadNotes(ev.pid); renderTree(); }
+        if (S.open && (ev.type === 'project' || ev.nid === S.open.nid)) { if (S.open.editing) return; loadNote(); }
+      }, 250);
+    }
+  };
+}
+document.addEventListener('visibilitychange', () => { if (!document.hidden && S.token && !$('#app').hidden) { if (!es || es.readyState === 2) openEvents(); loadAll(); } });
+$('#onl').onclick = () => {
+  const { box } = sheet('Quem está online');
+  const arr = [...S.users.values()].filter((u) => !u.removed).sort((a, b) => (S.online.has(b.id) - S.online.has(a.id)) || (b.lastSeen || 0) - (a.lastSeen || 0));
+  for (const u of arr) { const d = el('div', 'ver'); const n = nameSpan(u.id); d.append(el('span', S.online.has(u.id) ? 'dot' : 'dot off'), n, '  ' + (S.online.has(u.id) ? 'online agora' : u.lastSeen ? 'visto ' + fmt(u.lastSeen) : 'nunca entrou')); box.append(d); }
+};
+
+/* ───── início ───── */
+S.token = store.get('tt.web.token') || '';
+if (S.token) start(); else showLogin();
+</script>
+</body>
+</html>

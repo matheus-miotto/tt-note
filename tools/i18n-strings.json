@@ -1,0 +1,4211 @@
+{
+ "--servidor": [
+  "main.js"
+ ],
+ "— {0} já aberta(s) ou vazia(s)": [
+  "src/renderer.js"
+ ],
+ "— clique para restaurar": [
+  "src/renderer.js"
+ ],
+ "— clique para ver": [
+  "src/shared.js"
+ ],
+ "— o túnel pode estar limitando o tamanho; com o servidor no mesmo computador ou pela VPN funciona": [
+  "shared-client.js"
+ ],
+ "— Sem grupo —": [
+  "src/shared.js"
+ ],
+ ", RETOMANDO de {0}": [
+  "shared-client.js"
+ ],
+ "![${1:descrição}](${2:arquivo})$0": [
+  "src/snippets.js"
+ ],
+ "… e mais {0}": [
+  "src/renderer.js"
+ ],
+ "…(saída antiga cortada)…": [
+  "src/renderer.js"
+ ],
+ "· {0} para você": [
+  "src/renderer.js"
+ ],
+ "· anônima": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "· este arquivo": [
+  "src/renderer.js"
+ ],
+ "· mensagem oculta{0}": [
+  "src/shared.js"
+ ],
+ "· sem tempo real": [
+  "src/shared.js"
+ ],
+ "· só leitura": [
+  "src/shared.js"
+ ],
+ "· última que você viu: {0}": [
+  "src/renderer.js"
+ ],
+ "\"{0}\" não é uma imagem": [
+  "src/shared.js"
+ ],
+ "\"{0}\" tem mais de 4 MB (limite das figurinhas)": [
+  "src/shared.js"
+ ],
+ "({0} não lido{1}{2})": [
+  "src/renderer.js"
+ ],
+ "(linha em branco)": [
+  "src/renderer.js"
+ ],
+ "(linha vazia)": [
+  "src/renderer.js"
+ ],
+ "(mensagem apagada)": [
+  "src/shared.js"
+ ],
+ "(nenhuma)": [
+  "shared-client.js"
+ ],
+ "(neste computador)": [
+  "src/renderer.js"
+ ],
+ "(nova)": [
+  "src/renderer.js"
+ ],
+ "(o que já veio fica guardado; ao tentar de novo continua de onde parou)": [
+  "shared-client.js"
+ ],
+ "(sem login)": [
+  "src/shared.js"
+ ],
+ "(sem sugestões)": [
+  "src/renderer.js"
+ ],
+ "(sem texto)": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "(só leitura)": [
+  "server/web/index.html"
+ ],
+ "(última gravada)": [
+  "src/renderer.js"
+ ],
+ "); sigo com conexão única": [
+  "shared-client.js"
+ ],
+ "). Confira o endereço e se o Tailscale está ligado.": [
+  "shared-client.js"
+ ],
+ "). Use \"Ver JSON\" para corrigir.": [
+  "src/canvas.js"
+ ],
+ "{0} arquivo(s) com alterações não salvas: {1} O que deseja fazer?": [
+  "src/renderer.js"
+ ],
+ "{0} Clique para fechar. Ao tentar de novo, o envio continua de onde parou.": [
+  "src/renderer.js"
+ ],
+ "{0} escreveu para você": [
+  "src/shared.js"
+ ],
+ "{0} figurinhas adicionadas à coleção.": [
+  "src/shared.js"
+ ],
+ "{0} inválido: {1}": [
+  "src/renderer.js"
+ ],
+ "{0} linha(s) viraram tarefas": [
+  "src/renderer.js"
+ ],
+ "{0} notas · {1} links · clique para abrir · Esc para fechar": [
+  "src/renderer.js"
+ ],
+ "{0} O que você mudou depois disso não foi salvo.": [
+  "src/renderer.js"
+ ],
+ "{0} online agora": [
+  "src/shared.js"
+ ],
+ "{0} Pasta base: {1} (as pastas do grupo são criadas dentro dela)": [
+  "src/renderer.js"
+ ],
+ "{0} ponto(s) com arquivo:linha na saída: F4 vai para o próximo (clique na linha também abre)": [
+  "src/renderer.js"
+ ],
+ "{0} por {1} · {2}": [
+  "server/web/index.html"
+ ],
+ "{0} seleções": [
+  "src/renderer.js"
+ ],
+ "{0} tarefa(s) voltaram a texto": [
+  "src/renderer.js"
+ ],
+ "{0} tem {1} arquivo(s) com alterações não salvas: {2} O que deseja fazer?": [
+  "src/renderer.js"
+ ],
+ "{0}: não tem versão em uma linha": [
+  "src/renderer.js"
+ ],
+ "{0}{1} Última alteração: {2}{3}": [
+  "src/shared.js"
+ ],
+ "%valor (termina com)": [
+  "src/renderer.js"
+ ],
+ "%valor% (contém)": [
+  "src/renderer.js"
+ ],
+ "• {0} aba(s) sem título / não salvas ({1} KB de texto)": [
+  "src/renderer.js"
+ ],
+ "• {0} arquivo(s) que estavam abertos": [
+  "src/renderer.js"
+ ],
+ "• {0} projeto(s) .sublime-project, {1} arquivo(s) e {2} pasta(s) recentes": [
+  "src/renderer.js"
+ ],
+ "← Todas": [
+  "server/web/index.html"
+ ],
+ "← Voltar a todas as mensagens": [
+  "src/shared.js"
+ ],
+ "↓ Próxima": [
+  "src/renderer.js"
+ ],
+ "↩ mensagem apagada": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "＋ Adicionar opção": [
+  "src/polldialog.js"
+ ],
+ "＋ Criar": [
+  "src/shared.js"
+ ],
+ "＋ Criar usuário": [
+  "src/shared.js"
+ ],
+ "＋ Entrar em um servidor…": [
+  "src/shared.js"
+ ],
+ "+ Nota": [
+  "src/canvas.js"
+ ],
+ "+ Nova nota flutuante": [
+  "src/renderer.js"
+ ],
+ "＋ Novo grupo…": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "＋ Novo subgrupo em…": [
+  "src/renderer.js"
+ ],
+ "＋ Opção": [
+  "server/web/index.html"
+ ],
+ "+ Texto": [
+  "src/canvas.js"
+ ],
+ "⏱ sem conexão": [
+  "src/shared.js"
+ ],
+ "⏺ Gravando macro — Ctrl+Q para parar": [
+  "src/renderer.js"
+ ],
+ "■ Parar servidor": [
+  "src/renderer.js"
+ ],
+ "▦ Voltar ao quadro": [
+  "index.html"
+ ],
+ "▲ Mostrar mais {0} mensagens anteriores ({1} escondidas)": [
+  "src/shared.js"
+ ],
+ "▶ Iniciar servidor": [
+  "src/renderer.js"
+ ],
+ "▶ Servidor rodando — iniciar (já está)": [
+  "src/renderer.js"
+ ],
+ "✎ editado por": [
+  "server/web/index.html"
+ ],
+ "✏️ Editar": [
+  "src/renderer.js"
+ ],
+ "✏️ Você está editando": [
+  "src/renderer.js"
+ ],
+ "✔ Versão {0} publicada{1}": [
+  "src/renderer.js"
+ ],
+ "✕ Tirar do grupo": [
+  "src/renderer.js"
+ ],
+ "⟳ Reiniciar (aplica a versão nova do app)": [
+  "src/renderer.js"
+ ],
+ "🌐 Mostrar o endereço para entrar": [
+  "src/renderer.js"
+ ],
+ "🎞 Salvar o GIF original (mantém a animação)": [
+  "src/shared.js"
+ ],
+ "💬 Só esta conversa": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "💾 Criar e salvar na minha coleção": [
+  "src/shared.js"
+ ],
+ "📊 Criar enquete": [
+  "src/polldialog.js",
+  "server/web/index.html"
+ ],
+ "📋 Colar": [
+  "src/shared.js"
+ ],
+ "📌 {0} — veja todas no 📌 da barra de baixo": [
+  "src/renderer.js"
+ ],
+ "📌 Desafixar esta linha": [
+  "src/renderer.js"
+ ],
+ "📌 fixada por {0}": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "📌 Fixadas": [
+  "src/shared.js"
+ ],
+ "📌 Fixadas ({0})": [
+  "src/shared.js"
+ ],
+ "📌 Fixar esta linha": [
+  "src/renderer.js"
+ ],
+ "📌 Linhas fixadas": [
+  "src/renderer.js"
+ ],
+ "📌 Linhas fixadas…": [
+  "src/renderer.js"
+ ],
+ "📌 Mensagens fixadas": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "📳 {0} chamou a sua atenção": [
+  "src/renderer.js",
+  "server/web/index.html"
+ ],
+ "📳 Chamar atenção": [
+  "src/shared.js"
+ ],
+ "📳 Chamei a atenção de {0}": [
+  "src/shared.js"
+ ],
+ "🔑 Senha": [
+  "src/shared.js"
+ ],
+ "🔒 {0} está editando": [
+  "src/renderer.js"
+ ],
+ "🔒 encerrada por {0}": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "🔒 Você está editando em outra janela": [
+  "src/renderer.js"
+ ],
+ "🕘 Versões": [
+  "src/renderer.js"
+ ],
+ "🖼 imagem não encontrada:": [
+  "src/canvas.js"
+ ],
+ "${1:padrão}": [
+  "src/renderer.js"
+ ],
+ "${1:título}": [
+  "src/snippets.js"
+ ],
+ "${1:Título}": [
+  "src/snippets.js"
+ ],
+ "${2:descrição}": [
+  "src/snippets.js"
+ ],
+ "A atualização {0} já está baixada. Ao clicar: o app fecha, instala e abre de novo sozinho (suas abas e rascunhos são guardados). Instale quando for bom para você. Botão direito esconde.": [
+  "src/renderer.js"
+ ],
+ "A guia está vazia.": [
+  "src/renderer.js"
+ ],
+ "a pasta e tudo dentro dela": [
+  "src/renderer.js"
+ ],
+ "A senha precisa ter pelo menos 8 caracteres": [
+  "src/renderer.js"
+ ],
+ "A versão {0} já está baixada: use o botão verde \"Instalar e reiniciar\" quando quiser.": [
+  "src/renderer.js"
+ ],
+ "áàâãa": [
+  "src/spell-engine.js"
+ ],
+ "Aba anterior": [
+  "src/renderer.js"
+ ],
+ "abcdefghijklmnopqrstuvwxyzáàâãéêíóôõúüç": [
+  "src/spell-engine.js"
+ ],
+ "Abra ou crie um projeto primeiro": [
+  "src/renderer.js"
+ ],
+ "Abra pelo menos duas abas para comparar": [
+  "src/renderer.js"
+ ],
+ "Abra um arquivo de código para rodar (Ctrl+B)": [
+  "src/renderer.js"
+ ],
+ "Abra um arquivo para inserir um snippet": [
+  "src/renderer.js"
+ ],
+ "Abra uma aba para agrupar": [
+  "src/renderer.js"
+ ],
+ "Abra uma guia de texto ou Markdown para exportar.": [
+  "src/renderer.js"
+ ],
+ "Abra uma pasta primeiro": [
+  "src/renderer.js"
+ ],
+ "Abrir": [
+  "server/web/index.html"
+ ],
+ "Abrir [[link]] sob o cursor": [
+  "src/renderer.js"
+ ],
+ "Abrir {0} abas lado a lado (sem comparar)": [
+  "src/renderer.js"
+ ],
+ "Abrir a conversa": [
+  "src/renderer.js"
+ ],
+ "Abrir a nota numa aba": [
+  "src/canvas.js"
+ ],
+ "Abrir a pasta de dados": [
+  "src/renderer.js"
+ ],
+ "Abrir aba ao lado…": [
+  "src/renderer.js"
+ ],
+ "Abrir ao lado": [
+  "src/renderer.js"
+ ],
+ "Abrir ao lado…": [
+  "src/renderer.js"
+ ],
+ "Abrir arquivo recente…": [
+  "src/renderer.js"
+ ],
+ "Abrir arquivo…": [
+  "src/renderer.js"
+ ],
+ "Abrir arquivo(s)…": [
+  "src/renderer.js"
+ ],
+ "Abrir nota…": [
+  "src/renderer.js"
+ ],
+ "Abrir o TT Note": [
+  "main.js",
+  "note.html"
+ ],
+ "Abrir projeto recente…": [
+  "src/renderer.js"
+ ],
+ "Abrir recente…": [
+  "src/renderer.js"
+ ],
+ "Abrir settings.json": [
+  "src/renderer.js"
+ ],
+ "Aceleração de vídeo (desligar economiza ~50 MB de memória; vale ao reabrir o app)": [
+  "src/renderer.js"
+ ],
+ "Aceleração de vídeo desligada: economiza memória; vale quando você abrir o app de novo": [
+  "src/renderer.js"
+ ],
+ "Aceleração de vídeo ligada: vale quando você abrir o app de novo": [
+  "src/renderer.js"
+ ],
+ "Adicionada ao dicionário": [
+  "src/renderer.js"
+ ],
+ "Adicionar “{0}” ao dicionário": [
+  "src/renderer.js"
+ ],
+ "Adicionar mais arquivos": [
+  "src/shared.js"
+ ],
+ "Adicionar pasta como projeto": [
+  "src/renderer.js"
+ ],
+ "Adicionar pasta como projeto…": [
+  "src/renderer.js"
+ ],
+ "Administra": [
+  "src/shared.js"
+ ],
+ "administra o projeto": [
+  "src/shared.js"
+ ],
+ "Administra o projeto": [
+  "src/shared.js"
+ ],
+ "Administra os projetos do grupo": [
+  "src/shared.js"
+ ],
+ "Administrador": [
+  "src/shared.js"
+ ],
+ "administrador do servidor: acesso total": [
+  "src/shared.js"
+ ],
+ "Agrupar pelas áreas do quadro": [
+  "src/canvas.js"
+ ],
+ "Ainda não há grupos": [
+  "src/renderer.js"
+ ],
+ "Ainda não há outros usuários. Crie-os em ☁ Compartilhado → Usuários…": [
+  "src/shared.js"
+ ],
+ "Ainda não há stickers de imagem. Adicione o primeiro!": [
+  "src/shared.js"
+ ],
+ "Ajuste": [
+  "src/shared.js"
+ ],
+ "Alguém": [
+  "src/renderer.js"
+ ],
+ "Alterar minha senha…": [
+  "src/shared.js"
+ ],
+ "Alternar Live Preview (Markdown renderizado) · fora do Markdown: usar a seleção na busca": [
+  "src/renderer.js"
+ ],
+ "Alternar minimap": [
+  "src/renderer.js"
+ ],
+ "Anexar foto, vídeo ou arquivo": [
+  "server/web/index.html"
+ ],
+ "Anexo pronto": [
+  "server/web/index.html"
+ ],
+ "Anexo pronto: toque em Enviar.": [
+  "server/web/index.html"
+ ],
+ "Angular Template": [
+  "src/snippets.js"
+ ],
+ "antes de conectar": [
+  "shared-client.js"
+ ],
+ "Ao colar texto: detecta sozinho quando precisa preservar espaços (calendário, código, tabela)": [
+  "src/canvas.js"
+ ],
+ "Ao colar texto: Markdown normal, sem bloco de código automático (⌗ desligado por padrão)": [
+  "src/canvas.js"
+ ],
+ "Ao colar texto: sempre preserva espaços e quebras exatamente (⌗ ligado por padrão)": [
+  "src/canvas.js"
+ ],
+ "apagado por": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Apagar": [
+  "src/shared.js",
+  "main.js"
+ ],
+ "Apagar (dá para restaurar)": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Apagar (Delete)": [
+  "src/canvas.js"
+ ],
+ "Apagar a figurinha \"{0}\" da coleção? As mensagens que já a usam continuam mostrando a imagem.": [
+  "src/shared.js"
+ ],
+ "Apagar a nota \"{0}\" para todos?": [
+  "src/shared.js"
+ ],
+ "Apagar até o começo da linha": [
+  "src/renderer.js"
+ ],
+ "Apagar até o fim da linha": [
+  "src/renderer.js"
+ ],
+ "Apagar esta figurinha da coleção": [
+  "src/shared.js"
+ ],
+ "Apagar esta nota": [
+  "note.html"
+ ],
+ "Apagar esta nota?": [
+  "main.js"
+ ],
+ "Apagar este trecho? Dá para restaurar depois.": [
+  "server/web/index.html"
+ ],
+ "Apagar este trecho? Ele fica no histórico e pode ser restaurado.": [
+  "src/shared.js"
+ ],
+ "Apagar grupo": [
+  "src/shared.js"
+ ],
+ "Apagar grupo…": [
+  "src/shared.js"
+ ],
+ "Apagar linha": [
+  "src/renderer.js"
+ ],
+ "Apagar nota": [
+  "src/shared.js"
+ ],
+ "Apagar o grupo \"{0}\"? Os projetos dentro dele NÃO são apagados: só saem do grupo.": [
+  "src/shared.js"
+ ],
+ "Apagar o projeto \"{0}\" e todas as suas notas para todos? Os dados ficam guardados no servidor, mas o projeto some para todos.": [
+  "src/shared.js"
+ ],
+ "Apagar projeto…": [
+  "src/shared.js"
+ ],
+ "Apagar qual macro?": [
+  "src/renderer.js"
+ ],
+ "Apagar uma salva…": [
+  "src/renderer.js"
+ ],
+ "Aplicar": [
+  "src/renderer.js"
+ ],
+ "Aplicar JSON colado": [
+  "src/renderer.js"
+ ],
+ "Área para agrupar cartões": [
+  "src/canvas.js"
+ ],
+ "Arial Black": [
+  "src/shared.js"
+ ],
+ "arquivo": [
+  "server/web/index.html"
+ ],
+ "Arquivos abertos": [
+  "index.html"
+ ],
+ "Arrastar": [
+  "src/shared.js"
+ ],
+ "Arraste para aumentar ou diminuir · duplo clique volta ao automático": [
+  "index.html"
+ ],
+ "Arraste para aumentar ou diminuir o bloco Compartilhado · duplo clique volta ao automático": [
+  "index.html"
+ ],
+ "Arraste para mover (a imagem ou o texto, conforme a opção) · roda do mouse dá zoom · Ctrl+V cola uma imagem · ou solte um arquivo aqui": [
+  "src/shared.js"
+ ],
+ "Arraste para redimensionar": [
+  "index.html"
+ ],
+ "Árvore com tudo o que tem no quadro (lado direito, dá para fixar)": [
+  "src/canvas.js"
+ ],
+ "As imagens demoraram demais para carregar": [
+  "main.js"
+ ],
+ "Aspas": [
+  "src/renderer.js"
+ ],
+ "Assumir": [
+  "src/renderer.js"
+ ],
+ "Atalhos de teclado (lista)": [
+  "src/renderer.js"
+ ],
+ "Atual": [
+  "src/renderer.js"
+ ],
+ "Atualização {0} baixada. Clique em \"Instalar e reiniciar\" quando quiser (o app só fecha quando você clicar).": [
+  "src/renderer.js"
+ ],
+ "Atualização {0} pronta. Clique em \"Instalar e reiniciar\" quando quiser (o app só fecha quando você clicar).": [
+  "src/renderer.js"
+ ],
+ "Atualização do app: abrir o registro (log) de envio e download": [
+  "src/renderer.js"
+ ],
+ "Atualização do app: baixar sozinha (só instala quando eu clicar)": [
+  "src/renderer.js"
+ ],
+ "Atualização do app: publicar um instalador no servidor (administrador)": [
+  "src/renderer.js"
+ ],
+ "Atualização do app: verificar no servidor": [
+  "src/renderer.js"
+ ],
+ "Atualizar": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Aumentar fonte": [
+  "src/renderer.js"
+ ],
+ "Aumentar o texto": [
+  "src/canvas.js"
+ ],
+ "Auto": [
+  "src/canvas.js"
+ ],
+ "automática": [
+  "src/renderer.js"
+ ],
+ "Automática (1ª régua)": [
+  "src/renderer.js"
+ ],
+ "Automático (detecta quando precisa preservar espaços)": [
+  "src/renderer.js"
+ ],
+ "Automático (números sem aspas)": [
+  "src/renderer.js"
+ ],
+ "Automático (pela extensão do arquivo)": [
+  "src/renderer.js"
+ ],
+ "avisa todo o projeto": [
+  "src/shared.js"
+ ],
+ "Backlinks": [
+  "src/renderer.js"
+ ],
+ "Baixando a versão {0} em segundo plano. Quando terminar, aparece o botão para instalar — só instala quando você clicar.": [
+  "src/renderer.js"
+ ],
+ "Baixar de novo": [
+  "src/renderer.js"
+ ],
+ "Barra de abas no topo": [
+  "src/renderer.js"
+ ],
+ "Barra lateral": [
+  "src/renderer.js"
+ ],
+ "Base": [
+  "src/shared.js"
+ ],
+ "Batch File": [
+  "src/snippets.js",
+  "src/sublime-extra.js"
+ ],
+ "Bearer": [
+  "shared-client.js",
+  "server/web/index.html"
+ ],
+ "BETWEEN precisa de exatamente 2 valores (há": [
+  "src/sqlfilter.js"
+ ],
+ "Bichos": [
+  "src/emoji.js"
+ ],
+ "Blockquote": [
+  "src/livepreview.js"
+ ],
+ "Bloco \"Arquivos abertos\"": [
+  "src/renderer.js"
+ ],
+ "Bloco \"Projetos\"": [
+  "src/renderer.js"
+ ],
+ "bloco de código": [
+  "src/snippets.js"
+ ],
+ "Brush Script MT": [
+  "src/shared.js"
+ ],
+ "Build": [
+  "index.html"
+ ],
+ "Build com…": [
+  "src/renderer.js"
+ ],
+ "Build com… (escolher ou digitar o comando)": [
+  "src/renderer.js"
+ ],
+ "Build interrompido": [
+  "src/renderer.js"
+ ],
+ "Build: ir para o erro anterior": [
+  "src/renderer.js"
+ ],
+ "Build: ir para o próximo erro": [
+  "src/renderer.js"
+ ],
+ "Build: rodar este arquivo (Ctrl+B)": [
+  "src/renderer.js"
+ ],
+ "Build: rodar este arquivo (fora do Markdown)": [
+  "src/renderer.js"
+ ],
+ "Busca em português e inglês (ignora acento; “gat” já acha gato). Também filtra por categoria: rostos, gestos, festa…": [
+  "src/shared.js"
+ ],
+ "Busca: “{0}” (F3 acha o próximo, Shift+F3 o anterior)": [
+  "src/renderer.js"
+ ],
+ "Buscar": [
+  "src/renderer.js"
+ ],
+ "Buscar / substituir no arquivo": [
+  "src/renderer.js"
+ ],
+ "Buscar em arquivos": [
+  "src/renderer.js"
+ ],
+ "Buscar em arquivos (Enter para buscar)…": [
+  "src/renderer.js"
+ ],
+ "Buscar em arquivos…": [
+  "src/renderer.js"
+ ],
+ "Buscar em todas as notas…": [
+  "server/web/index.html"
+ ],
+ "Buscar em todos os projetos (Enter para buscar)…": [
+  "src/renderer.js"
+ ],
+ "Buscar emoji: gato, cat, coração, feliz, pizza…": [
+  "src/shared.js"
+ ],
+ "Buscar figurinha pelo nome…": [
+  "src/shared.js"
+ ],
+ "Buscar no canvas (Ctrl+F)": [
+  "src/canvas.js"
+ ],
+ "Buscar no canvas…": [
+  "src/canvas.js"
+ ],
+ "cabeçalho": [
+  "shared-client.js"
+ ],
+ "Calibri": [
+  "src/renderer.js"
+ ],
+ "Cancelar": [
+  "src/polldialog.js",
+  "src/renderer.js",
+  "src/shared.js",
+  "main.js",
+  "server/web/index.html"
+ ],
+ "Cancelar a resposta (Esc)": [
+  "src/shared.js"
+ ],
+ "Cantos arredondados": [
+  "src/shared.js"
+ ],
+ "Canvas": [
+  "src/canvas.js",
+  "src/renderer.js"
+ ],
+ "Canvas vazio — dê dois cliques para criar um cartão de texto, ou arraste notas e imagens para cá.": [
+  "src/canvas.js"
+ ],
+ "Canvas: colar texto (⌗)": [
+  "src/renderer.js"
+ ],
+ "Canvas: tamanho do texto": [
+  "src/renderer.js"
+ ],
+ "çc": [
+  "src/spell-engine.js"
+ ],
+ "Cerrar": [
+  "src/renderer.js"
+ ],
+ "Chamar a atenção de {0}": [
+  "src/shared.js"
+ ],
+ "Chamar a atenção de quem? (só aparece \"aceita\" para quem permitiu)": [
+  "src/shared.js"
+ ],
+ "Chamar a minha atenção (tremer a tela)": [
+  "src/shared.js"
+ ],
+ "Chamar atenção: quem pode tremer a minha tela…": [
+  "src/shared.js"
+ ],
+ "chip nova": [
+  "src/renderer.js"
+ ],
+ "Clique em Baixar para obter de novo.": [
+  "src/renderer.js"
+ ],
+ "Clique em Editar para mexer neste canvas": [
+  "src/canvas.js"
+ ],
+ "Clique em Editar para poder restaurar uma versão.": [
+  "src/renderer.js"
+ ],
+ "Clique para ampliar": [
+  "src/shared.js"
+ ],
+ "Clique para editar o nome mostrado (o arquivo não é renomeado)": [
+  "src/livepreview.js"
+ ],
+ "Clique para renomear": [
+  "src/shared.js"
+ ],
+ "Clique para renomear (Enter salva)": [
+  "src/shared.js"
+ ],
+ "Clique para renomear o canvas": [
+  "src/canvas.js"
+ ],
+ "Codificação / quebra de linha": [
+  "index.html"
+ ],
+ "Codificação / quebra de linha…": [
+  "src/renderer.js"
+ ],
+ "Colar": [
+  "src/renderer.js"
+ ],
+ "Colar a imagem que está na área de transferência (ou use Ctrl+V)": [
+  "src/shared.js"
+ ],
+ "Colocar uma imagem (ou cole um print no campo)": [
+  "src/polldialog.js"
+ ],
+ "Colocar uma imagem no quadro": [
+  "src/canvas.js"
+ ],
+ "Colocar uma nota do projeto no quadro": [
+  "src/canvas.js"
+ ],
+ "Coloque o cursor em um parágrafo ou selecione o trecho": [
+  "src/renderer.js"
+ ],
+ "Coloque o cursor numa palavra ou selecione um trecho": [
+  "src/renderer.js"
+ ],
+ "Coloque pelo menos 2 opções (texto e/ou imagem).": [
+  "src/polldialog.js",
+  "server/web/index.html"
+ ],
+ "Coluna": [
+  "src/renderer.js"
+ ],
+ "com": [
+  "src/themes.js"
+ ],
+ "com {0} nota(s) que estavam abertas": [
+  "src/renderer.js"
+ ],
+ "Comentário de bloco": [
+  "src/renderer.js"
+ ],
+ "Comentários": [
+  "src/themes.js"
+ ],
+ "Comic Sans MS": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Comida": [
+  "src/emoji.js"
+ ],
+ "Como colar texto": [
+  "src/canvas.js"
+ ],
+ "Como estão": [
+  "src/renderer.js"
+ ],
+ "Compactar em uma linha": [
+  "src/renderer.js"
+ ],
+ "Compactar em uma linha (JSON, XML ou SQL)": [
+  "src/renderer.js"
+ ],
+ "Compactar SQL (uma linha)": [
+  "src/renderer.js"
+ ],
+ "Comparando {0} abas · {1} diferença(s)": [
+  "src/renderer.js"
+ ],
+ "Comparar \"{0}\" com… (ou Ctrl+clique em várias abas na lateral)": [
+  "src/renderer.js"
+ ],
+ "Comparar com a aba atual": [
+  "src/renderer.js"
+ ],
+ "Compartilhado": [
+  "index.html"
+ ],
+ "Compartilhado: avisar no Windows quando me mencionarem ou responderem": [
+  "src/renderer.js"
+ ],
+ "Compartilhado: entrar no servidor…": [
+  "src/renderer.js"
+ ],
+ "Conectado": [
+  "src/shared.js"
+ ],
+ "Conectar": [
+  "src/shared.js"
+ ],
+ "Conectar a um servidor": [
+  "src/shared.js"
+ ],
+ "Conectar nos projetos compartilhados de uma equipe": [
+  "src/shared.js"
+ ],
+ "Configurações de exibição": [
+  "src/renderer.js"
+ ],
+ "confira se todas as tags foram fechadas e se os nomes batem": [
+  "src/formatters.js"
+ ],
+ "Consolas (código)": [
+  "src/renderer.js"
+ ],
+ "Console do desenvolvedor (Ctrl+`)": [
+  "src/renderer.js"
+ ],
+ "Console do desenvolvedor (erros e mensagens do app)": [
+  "src/renderer.js"
+ ],
+ "consulta: {0} tem a versão {1}{2} · {3} ms": [
+  "shared-client.js"
+ ],
+ "Conteúdo dos colchetes / parênteses": [
+  "src/renderer.js"
+ ],
+ "Continua a edição nesta janela": [
+  "src/renderer.js"
+ ],
+ "Contorno": [
+  "src/shared.js"
+ ],
+ "Converter a indentação para espaços": [
+  "src/renderer.js"
+ ],
+ "Converter a indentação para tabs": [
+  "src/renderer.js"
+ ],
+ "Converter para espaços": [
+  "src/renderer.js"
+ ],
+ "Converter para tabs": [
+  "src/renderer.js"
+ ],
+ "Copiar": [
+  "src/livepreview.js",
+  "src/renderer.js",
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Copiar o código deste bloco": [
+  "src/livepreview.js"
+ ],
+ "Copiar tema de cores": [
+  "src/renderer.js"
+ ],
+ "Copie e cole para compartilhar o tema de cores (também aceita o JSON de tema do Mattermost):": [
+  "src/renderer.js"
+ ],
+ "Cor": [
+  "src/canvas.js"
+ ],
+ "Cor da letra": [
+  "src/shared.js"
+ ],
+ "Cor da nota": [
+  "note.html"
+ ],
+ "cor de fundo": [
+  "src/shared.js"
+ ],
+ "Cor do contorno": [
+  "src/shared.js"
+ ],
+ "Cor do nome": [
+  "src/shared.js"
+ ],
+ "Cores da interface": [
+  "src/renderer.js"
+ ],
+ "Cores da sintaxe (editor)": [
+  "src/renderer.js"
+ ],
+ "correção": [
+  "src/renderer.js"
+ ],
+ "Correção": [
+  "src/renderer.js"
+ ],
+ "Corretor ortográfico": [
+  "src/renderer.js"
+ ],
+ "Corretor ortográfico desligado": [
+  "src/renderer.js"
+ ],
+ "Corretor ortográfico ligado (português e inglês)": [
+  "src/renderer.js"
+ ],
+ "Corretor ortográfico: ligar / desligar": [
+  "src/renderer.js"
+ ],
+ "Courier New": [
+  "src/shared.js"
+ ],
+ "criado por": [
+  "server/web/index.html"
+ ],
+ "Criado por": [
+  "src/shared.js"
+ ],
+ "criado por {0}": [
+  "src/renderer.js"
+ ],
+ "Criado por {0}.": [
+  "server/web/index.html"
+ ],
+ "Criado por {0}{1}": [
+  "src/canvas.js"
+ ],
+ "Criar enquete": [
+  "server/web/index.html"
+ ],
+ "Criar figurinha": [
+  "src/shared.js"
+ ],
+ "Criar snippet com a seleção…": [
+  "src/renderer.js"
+ ],
+ "Criar uma enquete (uma ou várias escolhas)": [
+  "src/shared.js"
+ ],
+ "Criar uma figurinha nova e deixá-la salva": [
+  "src/shared.js"
+ ],
+ "Curinga do LIKE": [
+  "src/renderer.js"
+ ],
+ "Cython": [
+  "src/snippets.js"
+ ],
+ "Da equipe": [
+  "src/shared.js"
+ ],
+ "Da equipe (imagens)": [
+  "src/shared.js"
+ ],
+ "Daily": [
+  "src/renderer.js",
+  "main.js"
+ ],
+ "Data de hoje": [
+  "src/snippets.js"
+ ],
+ "Data e hora agora": [
+  "src/snippets.js"
+ ],
+ "Dead": [
+  "src/renderer.js"
+ ],
+ "Definir sintaxe (linguagem) do arquivo": [
+  "src/renderer.js"
+ ],
+ "Definir sintaxe para este arquivo… (ex.: JSON, SQL, Markdown)": [
+  "src/renderer.js"
+ ],
+ "Definir sintaxe: Automático (pela extensão)": [
+  "src/renderer.js"
+ ],
+ "Definir sintaxe: Texto simples": [
+  "src/renderer.js"
+ ],
+ "Deixar entrar de novo": [
+  "src/shared.js"
+ ],
+ "DELETE FROM ${1:tabela} WHERE ${2:condição};$0": [
+  "src/snippets.js"
+ ],
+ "depois de {0} s no ar": [
+  "shared-client.js"
+ ],
+ "Desafixar": [
+  "src/renderer.js",
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Desafixar esta mensagem": [
+  "src/shared.js"
+ ],
+ "Descartar": [
+  "src/shared.js"
+ ],
+ "Descartar e fechar": [
+  "src/renderer.js"
+ ],
+ "Descer": [
+  "src/polldialog.js"
+ ],
+ "Desdobrar tudo": [
+  "src/renderer.js"
+ ],
+ "Desfazer": [
+  "src/renderer.js"
+ ],
+ "Destaque (botões, seleção)": [
+  "src/themes.js"
+ ],
+ "dicionário em formato desconhecido": [
+  "src/spell-engine.js"
+ ],
+ "Diferença anterior": [
+  "src/renderer.js"
+ ],
+ "Digite uma mensagem": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Diminuir fonte": [
+  "src/renderer.js"
+ ],
+ "Diminuir o texto": [
+  "src/canvas.js"
+ ],
+ "Dividir em lotes de (0 = não)": [
+  "src/renderer.js"
+ ],
+ "Dividir seleção em linhas": [
+  "src/renderer.js"
+ ],
+ "do grupo: {0}": [
+  "src/shared.js"
+ ],
+ "Do Obsidian (abrir cofre)…": [
+  "src/renderer.js"
+ ],
+ "Do Sublime Text…": [
+  "src/renderer.js"
+ ],
+ "Dobrar código": [
+  "src/renderer.js"
+ ],
+ "Dobrar nível {0}": [
+  "src/renderer.js"
+ ],
+ "Dobrar o nível {0} do código": [
+  "src/renderer.js"
+ ],
+ "Documento do Word": [
+  "main.js"
+ ],
+ "download: a versão {0} já estava baixada e confere; nada a baixar": [
+  "shared-client.js"
+ ],
+ "download: começando a versão {0} de {1} (esperado {2}) para {3}": [
+  "shared-client.js"
+ ],
+ "download: concluído, {0} em {1} s, conferência SHA-256 ok": [
+  "shared-client.js"
+ ],
+ "download: FALHOU a conferência (SHA-256 diferente; recebido {0}, esperado {1}); descartei o arquivo": [
+  "shared-client.js"
+ ],
+ "download: FALHOU depois de {0} s: {1}{2}": [
+  "shared-client.js"
+ ],
+ "download: pedaço {0}/{1} falhou na tentativa {2}/6 ({3})": [
+  "shared-client.js"
+ ],
+ "download: retomando — {0} de {1} pedaços já estão no disco ({2})": [
+  "shared-client.js"
+ ],
+ "download: servidor aceita Range; {0} pedaços de {1}, {2} ao mesmo tempo{3}": [
+  "shared-client.js"
+ ],
+ "download: servidor respondeu HTTP {0}, tamanho {1} (sem Range: conexão única{2})": [
+  "shared-client.js"
+ ],
+ "download: sondagem de Range falhou (": [
+  "shared-client.js"
+ ],
+ "Duas colunas": [
+  "src/renderer.js"
+ ],
+ "Duplicar linha": [
+  "src/renderer.js"
+ ],
+ "Duplo clique para escrever…": [
+  "src/canvas.js"
+ ],
+ "Edita todos": [
+  "src/shared.js"
+ ],
+ "editado por": [
+  "src/shared.js"
+ ],
+ "Editado por": [
+  "src/shared.js"
+ ],
+ "Editado por {0}{1}": [
+  "src/canvas.js"
+ ],
+ "Editar": [
+  "server/web/index.html"
+ ],
+ "Editar (a versão antiga fica guardada)": [
+  "src/shared.js"
+ ],
+ "Editar (Enter)": [
+  "src/canvas.js"
+ ],
+ "Editar a mensagem de outra pessoa (a versão antiga fica guardada)": [
+  "src/shared.js"
+ ],
+ "Editar a nota aqui (Enter)": [
+  "src/canvas.js"
+ ],
+ "Editar aqui": [
+  "src/renderer.js"
+ ],
+ "Editar o texto da enquete": [
+  "src/pollwidget.js"
+ ],
+ "Editor de texto criado pelo Matheus. Agilidade e organização em um só lugar.": [
+  "main.js"
+ ],
+ "éêe": [
+  "src/spell-engine.js"
+ ],
+ "Ela precisa permitir em ☁ Compartilhado → Chamar atenção…": [
+  "src/shared.js"
+ ],
+ "Em ☁ Compartilhado, digite o endereço, o usuário e a senha. O servidor está rodando.": [
+  "src/renderer.js"
+ ],
+ "Em qual grupo criar o subgrupo?": [
+  "src/renderer.js"
+ ],
+ "em uma linha": [
+  "src/renderer.js"
+ ],
+ "Embaixo": [
+  "src/shared.js"
+ ],
+ "Embaralhar": [
+  "src/renderer.js"
+ ],
+ "Emoji": [
+  "src/shared.js"
+ ],
+ "Emoji grandes": [
+  "src/shared.js"
+ ],
+ "Endereço do servidor": [
+  "src/shared.js"
+ ],
+ "Endereços do servidor": [
+  "src/renderer.js"
+ ],
+ "English": [
+  "src/i18n.js"
+ ],
+ "Enquadrar": [
+  "src/canvas.js"
+ ],
+ "Entendi": [
+  "index.html"
+ ],
+ "Entrar": [
+  "server/web/index.html"
+ ],
+ "Entrar de novo…": [
+  "src/shared.js"
+ ],
+ "Entrar em outro servidor": [
+  "index.html"
+ ],
+ "Entrar no servidor": [
+  "src/shared.js"
+ ],
+ "Entre com o usuário e a senha que o administrador criou para você.": [
+  "server/web/index.html"
+ ],
+ "Entre em um servidor (☁ Compartilhado) para verificar atualizações": [
+  "shared-client.js"
+ ],
+ "Entre no servidor como administrador primeiro": [
+  "shared-client.js"
+ ],
+ "Entre no servidor primeiro": [
+  "shared-client.js"
+ ],
+ "enviada ao servidor": [
+  "src/renderer.js"
+ ],
+ "Enviando {0} de {1} · {2} ({3})…": [
+  "src/shared.js"
+ ],
+ "Enviando {0} de {1}…": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Enviando a versão {0} para o servidor. Pode levar alguns minutos; se a conexão cair, a próxima tentativa continua de onde parou.": [
+  "src/renderer.js"
+ ],
+ "Enviando imagem {0} de {1}…": [
+  "src/polldialog.js",
+  "server/web/index.html"
+ ],
+ "Enviar": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Enviar (Enter)": [
+  "src/shared.js"
+ ],
+ "Enviar enquete": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Enviar seleção / aba para uma nota": [
+  "src/renderer.js"
+ ],
+ "Enviar um GIF (animado) ou uma imagem pronta como figurinha, sem alterar o arquivo": [
+  "src/shared.js"
+ ],
+ "envio em partes: {0}% ({1}) · parte em {2} ms · {3} s no total": [
+  "shared-client.js"
+ ],
+ "envio em partes: a parte em {0} falhou ({1}), tentativa {2} de 6": [
+  "shared-client.js"
+ ],
+ "envio em partes: concluído em {0} s (servidor guardou {1})": [
+  "shared-client.js"
+ ],
+ "envio em partes: FALHOU ao publicar depois de {0} s: HTTP {1} {2}": [
+  "shared-client.js"
+ ],
+ "envio em partes: id {0}, partes de {1}{2}": [
+  "shared-client.js"
+ ],
+ "envio em partes: o servidor tem {0}; ajustando para continuar de lá": [
+  "shared-client.js"
+ ],
+ "envio em partes: recusado (HTTP {0}) {1}": [
+  "shared-client.js"
+ ],
+ "envio: a cópia local não apareceu no servidor escolhido (HTTP {0}, versão {1}); seguindo para o envio pela rede": [
+  "shared-client.js"
+ ],
+ "envio: concluído pela rede em {0} s (servidor guardou {1})": [
+  "shared-client.js"
+ ],
+ "envio: concluído por cópia local em {0} ms": [
+  "shared-client.js"
+ ],
+ "envio: cópia local falhou:": [
+  "shared-client.js"
+ ],
+ "envio: enviando {0} pela rede para {1} (limite de espera 10 min)": [
+  "shared-client.js"
+ ],
+ "envio: FALHOU depois de {0} s: HTTP {1} {2}": [
+  "shared-client.js"
+ ],
+ "envio: há um servidor rodando neste computador; tentando copiar direto": [
+  "shared-client.js"
+ ],
+ "envio: não consegui começar (HTTP {0}) {1}": [
+  "shared-client.js"
+ ],
+ "envio: o servidor não conhece o envio em partes (versão antiga); usando o envio de uma vez": [
+  "shared-client.js"
+ ],
+ "envio: publicar a versão {0} ({1}, {2}) em {3} como {4}": [
+  "shared-client.js"
+ ],
+ "envio: servidor com código antigo (404 em /api/app/latest); reiniciando": [
+  "shared-client.js"
+ ],
+ "erro": [
+  "src/polldialog.js"
+ ],
+ "Erro": [
+  "src/shared.js",
+  "shared-client.js",
+  "server/web/index.html"
+ ],
+ "Erro anterior (Shift+F4)": [
+  "src/renderer.js"
+ ],
+ "Erro ao salvar": [
+  "src/renderer.js"
+ ],
+ "erro desconhecido": [
+  "src/renderer.js"
+ ],
+ "ERRO:": [
+  "main.js"
+ ],
+ "Escolha a versão do canvas para restaurar": [
+  "src/renderer.js"
+ ],
+ "Escolha o arquivo do instalador": [
+  "shared-client.js"
+ ],
+ "Escolha o cofre do Obsidian…": [
+  "src/renderer.js"
+ ],
+ "Escolha o que cada pessoa pode fazer neste projeto. A mudança vale na hora. Administradores do servidor sempre têm acesso total.": [
+  "src/shared.js"
+ ],
+ "Escolha onde criar a pasta do projeto…": [
+  "src/renderer.js"
+ ],
+ "Escolha pelo menos duas abas": [
+  "src/renderer.js"
+ ],
+ "Escolha uma imagem, um emoji ou escreva um texto.": [
+  "src/shared.js"
+ ],
+ "Escolha uma nota na lista.": [
+  "server/web/index.html"
+ ],
+ "Escolher outro arquivo…": [
+  "src/renderer.js"
+ ],
+ "Esconde (ou mostra) todas as imagens e vídeos desta nota. Cada imagem também tem a sua setinha.": [
+  "src/shared.js"
+ ],
+ "Esconder": [
+  "src/shared.js"
+ ],
+ "Escreva aqui…": [
+  "server/web/index.html"
+ ],
+ "Escreva aqui… (Enter envia · Ctrl+Enter quebra a linha · cole uma imagem para anexar)": [
+  "src/shared.js"
+ ],
+ "Escreve": [
+  "src/shared.js"
+ ],
+ "Escreve (edita só as dele)": [
+  "src/shared.js"
+ ],
+ "escreve (edita só o que é dele)": [
+  "src/shared.js"
+ ],
+ "Escreve e edita as dos outros": [
+  "src/shared.js"
+ ],
+ "escreve e edita o dos outros": [
+  "src/shared.js"
+ ],
+ "Espaços": [
+  "src/renderer.js"
+ ],
+ "Espaços: não mostrar": [
+  "src/renderer.js"
+ ],
+ "Espaços: sempre (● espaço, → tab)": [
+  "src/renderer.js"
+ ],
+ "Espaços: só no texto selecionado": [
+  "src/renderer.js"
+ ],
+ "Español": [
+  "src/i18n.js"
+ ],
+ "Esportes": [
+  "src/emoji.js"
+ ],
+ "Essa aba já está aberta": [
+  "src/renderer.js"
+ ],
+ "Esse arquivo já existe; abrindo": [
+  "src/renderer.js"
+ ],
+ "Esse arquivo não é uma imagem (use PNG, JPG, GIF ou WebP).": [
+  "src/shared.js"
+ ],
+ "Esse arquivo tem mais de 4 MB, o limite das figurinhas.": [
+  "src/shared.js"
+ ],
+ "está editando agora": [
+  "server/web/index.html"
+ ],
+ "Esta imagem pode ser animada. Com “manter a animação” marcado, o texto, a forma e o fundo entram em todos os quadros e a figurinha sai como GIF animado. O botão abaixo envia o arquivo original, sem alterações.": [
+  "src/shared.js"
+ ],
+ "Esta pessoa já recebe esse papel pelo grupo do projeto. Vale o mais alto entre o do grupo e o do projeto.": [
+  "src/shared.js"
+ ],
+ "Este app não consegue ler GIF animado": [
+  "src/gif.js"
+ ],
+ "Este arquivo não é um JSON válido (": [
+  "src/canvas.js"
+ ],
+ "Este é um canvas (quadro de cartões). Aqui você só vê; para editar, use o app TT Note no Windows. Última alteração: {0} · {1}{2}.": [
+  "server/web/index.html"
+ ],
+ "Este servidor não está mais na lista. Entre de novo em ☁ Compartilhado.": [
+  "src/shared.js"
+ ],
+ "Estilo DevExpress": [
+  "src/themes.js"
+ ],
+ "Estilo DevExpress Escuro": [
+  "src/themes.js"
+ ],
+ "Estrutura": [
+  "src/canvas.js"
+ ],
+ "eventos: conectado em {0} ms (HTTP {1}, {2})": [
+  "shared-client.js"
+ ],
+ "eventos: conectando em {0} (tentativa {1})": [
+  "shared-client.js"
+ ],
+ "eventos: primeiros dados após {0} ms": [
+  "shared-client.js"
+ ],
+ "Ex.: 100.64.0.5:8787 (Tailscale) · 192.168.0.10:8787 (mesma rede) · https://nome.trycloudflare.com (túnel)": [
+  "src/shared.js"
+ ],
+ "Excluir (Lixeira)…": [
+  "src/renderer.js"
+ ],
+ "Excluir arquivo atual (Lixeira)": [
+  "src/renderer.js"
+ ],
+ "Excluir grupo": [
+  "src/renderer.js"
+ ],
+ "Excluir grupo (as abas ficam sem grupo)": [
+  "src/renderer.js"
+ ],
+ "Excluir o grupo \"{0}\"{1}? As {2} aba(s) não serão fechadas: voltam para \"sem grupo\". Nenhum arquivo é apagado.": [
+  "src/renderer.js"
+ ],
+ "Executar uma salva…": [
+  "src/renderer.js"
+ ],
+ "Expandir a seleção para o bloco (escopo)": [
+  "src/renderer.js"
+ ],
+ "Expandir para o bloco": [
+  "src/renderer.js"
+ ],
+ "Exportar a guia": [
+  "src/renderer.js"
+ ],
+ "Exportar a guia como PDF…": [
+  "src/renderer.js"
+ ],
+ "Exportar a guia como Word (.docx)…": [
+  "src/renderer.js"
+ ],
+ "Exportar vale para guias de texto/Markdown, não para o canvas.": [
+  "src/renderer.js"
+ ],
+ "Falha ao baixar a atualização:": [
+  "shared-client.js"
+ ],
+ "Falha no envio": [
+  "server/web/index.html"
+ ],
+ "Falhou": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Faz a janela de uma pessoa tremer (como no MSN). Só funciona com quem permitiu.": [
+  "src/shared.js"
+ ],
+ "Fechar": [
+  "src/canvas.js",
+  "src/renderer.js"
+ ],
+ "Fechar (a nota fica guardada)": [
+  "note.html"
+ ],
+ "Fechar (Esc)": [
+  "src/shared.js",
+  "index.html"
+ ],
+ "Fechar aba": [
+  "src/renderer.js"
+ ],
+ "Fechar abas do grupo": [
+  "src/renderer.js"
+ ],
+ "Fechar as {0} abas": [
+  "src/renderer.js"
+ ],
+ "Fechar e manter para depois": [
+  "src/renderer.js"
+ ],
+ "Fechar este painel (a aba continua aberta)": [
+  "src/renderer.js"
+ ],
+ "Fechar o painel": [
+  "index.html"
+ ],
+ "Fechar projeto": [
+  "src/renderer.js"
+ ],
+ "Fechar projeto atual": [
+  "src/renderer.js"
+ ],
+ "Fechar sem perguntar (guarda a sessão)": [
+  "src/renderer.js"
+ ],
+ "Fechar sem salvar": [
+  "src/renderer.js"
+ ],
+ "Festa": [
+  "src/emoji.js"
+ ],
+ "Figurinha \"{0}\" salva (animação mantida).": [
+  "src/shared.js"
+ ],
+ "Figurinha \"{0}\" salva na sua coleção. Abra 🏷 Figurinhas para usar.": [
+  "src/shared.js"
+ ],
+ "Figurinha adicionada à coleção.": [
+  "src/shared.js"
+ ],
+ "Figurinha animada \"{0}\" salva na sua coleção.": [
+  "src/shared.js"
+ ],
+ "Figurinhas: usar, criar e guardar": [
+  "src/shared.js"
+ ],
+ "Filtro criado": [
+  "src/renderer.js"
+ ],
+ "Filtro SQL a partir da lista": [
+  "src/renderer.js"
+ ],
+ "Filtro SQL a partir da lista… (IN, LIKE, NOT LIKE…)": [
+  "src/renderer.js"
+ ],
+ "Filtro SQL: transformar a lista em IN (direto)": [
+  "src/renderer.js"
+ ],
+ "Filtro SQL: transformar a lista em LIKE (direto)": [
+  "src/renderer.js"
+ ],
+ "Filtro SQL: transformar a lista em NOT IN (direto)": [
+  "src/renderer.js"
+ ],
+ "Fixada no topo — clique para soltar": [
+  "src/note.js"
+ ],
+ "fixada por {0} · {1}": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Fixada por {0} · {1}": [
+  "src/shared.js"
+ ],
+ "Fixada: ocupa espaço ao lado. Clique para soltar": [
+  "src/canvas.js"
+ ],
+ "Fixar / desafixar a linha (📌)": [
+  "src/renderer.js"
+ ],
+ "Fixar esta mensagem no alto da conversa": [
+  "src/shared.js"
+ ],
+ "Fixar no alto da conversa": [
+  "server/web/index.html"
+ ],
+ "Fixar no topo (sempre visível)": [
+  "src/note.js",
+  "note.html"
+ ],
+ "Fonte": [
+  "src/shared.js"
+ ],
+ "Fonte do texto do quadro": [
+  "src/canvas.js"
+ ],
+ "Fora de grupos": [
+  "src/canvas.js"
+ ],
+ "Forma": [
+  "src/shared.js"
+ ],
+ "Formatar a seleção (detecta o tipo)": [
+  "src/renderer.js"
+ ],
+ "Formatar como JSON": [
+  "src/renderer.js"
+ ],
+ "Formatar como SQL": [
+  "src/renderer.js"
+ ],
+ "Formatar como XML": [
+  "src/renderer.js"
+ ],
+ "Formatar CSS": [
+  "src/renderer.js"
+ ],
+ "Formatar HTML": [
+  "src/renderer.js"
+ ],
+ "Formatar JavaScript": [
+  "src/renderer.js"
+ ],
+ "Formatar JSON (seleção, linha ou arquivo)": [
+  "src/renderer.js"
+ ],
+ "Formatar JSON ao colar em .md": [
+  "src/renderer.js"
+ ],
+ "Formatar log (SQL e JSON em blocos)": [
+  "src/renderer.js"
+ ],
+ "Formatar log (SQL e JSON em blocos) — seleção ou documento": [
+  "src/renderer.js"
+ ],
+ "Formatar SQL": [
+  "src/renderer.js"
+ ],
+ "Formatar XML": [
+  "src/renderer.js"
+ ],
+ "Formato": [
+  "src/renderer.js"
+ ],
+ "formulário": [
+  "src/snippets.js"
+ ],
+ "função": [
+  "src/snippets.js"
+ ],
+ "função async": [
+  "src/snippets.js"
+ ],
+ "Funções": [
+  "src/themes.js"
+ ],
+ "Fundo": [
+  "src/shared.js"
+ ],
+ "Fundo da barra lateral": [
+  "src/themes.js"
+ ],
+ "Fundo de cartões e campos": [
+  "src/themes.js"
+ ],
+ "Fundo do editor": [
+  "src/themes.js"
+ ],
+ "Gatilho do snippet (você digita isso e aperta Tab). Enter confirma": [
+  "src/renderer.js"
+ ],
+ "Georgia (com serifa)": [
+  "src/renderer.js"
+ ],
+ "Gerando {0}… (as imagens podem levar um instante)": [
+  "src/renderer.js"
+ ],
+ "Gestos": [
+  "src/emoji.js"
+ ],
+ "Git": [
+  "main.js"
+ ],
+ "Git Commit": [
+  "src/sublime-extra.js"
+ ],
+ "Git Ignore": [
+  "src/sublime-extra.js"
+ ],
+ "Gravar em {0}": [
+  "src/renderer.js"
+ ],
+ "Grave uma macro primeiro (Ctrl+Q)": [
+  "src/renderer.js"
+ ],
+ "Grupo": [
+  "src/canvas.js",
+  "src/renderer.js"
+ ],
+ "Grupo \"{0}\": {1} arquivo(s) salvo(s)": [
+  "src/renderer.js"
+ ],
+ "Grupo {0} — {1} projeto(s)": [
+  "src/shared.js"
+ ],
+ "Grupo vazio": [
+  "src/shared.js"
+ ],
+ "Grupos": [
+  "src/canvas.js"
+ ],
+ "Grupos de abas": [
+  "src/renderer.js"
+ ],
+ "Gruvbox Escuro": [
+  "src/themes.js"
+ ],
+ "guia": [
+  "src/renderer.js",
+  "main.js"
+ ],
+ "Há caracteres que não existem em Windows-1252: salvei em UTF-8": [
+  "src/renderer.js"
+ ],
+ "Há opções repetidas.": [
+  "src/polldialog.js",
+  "server/web/index.html"
+ ],
+ "Heading": [
+  "src/exporter.js"
+ ],
+ "Histórico": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Histórico ({0} versão/ões)": [
+  "src/shared.js"
+ ],
+ "Histórico ({0})": [
+  "server/web/index.html"
+ ],
+ "Histórico do canvas": [
+  "src/renderer.js"
+ ],
+ "Histórico do canvas (para restaurar, clique em Editar antes)": [
+  "src/renderer.js"
+ ],
+ "Histórico do trecho de": [
+  "src/shared.js"
+ ],
+ "hoje": [
+  "server/web/index.html"
+ ],
+ "Hora agora": [
+  "src/snippets.js"
+ ],
+ "Idioma do aplicativo": [
+  "src/i18n.js",
+  "src/renderer.js"
+ ],
+ "Idioma do aplicativo…": [
+  "src/renderer.js"
+ ],
+ "if (${1:condição}) { $0 }": [
+  "src/snippets.js"
+ ],
+ "if (${1:condição}) { $2 } else { $0 }": [
+  "src/snippets.js"
+ ],
+ "if [ ${1:condição} ]; then $0 fi": [
+  "src/snippets.js"
+ ],
+ "if ${1:condição}: $0": [
+  "src/snippets.js"
+ ],
+ "if ${1:condição}: $2 else: $0": [
+  "src/snippets.js"
+ ],
+ "if else for in do goto call set setlocal endlocal echo exit pause shift rem not exist defined errorlevel equ neq lss leq gtr geq start title cls cd chdir md mkdir rd rmdir del erase copy xcopy robocopy move ren rename type more dir path prompt ver vol color mode choice find findstr sort tasklist taskkill timeout assoc pushd popd": [
+  "src/sublime-extra.js"
+ ],
+ "íi": [
+  "src/spell-engine.js"
+ ],
+ "Image": [
+  "src/livepreview.js"
+ ],
+ "imagem de qualquer pasta": [
+  "src/renderer.js"
+ ],
+ "Imagem, arquivo ou vídeo": [
+  "src/shared.js"
+ ],
+ "Imagens": [
+  "main.js"
+ ],
+ "Imagens: otimizadas (envio mais rápido)": [
+  "src/shared.js"
+ ],
+ "Impact": [
+  "src/shared.js"
+ ],
+ "Impede o login sem apagar nada": [
+  "src/shared.js"
+ ],
+ "Importado do Sublime: {0} arquivo(s), {1} aba(s) sem título": [
+  "src/renderer.js"
+ ],
+ "Importar": [
+  "src/renderer.js"
+ ],
+ "Importar do Obsidian (abrir cofre)…": [
+  "src/renderer.js"
+ ],
+ "Importar do Sublime Text? {0} O Sublime não é alterado (só leitura).": [
+  "src/renderer.js"
+ ],
+ "Importar do Sublime Text…": [
+  "src/renderer.js"
+ ],
+ "Importar tudo": [
+  "src/renderer.js"
+ ],
+ "Indentação": [
+  "src/renderer.js"
+ ],
+ "Indentar com espaços": [
+  "src/renderer.js"
+ ],
+ "Informe a senha.": [
+  "src/shared.js"
+ ],
+ "Informe a versão no formato 1.20.2": [
+  "shared-client.js"
+ ],
+ "Informe o endereço do servidor": [
+  "shared-client.js"
+ ],
+ "Informe o endereço do servidor.": [
+  "src/shared.js"
+ ],
+ "Informe o nome e uma senha de pelo menos 8 caracteres": [
+  "src/shared.js"
+ ],
+ "Informe o seu usuário.": [
+  "src/shared.js"
+ ],
+ "Iniciando o servidor…": [
+  "src/renderer.js"
+ ],
+ "Iniciar junto com o Windows": [
+  "src/renderer.js"
+ ],
+ "Inserir": [
+  "src/polldialog.js",
+  "src/renderer.js"
+ ],
+ "Inserir enquete… (uma ou várias escolhas)": [
+  "src/renderer.js"
+ ],
+ "Inserir linha abaixo": [
+  "src/renderer.js"
+ ],
+ "Inserir linha acima": [
+  "src/renderer.js"
+ ],
+ "instalação: instalador não encontrado": [
+  "shared-client.js"
+ ],
+ "instalação: não consegui abrir o instalador:": [
+  "shared-client.js"
+ ],
+ "instalação: o app vai fechar e abrir {0} em modo silencioso": [
+  "shared-client.js"
+ ],
+ "Instalador do TT Note (.exe)": [
+  "main.js"
+ ],
+ "Instalador não encontrado": [
+  "shared-client.js"
+ ],
+ "Inverter": [
+  "src/renderer.js"
+ ],
+ "Inverter maiúsculas e minúsculas": [
+  "src/renderer.js"
+ ],
+ "Inverter sentido": [
+  "src/canvas.js"
+ ],
+ "Ir para": [
+  "src/renderer.js"
+ ],
+ "Ir para a aba {0}": [
+  "src/renderer.js"
+ ],
+ "Ir para a aba número": [
+  "src/renderer.js"
+ ],
+ "Ir para a mensagem": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Ir para a mensagem fixada": [
+  "src/shared.js"
+ ],
+ "Ir para a mensagem original": [
+  "src/shared.js"
+ ],
+ "Ir para aba aberta…": [
+  "src/renderer.js"
+ ],
+ "Ir para aba aberta… ({0})": [
+  "src/renderer.js"
+ ],
+ "Ir para arquivo (Goto Anything)": [
+  "src/renderer.js"
+ ],
+ "Ir para arquivo…": [
+  "src/renderer.js"
+ ],
+ "Ir para arquivo… (arquivo:linha)": [
+  "src/renderer.js"
+ ],
+ "Ir para linha": [
+  "src/renderer.js"
+ ],
+ "Ir para linha…": [
+  "src/renderer.js"
+ ],
+ "Ir para o colchete correspondente": [
+  "src/renderer.js"
+ ],
+ "Ir para símbolo…": [
+  "src/renderer.js"
+ ],
+ "Ir para título / símbolo…": [
+  "src/renderer.js"
+ ],
+ "Ir para título…": [
+  "src/renderer.js"
+ ],
+ "Ir para título/símbolo": [
+  "src/renderer.js"
+ ],
+ "Itálico": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Já está em uma linha": [
+  "src/renderer.js"
+ ],
+ "Já está formatado": [
+  "src/renderer.js"
+ ],
+ "Já existe um arquivo com esse nome": [
+  "src/renderer.js"
+ ],
+ "Já existe um item com esse nome": [
+  "src/renderer.js"
+ ],
+ "Já existe uma aba com esse nome": [
+  "src/renderer.js"
+ ],
+ "Já há um build rodando (Ctrl+Pause para parar)": [
+  "src/renderer.js"
+ ],
+ "Já há uma publicação em andamento.": [
+  "src/renderer.js"
+ ],
+ "JSON colado e formatado em bloco": [
+  "src/renderer.js"
+ ],
+ "JSON inválido:": [
+  "src/renderer.js"
+ ],
+ "JSON inválido: ainda não salvo": [
+  "src/renderer.js"
+ ],
+ "JSON só para ler: clique em ✏️ Editar no canvas para poder alterar.": [
+  "src/renderer.js"
+ ],
+ "Juntar linhas": [
+  "src/renderer.js"
+ ],
+ "Kotlin": [
+  "src/snippets.js"
+ ],
+ "Latência: {0} — média {1} ms": [
+  "src/shared.js"
+ ],
+ "Ligações": [
+  "src/canvas.js"
+ ],
+ "Ligar sozinha em arquivos de commit": [
+  "src/renderer.js"
+ ],
+ "LIKE (vários, com OR)": [
+  "src/sqlfilter.js"
+ ],
+ "Linearizar XML (uma linha)": [
+  "src/renderer.js"
+ ],
+ "Linha": [
+  "src/renderer.js"
+ ],
+ "Linha {0}, Coluna {1}": [
+  "src/renderer.js"
+ ],
+ "Linha desafixada": [
+  "src/renderer.js"
+ ],
+ "Linha fixada": [
+  "src/renderer.js"
+ ],
+ "Linha fixada — clique para desafixar": [
+  "src/pins.js"
+ ],
+ "Linhas e divisórias": [
+  "src/themes.js"
+ ],
+ "linhas fixadas": [
+  "src/renderer.js"
+ ],
+ "Linhas fixadas (Ctrl+Alt+Shift+P): ver todas": [
+  "index.html"
+ ],
+ "Linhas fixadas: ver todas…": [
+  "src/renderer.js"
+ ],
+ "Linhas fixadas: ver todas… (Ctrl+Alt+Shift+P)": [
+  "src/renderer.js"
+ ],
+ "Linhas selecionadas → tarefas (checkbox)": [
+  "src/renderer.js"
+ ],
+ "Linhas: embaralhar": [
+  "src/renderer.js"
+ ],
+ "Linhas: inverter a ordem": [
+  "src/renderer.js"
+ ],
+ "Linhas: remover repetidas": [
+  "src/renderer.js"
+ ],
+ "Link": [
+  "src/livepreview.js"
+ ],
+ "Links": [
+  "src/themes.js"
+ ],
+ "Links de saída": [
+  "src/renderer.js"
+ ],
+ "Live Preview": [
+  "src/renderer.js"
+ ],
+ "Local": [
+  "main.js"
+ ],
+ "Localizar": [
+  "src/renderer.js"
+ ],
+ "Localizar / substituir…": [
+  "src/renderer.js"
+ ],
+ "Log formatado: {0} SQL e {1} JSON em blocos (Ctrl+Z desfaz)": [
+  "src/renderer.js"
+ ],
+ "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.$0": [
+  "src/snippets.js"
+ ],
+ "Macro: apagar uma salva…": [
+  "src/renderer.js"
+ ],
+ "Macro: executar uma salva…": [
+  "src/renderer.js"
+ ],
+ "Macro: gravar / parar de gravar": [
+  "src/renderer.js"
+ ],
+ "Macro: repetir a última gravada": [
+  "src/renderer.js"
+ ],
+ "Macro: salvar a última com um nome…": [
+  "src/renderer.js"
+ ],
+ "Macros": [
+  "src/renderer.js"
+ ],
+ "Mais de 1000 itens: o Oracle recusa. Ative \"dividir em lotes\".": [
+  "src/sqlfilter.js"
+ ],
+ "Mais zoom": [
+  "src/canvas.js"
+ ],
+ "Maiúsc./minúsc.": [
+  "src/renderer.js"
+ ],
+ "Maiúscula Em Cada Palavra": [
+  "src/renderer.js"
+ ],
+ "Maiúscula Inicial Em Cada Palavra (Title Case)": [
+  "src/renderer.js"
+ ],
+ "Maiúsculas": [
+  "src/renderer.js"
+ ],
+ "MAIÚSCULAS": [
+  "src/renderer.js"
+ ],
+ "Maiúsculas / minúsculas": [
+  "src/renderer.js"
+ ],
+ "Makefile": [
+  "src/sublime-extra.js"
+ ],
+ "mantém os painéis lado a lado": [
+  "src/renderer.js"
+ ],
+ "manter a animação (texto, forma e fundo valem para todos os quadros)": [
+  "src/shared.js"
+ ],
+ "Manter na bandeja ao fechar (notas e Ctrl+Alt+N seguem ativos)": [
+  "src/renderer.js"
+ ],
+ "Marcações / títulos": [
+  "src/themes.js"
+ ],
+ "Markdown: itálico · fora do Markdown: busca incremental": [
+  "src/renderer.js"
+ ],
+ "Markdown: negrito · fora do Markdown: build (rodar o arquivo)": [
+  "src/renderer.js"
+ ],
+ "Melhoria": [
+  "src/renderer.js"
+ ],
+ "Menos zoom": [
+  "src/canvas.js"
+ ],
+ "Mensagens fixadas": [
+  "server/web/index.html"
+ ],
+ "Mensagens para você (menções e respostas) que você ainda não leu": [
+  "src/shared.js"
+ ],
+ "Mensagens para você neste projeto": [
+  "src/shared.js"
+ ],
+ "Mesma fonte do editor": [
+  "src/renderer.js"
+ ],
+ "Mesma rede ({0}) — só funciona para quem está no mesmo Wi-Fi/rede": [
+  "server-manager.js"
+ ],
+ "Meta": [
+  "src/renderer.js"
+ ],
+ "Meu snippet": [
+  "src/renderer.js"
+ ],
+ "Microsoft": [
+  "server-manager.js"
+ ],
+ "Minhas figurinhas": [
+  "src/shared.js"
+ ],
+ "Minificar JSON": [
+  "src/renderer.js"
+ ],
+ "Minimap": [
+  "src/renderer.js"
+ ],
+ "Minimap: desligado": [
+  "src/renderer.js"
+ ],
+ "Minimap: ligado": [
+  "src/renderer.js"
+ ],
+ "Mínimo de 8 caracteres": [
+  "src/shared.js"
+ ],
+ "minúsculas": [
+  "src/renderer.js"
+ ],
+ "Minúsculas": [
+  "src/renderer.js"
+ ],
+ "Modo inserir": [
+  "src/renderer.js"
+ ],
+ "Modo sem distração": [
+  "src/renderer.js"
+ ],
+ "Modo sem distração (tela cheia, só o texto)": [
+  "src/renderer.js"
+ ],
+ "Modo sem distração: Shift+F11 volta ao normal": [
+  "src/renderer.js"
+ ],
+ "Modo sobrescrever (tecla Insert volta ao normal)": [
+  "src/renderer.js"
+ ],
+ "Mostrar": [
+  "src/shared.js"
+ ],
+ "Mostrar / ocultar notas": [
+  "main.js"
+ ],
+ "Mostrar / ocultar todas": [
+  "src/renderer.js"
+ ],
+ "Mostrar a mensagem de novo": [
+  "src/shared.js"
+ ],
+ "Mostrar espaços (●) e tabs (→)": [
+  "src/renderer.js"
+ ],
+ "Mostrar espaços e tabs: alternar (nunca → só na seleção → sempre)": [
+  "src/renderer.js"
+ ],
+ "Mostrar inteira": [
+  "src/shared.js"
+ ],
+ "Mostrar no Explorer": [
+  "src/renderer.js"
+ ],
+ "Mostrar o texto do arquivo .canvas": [
+  "src/canvas.js"
+ ],
+ "Mostrar/ocultar a senha": [
+  "src/shared.js"
+ ],
+ "Mover \"{0}\" para qual grupo?": [
+  "src/shared.js"
+ ],
+ "Mover {0} \"{1}\" para a Lixeira?": [
+  "src/renderer.js"
+ ],
+ "Mover a aba para o grupo…": [
+  "src/renderer.js"
+ ],
+ "Mover linha para baixo": [
+  "src/renderer.js"
+ ],
+ "Mover linha para cima": [
+  "src/renderer.js"
+ ],
+ "Mover para a Lixeira": [
+  "src/renderer.js"
+ ],
+ "Mover para baixo": [
+  "src/renderer.js"
+ ],
+ "Mover para cima": [
+  "src/renderer.js"
+ ],
+ "Mover para grupo…": [
+  "src/renderer.js"
+ ],
+ "Mover para o grupo…": [
+  "src/shared.js"
+ ],
+ "Movido para a Lixeira:": [
+  "src/renderer.js"
+ ],
+ "Mudar a cor": [
+  "src/shared.js"
+ ],
+ "Nada para comparar (ou sem diferenças)": [
+  "src/renderer.js"
+ ],
+ "Nada para converter: já está em espaços": [
+  "src/renderer.js"
+ ],
+ "Nada para converter: já está em tabs": [
+  "src/renderer.js"
+ ],
+ "Nada para filtrar": [
+  "src/renderer.js"
+ ],
+ "Nada para formatar aqui (selecione o trecho)": [
+  "src/renderer.js"
+ ],
+ "Nada para salvar no grupo \"{0}\"": [
+  "src/renderer.js"
+ ],
+ "não aceita chamadas de atenção": [
+  "src/shared.js"
+ ],
+ "Não achei trechos de log ([consulta](…): select…, SQL (…): update…, [requisicao](…): {…}) para formatar": [
+  "src/renderer.js"
+ ],
+ "Não consegui abrir": [
+  "src/renderer.js"
+ ],
+ "Não consegui abrir essa imagem.": [
+  "src/shared.js"
+ ],
+ "Não consegui abrir:": [
+  "src/renderer.js"
+ ],
+ "Não consegui alterar a enquete": [
+  "src/shared.js"
+ ],
+ "Não consegui chamar a atenção": [
+  "src/shared.js"
+ ],
+ "Não consegui consultar o servidor": [
+  "shared-client.js"
+ ],
+ "Não consegui entrar": [
+  "shared-client.js",
+  "server/web/index.html"
+ ],
+ "Não consegui enviar": [
+  "src/shared.js"
+ ],
+ "Não consegui enviar \"{0}\"": [
+  "src/shared.js"
+ ],
+ "Não consegui enviar a imagem": [
+  "src/shared.js"
+ ],
+ "Não consegui enviar o arquivo": [
+  "src/shared.js"
+ ],
+ "Não consegui enviar o sticker": [
+  "src/shared.js"
+ ],
+ "Não consegui enviar uma imagem:": [
+  "src/polldialog.js"
+ ],
+ "Não consegui enviar:": [
+  "src/shared.js"
+ ],
+ "Não consegui excluir:": [
+  "src/renderer.js"
+ ],
+ "Não consegui exportar: {0}": [
+  "src/renderer.js"
+ ],
+ "Não consegui falar com o servidor (": [
+  "shared-client.js"
+ ],
+ "Não consegui fixar": [
+  "src/shared.js"
+ ],
+ "Não consegui gerar a imagem da figurinha.": [
+  "src/shared.js"
+ ],
+ "não consegui gerar o PDF": [
+  "src/renderer.js"
+ ],
+ "Não consegui gravar a nota": [
+  "src/renderer.js"
+ ],
+ "Não consegui gravar no settings.json": [
+  "src/renderer.js"
+ ],
+ "Não consegui iniciar: {0}": [
+  "src/renderer.js"
+ ],
+ "Não consegui ler": [
+  "src/renderer.js"
+ ],
+ "Não consegui ler essa imagem.": [
+  "src/shared.js"
+ ],
+ "Não consegui marcar": [
+  "src/shared.js"
+ ],
+ "Não consegui parar o servidor": [
+  "server-manager.js"
+ ],
+ "Não consegui pegar a edição": [
+  "src/renderer.js"
+ ],
+ "Não consegui reagir": [
+  "src/shared.js"
+ ],
+ "Não consegui registrar o voto": [
+  "src/shared.js"
+ ],
+ "Não consegui restaurar": [
+  "src/renderer.js"
+ ],
+ "Não consegui salvar": [
+  "src/shared.js"
+ ],
+ "Não consegui salvar a imagem colada": [
+  "src/renderer.js"
+ ],
+ "Não consegui salvar o canvas": [
+  "src/renderer.js"
+ ],
+ "Não encontrei cofres do Obsidian neste computador.": [
+  "src/renderer.js"
+ ],
+ "Não encontrei o Sublime Text neste computador.": [
+  "src/renderer.js"
+ ],
+ "Não encontrei o Tailscale neste computador. Para os colegas entrarem de fora de casa, instale o Tailscale aqui e neles: o endereço aparece nesta lista (100.x.x.x). Se estiver usando um túnel do Cloudflare, o endereço é o https://….trycloudflare.com que o cloudflared mostra.": [
+  "src/renderer.js"
+ ],
+ "não enviada": [
+  "src/shared.js"
+ ],
+ "Não há blocos dobráveis no nível {0}": [
+  "src/renderer.js"
+ ],
+ "Não há imagem na área de transferência. Copie uma imagem e tente de novo.": [
+  "src/shared.js"
+ ],
+ "Não há outra aba para abrir ao lado": [
+  "src/renderer.js"
+ ],
+ "Não há outras pessoas neste projeto.": [
+  "src/shared.js"
+ ],
+ "Não há valores na seleção": [
+  "src/sqlfilter.js"
+ ],
+ "Não reconheci o formato. Selecione o trecho ou use Editar → Formatar como…": [
+  "src/renderer.js"
+ ],
+ "Não salvar": [
+  "src/renderer.js"
+ ],
+ "Não sei rodar arquivos .{0}. Defina em settings.json: \"builds\": { \"ext\": \"comando com $file\" } (Ctrl+Shift+B também aceita um comando digitado)": [
+  "src/renderer.js"
+ ],
+ "Negrito": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Nenhum [[link]] sob o cursor": [
+  "src/renderer.js"
+ ],
+ "Nenhum arquivo aberto": [
+  "src/renderer.js"
+ ],
+ "Nenhum arquivo recente ainda": [
+  "src/renderer.js"
+ ],
+ "Nenhum emoji encontrado. Tente outra palavra, em português ou inglês.": [
+  "src/shared.js"
+ ],
+ "Nenhum erro com arquivo:linha na saída do build": [
+  "src/renderer.js"
+ ],
+ "Nenhum JSON sob o cursor (ou selecione o trecho)": [
+  "src/renderer.js"
+ ],
+ "Nenhum projeto aberto. Use o menu Arquivo → \"Novo projeto…\" para criar ou \"Adicionar pasta como projeto…\" para abrir uma pasta.": [
+  "src/renderer.js"
+ ],
+ "Nenhum projeto ainda. Clique direito no servidor → Novo projeto…": [
+  "src/shared.js"
+ ],
+ "Nenhum projeto recente ainda": [
+  "src/renderer.js"
+ ],
+ "Nenhum trecho ainda. Escreva abaixo para começar — seu nome aparece em cima do que você escrever.": [
+  "src/shared.js"
+ ],
+ "Nenhum trecho ainda. Escreva abaixo para começar.": [
+  "server/web/index.html"
+ ],
+ "Nenhuma aba aberta": [
+  "src/renderer.js"
+ ],
+ "Nenhuma aba fechada para reabrir": [
+  "src/renderer.js"
+ ],
+ "Nenhuma figurinha com esse nome.": [
+  "src/shared.js"
+ ],
+ "Nenhuma linha fixada ainda. Ponha o cursor numa linha e use Ctrl+Alt+P (ou o botão direito → Fixar esta linha).": [
+  "src/renderer.js"
+ ],
+ "Nenhuma macro gravada: Ctrl+Q para gravar": [
+  "src/renderer.js"
+ ],
+ "Nenhuma macro salva ainda": [
+  "src/renderer.js"
+ ],
+ "Nenhuma mensagem fixada. Use o 📌 no canto de uma mensagem para fixar.": [
+  "src/shared.js"
+ ],
+ "Nenhuma mensagem fixada. Use o 📌 numa mensagem para fixar.": [
+  "server/web/index.html"
+ ],
+ "nenhuma preferência": [
+  "src/renderer.js"
+ ],
+ "Neon Sakura": [
+  "src/themes.js"
+ ],
+ "Neon Sakura Claro": [
+  "src/themes.js"
+ ],
+ "Neste computador (para o seu próprio TT Note)": [
+  "server-manager.js"
+ ],
+ "Ninguém (padrão)": [
+  "src/shared.js"
+ ],
+ "Ninguém online agora": [
+  "src/shared.js"
+ ],
+ "Ninguém pode chamar a sua atenção": [
+  "src/shared.js"
+ ],
+ "No canvas só entram notas (.md, .txt) e imagens": [
+  "src/canvas.js"
+ ],
+ "No meio": [
+  "src/shared.js"
+ ],
+ "no servidor deste computador": [
+  "src/renderer.js"
+ ],
+ "No topo": [
+  "src/shared.js"
+ ],
+ "Nome": [
+  "src/shared.js"
+ ],
+ "Nome (como vai aparecer nas notas)": [
+  "src/shared.js"
+ ],
+ "Nome (legenda) embaixo das imagens: mostrar/esconder nesta aba": [
+  "src/renderer.js"
+ ],
+ "Nome da figurinha": [
+  "src/shared.js"
+ ],
+ "Nome da macro. Enter confirma": [
+  "src/renderer.js"
+ ],
+ "Nome das imagens escondido nesta aba": [
+  "src/renderer.js"
+ ],
+ "Nome das imagens mostrado nesta aba": [
+  "src/renderer.js"
+ ],
+ "Nome do novo canvas": [
+  "src/shared.js"
+ ],
+ "Nome do novo grupo de projetos (ex.: Clientes, Pessoal)": [
+  "src/shared.js"
+ ],
+ "Nome do novo grupo… (use / para subgrupos: Clientes/Alinare)": [
+  "src/renderer.js"
+ ],
+ "Nome do novo projeto": [
+  "src/shared.js"
+ ],
+ "Nome do novo projeto (será criada uma pasta)…": [
+  "src/renderer.js"
+ ],
+ "Nome embaixo das imagens (nesta aba)": [
+  "src/renderer.js"
+ ],
+ "Nome para este servidor": [
+  "src/shared.js"
+ ],
+ "Nome para este servidor (opcional)": [
+  "src/shared.js"
+ ],
+ "NOT LIKE (vários, com AND)": [
+  "src/sqlfilter.js"
+ ],
+ "Nota": [
+  "src/note.js",
+  "src/renderer.js",
+  "src/shared.js",
+  "main.js",
+  "note.html"
+ ],
+ "nota de qualquer pasta": [
+  "src/renderer.js"
+ ],
+ "Nota diária": [
+  "src/renderer.js"
+ ],
+ "Nota flutuante: abrir…": [
+  "src/renderer.js"
+ ],
+ "Nota flutuante: enviar a seleção (ou a aba) para uma nota": [
+  "src/renderer.js"
+ ],
+ "Nota flutuante: mostrar / ocultar todas": [
+  "src/renderer.js"
+ ],
+ "Nota flutuante: nova (atalho global Ctrl+Alt+N)": [
+  "src/renderer.js"
+ ],
+ "Nota não encontrada:": [
+  "src/canvas.js"
+ ],
+ "Notas": [
+  "main.js"
+ ],
+ "Notas ({0})": [
+  "main.js"
+ ],
+ "Notas flutuantes": [
+  "src/renderer.js"
+ ],
+ "Notas flutuantes… ({0})": [
+  "src/renderer.js"
+ ],
+ "Nova guia neste grupo": [
+  "src/renderer.js"
+ ],
+ "Nova nota (Ctrl+Alt+N)": [
+  "src/renderer.js",
+  "note.html"
+ ],
+ "Nova nota flutuante": [
+  "main.js"
+ ],
+ "Nova nota na pasta do projeto": [
+  "src/renderer.js"
+ ],
+ "Nova nota na pasta do projeto…": [
+  "src/renderer.js"
+ ],
+ "Nova nota…": [
+  "src/shared.js"
+ ],
+ "Nova pasta": [
+  "src/renderer.js"
+ ],
+ "Nova pasta em {0}/": [
+  "src/renderer.js"
+ ],
+ "Nova pasta…": [
+  "src/renderer.js"
+ ],
+ "Nova senha de {0} (mínimo 8)": [
+  "src/shared.js"
+ ],
+ "Nova versão {0} no servidor (você está na {1}). Clique para BAIXAR: o app continua aberto. Depois aparece o botão para instalar, quando você quiser. Botão direito esconde.": [
+  "src/renderer.js"
+ ],
+ "Novidades": [
+  "index.html"
+ ],
+ "Novidades (o que mudou em cada versão)": [
+  "src/renderer.js"
+ ],
+ "Novidades desta versão": [
+  "index.html"
+ ],
+ "novo": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Novo": [
+  "src/renderer.js"
+ ],
+ "Novo arquivo": [
+  "src/renderer.js"
+ ],
+ "Novo arquivo (sem título)": [
+  "src/renderer.js"
+ ],
+ "Novo arquivo em {0}/ (ex.: nota.md, pasta/outra.md)": [
+  "src/renderer.js"
+ ],
+ "Novo arquivo no projeto…": [
+  "src/renderer.js"
+ ],
+ "Novo arquivo…": [
+  "src/renderer.js"
+ ],
+ "Novo canvas": [
+  "src/renderer.js"
+ ],
+ "Novo canvas (quadro de cartões)": [
+  "src/renderer.js"
+ ],
+ "Novo canvas neste grupo": [
+  "src/renderer.js"
+ ],
+ "Novo canvas…": [
+  "src/shared.js"
+ ],
+ "Novo cartão de texto (ou dois cliques no fundo)": [
+  "src/canvas.js"
+ ],
+ "Novo cartão ligado (Tab)": [
+  "src/canvas.js"
+ ],
+ "Novo grupo com esta aba…": [
+  "src/renderer.js"
+ ],
+ "Novo grupo com estas abas…": [
+  "src/renderer.js"
+ ],
+ "Novo grupo de abas…": [
+  "src/renderer.js"
+ ],
+ "Novo grupo de projetos…": [
+  "src/shared.js"
+ ],
+ "Novo grupo…": [
+  "src/renderer.js"
+ ],
+ "Novo nome (links [[...]] serão atualizados)…": [
+  "src/renderer.js"
+ ],
+ "Novo nome da pasta…": [
+  "src/renderer.js"
+ ],
+ "Novo nome do canvas…": [
+  "src/renderer.js"
+ ],
+ "Novo nome do grupo": [
+  "src/shared.js"
+ ],
+ "Novo nome do grupo…": [
+  "src/renderer.js"
+ ],
+ "Novo nome do projeto": [
+  "src/shared.js"
+ ],
+ "Novo projeto (criar pasta)": [
+  "src/renderer.js"
+ ],
+ "Novo projeto neste grupo…": [
+  "src/shared.js"
+ ],
+ "Novo projeto…": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Novo subgrupo em \"{0}\"… (use / para criar vários níveis)": [
+  "src/renderer.js"
+ ],
+ "Novo subgrupo…": [
+  "src/renderer.js"
+ ],
+ "Novo título": [
+  "src/shared.js"
+ ],
+ "Novo título da nota": [
+  "src/shared.js"
+ ],
+ "Novo usuário": [
+  "src/shared.js"
+ ],
+ "NULL dentro do IN nunca casa (use IS NULL)": [
+  "src/sqlfilter.js"
+ ],
+ "NULL dentro do NOT IN faz a consulta não retornar nada": [
+  "src/sqlfilter.js"
+ ],
+ "Números": [
+  "src/themes.js"
+ ],
+ "Nunca": [
+  "src/canvas.js",
+  "src/renderer.js"
+ ],
+ "Nunca (Markdown normal, ⌗ desligado)": [
+  "src/renderer.js"
+ ],
+ "o arquivo": [
+  "src/renderer.js"
+ ],
+ "O arquivo baixado não confere com o do servidor. Tente de novo.": [
+  "shared-client.js"
+ ],
+ "o arquivo não é um canvas": [
+  "src/canvas.js"
+ ],
+ "O canvas ainda está vazio.": [
+  "server/web/index.html"
+ ],
+ "O envio parou em {0}% ({1}). Tente de novo: ele continua de onde parou.": [
+  "shared-client.js"
+ ],
+ "O gatilho só pode ter letras, números, : . - e _": [
+  "src/renderer.js"
+ ],
+ "O GIF ficou maior que 4 MB mesmo reduzido. Use um GIF com menos quadros ou desmarque \"manter a animação\".": [
+  "src/shared.js"
+ ],
+ "O papel escolhido vale para todos os projetos deste grupo (inclusive os que forem criados depois). Se a pessoa também tiver um papel direto em um projeto, vale o mais alto dos dois. Administradores do servidor sempre têm acesso total.": [
+  "src/shared.js"
+ ],
+ "o pedaço {0} falhou 6 vezes ({1})": [
+  "shared-client.js"
+ ],
+ "O projeto \"{0}\"": [
+  "src/renderer.js"
+ ],
+ "O quadro está vazio.": [
+  "src/canvas.js"
+ ],
+ "O que mudou em cada versão": [
+  "src/renderer.js"
+ ],
+ "O servidor ainda não tem nenhuma atualização publicada.": [
+  "src/renderer.js"
+ ],
+ "o servidor encerrou a conexão": [
+  "shared-client.js"
+ ],
+ "O servidor está com uma versão antiga do programa. Reinicie-o (Arquivo → Servidor neste computador → Reiniciar) e tente de novo.": [
+  "shared-client.js"
+ ],
+ "O servidor já está rodando (porta {0}).": [
+  "src/renderer.js"
+ ],
+ "O servidor já estava parado.": [
+  "src/renderer.js"
+ ],
+ "O servidor não está rodando. Use ▶ Iniciar servidor primeiro.": [
+  "src/renderer.js"
+ ],
+ "O servidor não inicia mais com o Windows.": [
+  "src/renderer.js"
+ ],
+ "O servidor não respondeu a tempo. Veja o registro (server.log) na pasta de dados.": [
+  "server-manager.js"
+ ],
+ "o servidor recusou": [
+  "src/shared.js"
+ ],
+ "O servidor recusou a figurinha (erro": [
+  "src/shared.js"
+ ],
+ "O servidor recusou o arquivo.": [
+  "src/shared.js"
+ ],
+ "O servidor vai iniciar junto com o Windows.": [
+  "src/renderer.js"
+ ],
+ "O sticker precisa ter até 4 MB": [
+  "src/shared.js"
+ ],
+ "o texto": [
+  "src/shared.js"
+ ],
+ "O texto não pode ficar vazio (use apagar)": [
+  "src/shared.js"
+ ],
+ "O Windows não deixou ler a área de transferência por aqui: clique na janela e use Ctrl+V.": [
+  "src/shared.js"
+ ],
+ "Ocultar esta mensagem e as respostas a ela": [
+  "server/web/index.html"
+ ],
+ "Ocultar esta mensagem e as respostas a ela (fica só o nome; volta sozinha se alguém interagir)": [
+  "src/shared.js"
+ ],
+ "offline agora": [
+  "src/shared.js"
+ ],
+ "online agora": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Online agora:": [
+  "src/shared.js"
+ ],
+ "óôõo": [
+  "src/spell-engine.js"
+ ],
+ "Opção": [
+  "src/polldialog.js",
+  "server/web/index.html"
+ ],
+ "opcional no IN; obrigatório no LIKE (padrão: coluna)": [
+  "src/renderer.js"
+ ],
+ "Opções": [
+  "src/polldialog.js"
+ ],
+ "Ordenar (diferencia maiúsculas)": [
+  "src/renderer.js"
+ ],
+ "Ordenar (ignora maiúsculas)": [
+  "src/renderer.js"
+ ],
+ "Ordenar linhas": [
+  "src/renderer.js"
+ ],
+ "Ordenar linhas (diferencia maiúsculas e minúsculas)": [
+  "src/renderer.js"
+ ],
+ "Ordenar linhas (ignora maiúsculas e minúsculas)": [
+  "src/renderer.js"
+ ],
+ "Os apps conectados vão poder baixar. Clique para fechar esta barra.": [
+  "src/renderer.js"
+ ],
+ "ou um emoji: 😎": [
+  "src/shared.js"
+ ],
+ "Outra pasta base…": [
+  "src/renderer.js"
+ ],
+ "Outra pessoa assumiu a edição e salvou.": [
+  "src/renderer.js"
+ ],
+ "Packages": [
+  "main.js"
+ ],
+ "Padrão (Segoe UI)": [
+  "src/renderer.js"
+ ],
+ "Palabra completa": [
+  "src/renderer.js"
+ ],
+ "Palavra inteira": [
+  "src/renderer.js"
+ ],
+ "Paleta de comandos": [
+  "src/renderer.js"
+ ],
+ "Para votar, o servidor precisa ser atualizado.": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Pare a gravação (Ctrl+Q) antes de repetir": [
+  "src/renderer.js"
+ ],
+ "pedaço incompleto ({0} de {1} bytes)": [
+  "shared-client.js"
+ ],
+ "Pergunta": [
+  "src/polldialog.js",
+  "server/web/index.html"
+ ],
+ "Personalizado": [
+  "src/themes.js"
+ ],
+ "ponto de entrada": [
+  "src/snippets.js"
+ ],
+ "por": [
+  "src/shared.js"
+ ],
+ "Português (Brasil)": [
+  "src/i18n.js"
+ ],
+ "Português (Portugal)": [
+  "src/i18n.js"
+ ],
+ "preferências:": [
+  "src/renderer.js"
+ ],
+ "Preferências: abrir settings.json": [
+  "src/renderer.js"
+ ],
+ "Preparando o servidor (primeira vez: copia ~265 MB, leva alguns segundos)…": [
+  "src/renderer.js"
+ ],
+ "Preservar espaços e quebras exatamente (liga/desliga o bloco de código)": [
+  "src/canvas.js"
+ ],
+ "Preview disponível apenas para Markdown.": [
+  "src/renderer.js"
+ ],
+ "Preview Markdown lateral": [
+  "src/renderer.js"
+ ],
+ "Primeira vez: informe o nome e a senha do administrador": [
+  "server-manager.js"
+ ],
+ "Primeira vez: nome do administrador do servidor (você)": [
+  "src/renderer.js"
+ ],
+ "Programs": [
+  "server-manager.js"
+ ],
+ "Projeto \"{0}\" apagado": [
+  "src/shared.js"
+ ],
+ "Projeto criado:": [
+  "src/renderer.js"
+ ],
+ "Projetos": [
+  "index.html"
+ ],
+ "Promise": [
+  "src/snippets.js"
+ ],
+ "Próxima aba": [
+  "src/renderer.js"
+ ],
+ "Próxima aba (Ctrl+Tab)": [
+  "src/renderer.js"
+ ],
+ "Próxima diferença": [
+  "src/renderer.js"
+ ],
+ "Próximo ↓": [
+  "src/renderer.js"
+ ],
+ "Próximo erro (F4)": [
+  "src/renderer.js"
+ ],
+ "pub-bar ok": [
+  "src/renderer.js"
+ ],
+ "Publicando {0} · conferindo no servidor…": [
+  "src/renderer.js"
+ ],
+ "Publicar em qual servidor?": [
+  "src/renderer.js"
+ ],
+ "Publicar instalador no servidor… (administrador)": [
+  "src/renderer.js"
+ ],
+ "Quadrada": [
+  "src/shared.js"
+ ],
+ "Qual grupo salvar em pastas?": [
+  "src/renderer.js"
+ ],
+ "Qual imagem colocar no quadro?": [
+  "src/renderer.js"
+ ],
+ "Qual nota colocar no quadro?": [
+  "src/renderer.js"
+ ],
+ "Quando alguém usa \"📳 Chamar atenção\" para você, a janela do app pisca na barra de tarefas, treme e toca um som. Só acontece se você permitir aqui, e você pode mudar ou desligar a qualquer hora. Para não virar incômodo: cada pessoa só pode te chamar 1 vez a cada 15 segundos (e 6 por minuto no total).": [
+  "src/shared.js"
+ ],
+ "Quebra automática de linha (clique para desligar)": [
+  "index.html"
+ ],
+ "Quebra automática desligada": [
+  "src/renderer.js"
+ ],
+ "Quebra automática ligada: {0} colunas": [
+  "src/renderer.js"
+ ],
+ "Quebra de linha (só nesta guia)": [
+  "src/renderer.js"
+ ],
+ "Quebra de linha desligada nesta guia": [
+  "src/renderer.js"
+ ],
+ "Quebra de linha ligada nesta guia": [
+  "src/renderer.js"
+ ],
+ "Quebra de linha: CRLF (Windows)": [
+  "src/renderer.js"
+ ],
+ "Quebra de linha: LF": [
+  "src/renderer.js"
+ ],
+ "Quebra por colunas estilo Git (liga/desliga)": [
+  "src/renderer.js"
+ ],
+ "Quem acessa este grupo…": [
+  "src/shared.js"
+ ],
+ "Quem acessa este projeto…": [
+  "src/shared.js"
+ ],
+ "Quem edita mensagens de outras pessoas": [
+  "src/shared.js"
+ ],
+ "Quem está online": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Quem está online…": [
+  "src/shared.js"
+ ],
+ "Quem pode editar as mensagens de outras pessoas nesta nota": [
+  "src/shared.js"
+ ],
+ "Reabrir": [
+  "src/renderer.js"
+ ],
+ "Reabrir aba fechada": [
+  "src/renderer.js"
+ ],
+ "Reabrir com {0}": [
+  "src/renderer.js"
+ ],
+ "Reabrir descarta as alterações não salvas deste arquivo. Continuar?": [
+  "src/renderer.js"
+ ],
+ "Reagir com emoji ou figurinha": [
+  "src/shared.js"
+ ],
+ "Recarregar projeto": [
+  "src/renderer.js"
+ ],
+ "Recarregar projetos": [
+  "src/renderer.js"
+ ],
+ "Recentes": [
+  "src/shared.js"
+ ],
+ "Recortar": [
+  "src/renderer.js"
+ ],
+ "Recuo ao formatar (XML, SQL, JSON…)": [
+  "src/renderer.js"
+ ],
+ "Redonda": [
+  "src/shared.js"
+ ],
+ "Reemplazar": [
+  "src/renderer.js"
+ ],
+ "Reemplazar todo": [
+  "src/renderer.js"
+ ],
+ "Reenviar": [
+  "src/shared.js"
+ ],
+ "Refazer": [
+  "src/renderer.js"
+ ],
+ "Reformatado em {0} colunas": [
+  "src/renderer.js"
+ ],
+ "Reformatar parágrafo estilo Git (na largura das colunas)": [
+  "src/renderer.js"
+ ],
+ "Regex": [
+  "src/renderer.js"
+ ],
+ "Registro de envio/download de atualização (log)": [
+  "src/renderer.js"
+ ],
+ "Regra da nota atualizada": [
+  "src/shared.js"
+ ],
+ "Regras da nota \"{0}\"": [
+  "src/shared.js"
+ ],
+ "Regular Expression": [
+  "src/sublime-extra.js"
+ ],
+ "Reiniciando o servidor…": [
+  "src/renderer.js"
+ ],
+ "Remove o usuário (o que ele escreveu continua nas notas)": [
+  "src/shared.js"
+ ],
+ "Remover": [
+  "src/shared.js"
+ ],
+ "Remover este sticker da lista": [
+  "src/shared.js"
+ ],
+ "Remover o usuário \"{0}\"? Ele perde o acesso e sai de todos os projetos. O que ele escreveu continua nas notas, com o nome dele.": [
+  "src/shared.js"
+ ],
+ "Remover repetidas": [
+  "src/renderer.js"
+ ],
+ "Remover repetidos": [
+  "src/renderer.js"
+ ],
+ "Renomear arquivo atual…": [
+  "src/renderer.js"
+ ],
+ "Renomear este servidor…": [
+  "src/shared.js"
+ ],
+ "Renomear grupo…": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Renomear nota (atualiza links)": [
+  "src/renderer.js"
+ ],
+ "Renomear nota…": [
+  "src/shared.js"
+ ],
+ "Renomear projeto…": [
+  "src/shared.js"
+ ],
+ "Renomear…": [
+  "src/renderer.js"
+ ],
+ "Repetir a última (Ctrl+Shift+Q)": [
+  "src/renderer.js"
+ ],
+ "Responder": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Responder neste fio…": [
+  "server/web/index.html"
+ ],
+ "Responder neste fio… (Enter envia · Ctrl+Enter quebra a linha)": [
+  "src/shared.js"
+ ],
+ "restaurado por": [
+  "src/shared.js"
+ ],
+ "Restaurado por": [
+  "src/shared.js"
+ ],
+ "Restaurar": [
+  "src/renderer.js",
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Restaurar a versão de {0}? O estado atual continua no histórico.": [
+  "src/renderer.js"
+ ],
+ "Restaurar esta versão": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Restaurar fonte": [
+  "src/renderer.js"
+ ],
+ "Restaurar tamanho da fonte": [
+  "src/renderer.js"
+ ],
+ "Resultado": [
+  "src/renderer.js"
+ ],
+ "Resultados para \"{0}\"": [
+  "src/renderer.js"
+ ],
+ "Resultados para “{0}” ({1})": [
+  "src/shared.js"
+ ],
+ "Rodar este arquivo": [
+  "src/renderer.js"
+ ],
+ "Rolagem sincronizada": [
+  "src/renderer.js"
+ ],
+ "Rostos": [
+  "src/emoji.js"
+ ],
+ "Rótulo da seta": [
+  "src/canvas.js"
+ ],
+ "Rust": [
+  "src/snippets.js"
+ ],
+ "Sair": [
+  "src/renderer.js",
+  "main.js",
+  "server/web/index.html"
+ ],
+ "Sair (mantém tudo para a próxima vez)": [
+  "src/renderer.js"
+ ],
+ "Sair da comparação": [
+  "src/renderer.js"
+ ],
+ "Sair da comparação (manter lado a lado)": [
+  "src/renderer.js"
+ ],
+ "Sair deste servidor{0}": [
+  "src/shared.js"
+ ],
+ "Sair e descartar alterações não salvas…": [
+  "src/renderer.js"
+ ],
+ "Sair e descartar não salvos…": [
+  "src/renderer.js"
+ ],
+ "Sair e DESCARTAR rascunhos e alterações não salvas? Os arquivos já salvos não são afetados. O que não foi salvo será perdido.": [
+  "src/renderer.js"
+ ],
+ "Salva e libera para os outros editarem": [
+  "src/renderer.js"
+ ],
+ "Salvando…": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Salvar": [
+  "src/renderer.js",
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Salvar \"{0}\" do grupo \"{1}\"": [
+  "src/renderer.js"
+ ],
+ "Salvar {0} aba(s) do grupo \"{1}\"": [
+  "src/renderer.js"
+ ],
+ "Salvar alterações em \"{0}\"?": [
+  "src/renderer.js"
+ ],
+ "Salvar aqui": [
+  "src/renderer.js"
+ ],
+ "Salvar automaticamente": [
+  "src/renderer.js"
+ ],
+ "Salvar com um nome…": [
+  "src/renderer.js"
+ ],
+ "Salvar como…": [
+  "src/renderer.js"
+ ],
+ "Salvar grupo em pastas…": [
+  "src/renderer.js"
+ ],
+ "Salvar senha": [
+  "src/shared.js"
+ ],
+ "Salvar tudo": [
+  "src/renderer.js"
+ ],
+ "Salvar um grupo em pastas…": [
+  "src/renderer.js"
+ ],
+ "Salve o arquivo antes (Ctrl+S) para poder rodar": [
+  "src/renderer.js"
+ ],
+ "Salve um arquivo de código primeiro": [
+  "src/renderer.js"
+ ],
+ "Salvo ✓": [
+  "src/renderer.js"
+ ],
+ "Salvo fora da pasta do projeto:": [
+  "src/renderer.js"
+ ],
+ "Salvo:": [
+  "src/renderer.js"
+ ],
+ "Salvo: {0}": [
+  "src/renderer.js"
+ ],
+ "Sass": [
+  "src/snippets.js"
+ ],
+ "Scala": [
+  "src/snippets.js"
+ ],
+ "se os acentos estiverem errados": [
+  "src/renderer.js"
+ ],
+ "Segoe UI": [
+  "src/shared.js"
+ ],
+ "Segoe UI Black": [
+  "src/shared.js"
+ ],
+ "Seguir as setas (bom para mapa mental)": [
+  "src/canvas.js"
+ ],
+ "Seguir o papel de cada pessoa no projeto (só quem tem \"Edita todos\")": [
+  "src/shared.js"
+ ],
+ "Selecionar linha": [
+  "src/renderer.js"
+ ],
+ "Selecionar o conteúdo dos colchetes / parênteses / chaves (repetir expande)": [
+  "src/renderer.js"
+ ],
+ "Selecionar próxima ocorrência": [
+  "src/renderer.js"
+ ],
+ "Selecionar todas as ocorrências": [
+  "src/renderer.js"
+ ],
+ "Selecionar todas as ocorrências da palavra (Sublime)": [
+  "src/renderer.js"
+ ],
+ "Selecionar tudo": [
+  "src/renderer.js"
+ ],
+ "Selecione as linhas que viram tarefas": [
+  "src/renderer.js"
+ ],
+ "Selecione o texto que vai virar o snippet": [
+  "src/renderer.js"
+ ],
+ "Selecione uma nota": [
+  "server/web/index.html"
+ ],
+ "SELECT ${1:*} FROM ${2:tabela} WHERE ${3:condição};$0": [
+  "src/snippets.js"
+ ],
+ "sem acesso": [
+  "src/shared.js"
+ ],
+ "Sem acesso": [
+  "src/shared.js"
+ ],
+ "sem acesso pelo grupo": [
+  "src/shared.js"
+ ],
+ "Sem acesso pelo grupo": [
+  "src/shared.js"
+ ],
+ "Sem conexão — mostrando a última versão salva": [
+  "src/shared.js"
+ ],
+ "Sem conexão — reconectando…": [
+  "src/shared.js"
+ ],
+ "Sem conexão com o servidor": [
+  "src/shared.js",
+  "shared-client.js"
+ ],
+ "Sem conexão com o servidor — tentando reconectar. O que você digitar fica guardado aqui.": [
+  "src/shared.js"
+ ],
+ "Sem conexão com o servidor (": [
+  "shared-client.js"
+ ],
+ "Sem conexão: tentando de novo…": [
+  "src/renderer.js"
+ ],
+ "Sem cor": [
+  "src/canvas.js"
+ ],
+ "sem edições": [
+  "src/renderer.js"
+ ],
+ "Sem grupo": [
+  "src/renderer.js"
+ ],
+ "sem nenhum dado por {0} s (vigia)": [
+  "shared-client.js"
+ ],
+ "Sem nota ativa": [
+  "src/renderer.js"
+ ],
+ "Sem notas": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "sem permissão para editar": [
+  "src/renderer.js"
+ ],
+ "Sem resposta do servidor": [
+  "src/shared.js"
+ ],
+ "sem resposta em {0} s": [
+  "shared-client.js"
+ ],
+ "Sem seleção: usando o documento inteiro.": [
+  "src/renderer.js"
+ ],
+ "Sem título": [
+  "src/renderer.js"
+ ],
+ "Sempre": [
+  "src/canvas.js",
+  "src/renderer.js"
+ ],
+ "Sempre com aspas": [
+  "src/renderer.js"
+ ],
+ "Sempre preservar espaços e quebras (⌗ ligado)": [
+  "src/renderer.js"
+ ],
+ "Senha": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Senha (mínimo 8)": [
+  "src/shared.js"
+ ],
+ "Senha de {0} (mínimo 8 caracteres)": [
+  "src/renderer.js"
+ ],
+ "Senha trocada (as sessões antigas foram derrubadas)": [
+  "src/shared.js"
+ ],
+ "Senha trocada. Entre de novo.": [
+  "src/shared.js"
+ ],
+ "Servidor neste computador": [
+  "src/renderer.js"
+ ],
+ "Servidor neste computador: iniciar": [
+  "src/renderer.js"
+ ],
+ "Servidor neste computador: iniciar junto com o Windows (liga/desliga)": [
+  "src/renderer.js"
+ ],
+ "Servidor neste computador: mostrar o endereço para entrar": [
+  "src/renderer.js"
+ ],
+ "Servidor neste computador: parar": [
+  "src/renderer.js"
+ ],
+ "Servidor neste computador: reiniciar (aplica a versão nova do app)": [
+  "src/renderer.js"
+ ],
+ "Servidor parado.": [
+  "src/renderer.js"
+ ],
+ "Servidor rodando na porta {0}. Veja o endereço em Arquivo → Servidor neste computador → Mostrar o endereço.": [
+  "src/renderer.js"
+ ],
+ "Sessão encerrada": [
+  "src/shared.js"
+ ],
+ "Sessão expirada": [
+  "server/web/index.html"
+ ],
+ "Seta nas duas pontas": [
+  "src/canvas.js"
+ ],
+ "settings.json inválido:": [
+  "src/renderer.js"
+ ],
+ "seu nome de usuário": [
+  "src/shared.js"
+ ],
+ "Shell": [
+  "src/snippets.js"
+ ],
+ "Símbolos": [
+  "src/emoji.js"
+ ],
+ "Sintaxe deste .md voltou para Markdown (automático)": [
+  "src/renderer.js"
+ ],
+ "situação atual": [
+  "src/shared.js"
+ ],
+ "Snippet \"{0}\" salvo. Digite {1} e Tab. (No texto use $1, $2 e {2} para as paradas do Tab.)": [
+  "src/renderer.js"
+ ],
+ "Snippet… (digite o gatilho e aperte Tab no texto para usar direto)": [
+  "src/renderer.js"
+ ],
+ "Snippets": [
+  "src/renderer.js"
+ ],
+ "Snippets: criar um snippet com o texto selecionado…": [
+  "src/renderer.js"
+ ],
+ "Só {0}": [
+  "src/renderer.js"
+ ],
+ "Só a lista": [
+  "src/sqlfilter.js"
+ ],
+ "Só aparece aqui na lateral, para você diferenciar os servidores.": [
+  "src/shared.js"
+ ],
+ "Só as pessoas que eu escolher": [
+  "src/shared.js"
+ ],
+ "só em {0}": [
+  "src/renderer.js"
+ ],
+ "Só há {0} aba(s) aberta(s)": [
+  "src/renderer.js"
+ ],
+ "só lê": [
+  "src/shared.js"
+ ],
+ "Só lê": [
+  "src/shared.js"
+ ],
+ "só nas outras": [
+  "src/renderer.js"
+ ],
+ "Só no texto selecionado (padrão do Sublime)": [
+  "src/renderer.js"
+ ],
+ "só o autor edita": [
+  "src/shared.js"
+ ],
+ "Só o autor edita a própria mensagem (ninguém edita a dos outros)": [
+  "src/shared.js"
+ ],
+ "Só quem você escolher pode chamar a sua atenção": [
+  "src/shared.js"
+ ],
+ "Solarized Claro": [
+  "src/themes.js"
+ ],
+ "Solarized Escuro": [
+  "src/themes.js"
+ ],
+ "Solta: fica por cima e some ao clicar no quadro. Clique para fixar": [
+  "src/canvas.js"
+ ],
+ "Start Menu": [
+  "server-manager.js"
+ ],
+ "Startup": [
+  "server-manager.js"
+ ],
+ "Sticker adicionado para a equipe toda": [
+  "src/shared.js"
+ ],
+ "Stickers": [
+  "src/shared.js"
+ ],
+ "Strikethrough": [
+  "src/livepreview.js"
+ ],
+ "Stylus": [
+  "src/snippets.js"
+ ],
+ "Sua nova senha (mínimo 8)": [
+  "src/shared.js"
+ ],
+ "sua senha": [
+  "src/shared.js"
+ ],
+ "Sua sessão em {0} expirou: entre de novo (＋ no bloco Compartilhado)": [
+  "src/shared.js"
+ ],
+ "Sua sessão terminou. Entre de novo.": [
+  "server/web/index.html"
+ ],
+ "Subir": [
+  "src/polldialog.js"
+ ],
+ "Sublime Text": [
+  "main.js"
+ ],
+ "Substituir": [
+  "src/renderer.js"
+ ],
+ "Substituir todos": [
+  "src/renderer.js"
+ ],
+ "Substituir tudo": [
+  "src/renderer.js"
+ ],
+ "Table": [
+  "src/livepreview.js"
+ ],
+ "Tabs": [
+  "src/renderer.js"
+ ],
+ "Tags": [
+  "src/renderer.js"
+ ],
+ "Tahoma": [
+  "src/shared.js"
+ ],
+ "Tailscale (VPN) — é o endereço para os colegas, de qualquer lugar": [
+  "server-manager.js"
+ ],
+ "Tamanho": [
+  "src/shared.js"
+ ],
+ "Tamanho da fonte": [
+  "src/renderer.js"
+ ],
+ "Tamanho da tabulação": [
+  "src/renderer.js"
+ ],
+ "Task": [
+  "src/livepreview.js"
+ ],
+ "Tema": [
+  "src/renderer.js"
+ ],
+ "Tema copiado": [
+  "src/renderer.js"
+ ],
+ "Tema escuro (ajusta o claro/escuro dos controles)": [
+  "src/renderer.js"
+ ],
+ "Tema personalizado": [
+  "src/renderer.js"
+ ],
+ "Tema salvo": [
+  "src/renderer.js"
+ ],
+ "Tema: alternar para o próximo": [
+  "src/renderer.js"
+ ],
+ "Tema: editar cores / colar JSON do tema…": [
+  "src/renderer.js"
+ ],
+ "Temas prontos": [
+  "src/renderer.js"
+ ],
+ "Tempo real indisponível — o servidor responde e a conversa se atualiza a cada poucos segundos.": [
+  "src/shared.js"
+ ],
+ "Tentar agora": [
+  "src/shared.js"
+ ],
+ "Terminar edição": [
+  "src/renderer.js"
+ ],
+ "terminou com erro (código": [
+  "src/renderer.js"
+ ],
+ "Texto": [
+  "src/renderer.js",
+  "src/shared.js",
+  "src/themes.js"
+ ],
+ "Texto apagado": [
+  "src/themes.js"
+ ],
+ "Texto de exemplo (Lorem ipsum)": [
+  "src/snippets.js"
+ ],
+ "Texto e código": [
+  "main.js"
+ ],
+ "Texto simples": [
+  "src/renderer.js"
+ ],
+ "Times New Roman": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Tipo": [
+  "src/renderer.js"
+ ],
+ "Tira a edição dessa pessoa (o que ela não salvou se perde)": [
+  "src/renderer.js"
+ ],
+ "Tirar": [
+  "src/shared.js"
+ ],
+ "Tirar a prévia": [
+  "src/shared.js"
+ ],
+ "Tirar aba atual do grupo": [
+  "src/renderer.js"
+ ],
+ "Tirar aba do grupo": [
+  "src/renderer.js"
+ ],
+ "Tirar do grupo": [
+  "src/renderer.js"
+ ],
+ "Tirar esta opção": [
+  "src/polldialog.js"
+ ],
+ "Tirar foto": [
+  "server/web/index.html"
+ ],
+ "Título da nova nota": [
+  "src/shared.js"
+ ],
+ "Todas": [
+  "src/renderer.js"
+ ],
+ "todos": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Todos": [
+  "src/renderer.js"
+ ],
+ "Todos os arquivos": [
+  "main.js"
+ ],
+ "Todos podem chamar a sua atenção": [
+  "src/shared.js"
+ ],
+ "Todos que dividem projeto comigo": [
+  "src/shared.js"
+ ],
+ "todos que escrevem editam": [
+  "src/shared.js"
+ ],
+ "Todos que escrevem podem editar as mensagens de todos": [
+  "src/shared.js"
+ ],
+ "Tokyo Night": [
+  "src/themes.js"
+ ],
+ "Trabalho": [
+  "src/emoji.js"
+ ],
+ "Transformar linhas selecionadas em tarefas ☑": [
+  "src/renderer.js"
+ ],
+ "Trava o quadro para você editar; os outros veem ao vivo": [
+  "src/renderer.js"
+ ],
+ "travou (sem dados por": [
+  "shared-client.js"
+ ],
+ "Trebuchet MS": [
+  "src/shared.js"
+ ],
+ "Trecho de": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Três colunas": [
+  "src/renderer.js"
+ ],
+ "Trocar a senha": [
+  "src/shared.js"
+ ],
+ "Trocar as duas letras ao redor do cursor": [
+  "src/renderer.js"
+ ],
+ "Trocar as duas letras ao redor do cursor (Transpose)": [
+  "src/renderer.js"
+ ],
+ "TT Escuro (padrão)": [
+  "src/themes.js"
+ ],
+ "Tudo em uma linha": [
+  "src/renderer.js"
+ ],
+ "Última alteração: {0}": [
+  "server/web/index.html"
+ ],
+ "última edição de": [
+  "src/renderer.js"
+ ],
+ "Último pedido: {0} ms · média {1} ms · pior {2} ms (últimos {3}) Falhas: {4} · reconexões: {5} Clique para testar agora.": [
+  "src/shared.js"
+ ],
+ "Um administrador assumiu a edição deste canvas.": [
+  "src/renderer.js"
+ ],
+ "Um valor por linha": [
+  "src/renderer.js"
+ ],
+ "Uma coluna": [
+  "src/renderer.js"
+ ],
+ "Uma coluna (fechar os painéis lado a lado)": [
+  "src/renderer.js"
+ ],
+ "uma escolha": [
+  "src/pollwidget.js",
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Uma escolha": [
+  "src/polldialog.js",
+  "server/web/index.html"
+ ],
+ "UPDATE ${1:tabela} SET ${2:coluna} = ${3:valor} WHERE ${4:condição};$0": [
+  "src/snippets.js"
+ ],
+ "Usando o texto selecionado.": [
+  "src/renderer.js"
+ ],
+ "Use o endereço, o usuário e a senha que o administrador do servidor passou para você.": [
+  "src/shared.js"
+ ],
+ "Use o formato 1.20.2 (três números separados por ponto)": [
+  "src/renderer.js"
+ ],
+ "User": [
+  "main.js"
+ ],
+ "Usuário": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Usuário {0} criado": [
+  "src/shared.js"
+ ],
+ "Usuário {0} removido": [
+  "src/shared.js"
+ ],
+ "Usuário comum": [
+  "src/shared.js"
+ ],
+ "usuário removido": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Usuário removido": [
+  "src/shared.js"
+ ],
+ "Usuários": [
+  "src/shared.js"
+ ],
+ "Usuários do servidor": [
+  "src/shared.js"
+ ],
+ "Usuários…": [
+  "src/shared.js"
+ ],
+ "UTF-8 com BOM": [
+  "src/renderer.js"
+ ],
+ "úüu": [
+  "src/spell-engine.js"
+ ],
+ "Vale só para esta nota (guia). O dono de cada mensagem sempre pode editar a própria, e quem administra o projeto edita qualquer uma. A versão antiga é sempre guardada.": [
+  "src/shared.js"
+ ],
+ "Valer só para \"{0}\" ou para todas as linguagens?": [
+  "src/renderer.js"
+ ],
+ "valor% (começa com)": [
+  "src/renderer.js"
+ ],
+ "várias escolhas": [
+  "src/pollwidget.js",
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Várias escolhas": [
+  "src/polldialog.js",
+  "server/web/index.html"
+ ],
+ "veio incompleto ({0} de {1})": [
+  "shared-client.js"
+ ],
+ "ver": [
+  "src/renderer.js",
+  "server/web/index.html"
+ ],
+ "ver as {0} fixadas": [
+  "src/shared.js"
+ ],
+ "ver as {0} marcações": [
+  "src/shared.js"
+ ],
+ "Ver JSON": [
+  "src/canvas.js"
+ ],
+ "Ver o registro (server.log)": [
+  "src/renderer.js"
+ ],
+ "Ver só esta conversa": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Ver só esta conversa (a mensagem e as respostas)": [
+  "src/shared.js"
+ ],
+ "Ver todas as mensagens fixadas": [
+  "src/shared.js"
+ ],
+ "Verdana": [
+  "src/renderer.js",
+  "src/shared.js"
+ ],
+ "Verificar atualização do app (pelo servidor)": [
+  "src/renderer.js"
+ ],
+ "Versão": [
+  "src/renderer.js"
+ ],
+ "Versão {0}": [
+  "main.js"
+ ],
+ "Versão {0} disponível: use o botão ⬇ Baixar no canto superior direito.": [
+  "src/renderer.js"
+ ],
+ "Versão {0} publicada ({1}). Os apps conectados vão avisar.": [
+  "src/renderer.js"
+ ],
+ "Versão atual": [
+  "src/renderer.js"
+ ],
+ "Versão que está sendo publicada (ex.: 1.20.2) — Enter confirma": [
+  "src/renderer.js"
+ ],
+ "Versão restaurada": [
+  "src/renderer.js"
+ ],
+ "vídeo": [
+  "src/shared.js"
+ ],
+ "Visão de grafo": [
+  "src/renderer.js"
+ ],
+ "visto agora há pouco": [
+  "src/shared.js"
+ ],
+ "visto há {0} dia(s)": [
+  "src/shared.js"
+ ],
+ "visto há {0} h": [
+  "src/shared.js"
+ ],
+ "visto há {0} min": [
+  "src/shared.js"
+ ],
+ "você": [
+  "src/shared.js"
+ ],
+ "Você ainda não tem acesso a nenhum projeto.": [
+  "src/shared.js",
+  "server/web/index.html"
+ ],
+ "Você ainda não tem figurinhas. Clique em ＋ Criar para fazer a primeira — ela fica salva aqui para sempre.": [
+  "src/shared.js"
+ ],
+ "Você está editando o texto de {0}. A versão dele fica guardada.": [
+  "src/shared.js"
+ ],
+ "Você está na versão {0}": [
+  "src/renderer.js"
+ ],
+ "Você já está na versão mais nova ({0})": [
+  "shared-client.js"
+ ],
+ "Você já está na versão mais nova ({0}).": [
+  "src/renderer.js"
+ ],
+ "Você perdeu a edição deste canvas.": [
+  "src/renderer.js"
+ ],
+ "Você só pode ler esta nota": [
+  "server/web/index.html"
+ ],
+ "Voltar a ver o canvas como quadro": [
+  "index.html"
+ ],
+ "Voto anônimo": [
+  "server/web/index.html"
+ ],
+ "Voto anônimo (ninguém vê quem votou em quê)": [
+  "src/polldialog.js"
+ ],
+ "Vue": [
+  "src/snippets.js"
+ ],
+ "while ${1:condição}: $0": [
+  "src/snippets.js"
+ ],
+ "Wrap: alternar quebra de linha (só nesta guia)": [
+  "src/renderer.js"
+ ]
+}
