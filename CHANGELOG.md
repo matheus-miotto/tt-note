@@ -3,6 +3,9 @@
 Formato da versão: `1.{melhorias}.{ajustes}` — melhoria = funcionalidade nova (zera os ajustes); ajuste = correção.
 Gerado a partir de `novidades.json` (a lista que o app mostra em "Novidades").
 
+## 1.51.1 — 2026-11-19
+- **Correção:** os botões "Me dê sugestões" e "Me dê um elogio" da janela de apoio agora abrem o GitHub (o endereço do repositório não era completado)
+
 ## 1.51.0 — 2026-11-19
 - **Novo:** QR Code do Pix na janela de apoio
 - **Novo:** os botões "Me dê sugestões" e "Me dê um elogio" agora abrem o repositório do projeto no GitHub

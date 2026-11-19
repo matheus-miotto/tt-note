@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.51.1",
+    "date": "2026-11-19",
+    "items": [
+      {
+        "tipo": "correção",
+        "texto": "os botões \"Me dê sugestões\" e \"Me dê um elogio\" da janela de apoio agora abrem o GitHub (o endereço do repositório não era completado)"
+      }
+    ]
+  },
+  {
     "version": "1.51.0",
     "date": "2026-11-19",
     "items": [

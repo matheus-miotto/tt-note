@@ -1,6 +1,6 @@
 {
   "name": "tt-note",
-  "version": "1.51.0",
+  "version": "1.51.1",
   "description": "Editor pessoal: Sublime Text + Obsidian",
   "main": "main.js",
   "private": true,

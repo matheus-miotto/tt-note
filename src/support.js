@@ -26,6 +26,8 @@ const STAR = '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor
 import { pixPayload, qrSvg } from './pix.js';
 export { pixPayload };
 
+// repo pode ser "dono/nome" ou o endereço completo do GitHub
+const repoUrl = () => { const r = String(cfg.repo || '').trim().replace(/\/+$/, ''); return /^https?:\/\//i.test(r) ? r : 'https://github.com/' + r.replace(/^github\.com\//i, ''); };
 export const supportAvailable = () => !!(cfg.pix || cfg.repo);
 
 const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
@@ -50,8 +52,8 @@ export function openSupport({ api }) {
     card.append(h('div', 'sp-sign', '— Matheus'));
     if (cfg.pix) { const b = h('button', 'sp-main', HEART + '<span>Me pague um Monster</span>'); b.onclick = pix; card.append(b); }
     const row = h('div', 'sp-btns');
-    if (cfg.repo) { const g = h('button', 'sp-ghost', GITHUB + '<span>Me dê sugestões</span>'); g.onclick = () => open(cfg.repo.replace(/\/+$/, '') + '/issues/new'); row.append(g); }
-    if (cfg.repo) { const g = h('button', 'sp-ghost', STAR + '<span>Me dê um elogio</span>'); g.onclick = () => open(cfg.repo); row.append(g); }
+    if (cfg.repo) { const g = h('button', 'sp-ghost', GITHUB + '<span>Me dê sugestões</span>'); g.onclick = () => open(repoUrl() + '/issues/new/choose'); row.append(g); }
+    if (cfg.repo) { const g = h('button', 'sp-ghost', STAR + '<span>Me dê um elogio</span>'); g.onclick = () => open(repoUrl()); row.append(g); }
     if (row.childNodes.length) card.append(row);
     const bye = h('button', 'sp-bye', 'Agora não, valeu!'); bye.onclick = close;
     card.append(bye);
