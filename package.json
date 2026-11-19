@@ -5,6 +5,7 @@
   "main": "main.js",
   "private": true,
   "scripts": {
+    "pix:qr": "node tools/pix-qr.mjs",
     "build": "esbuild src/renderer.js src/note.js src/spell-worker.js --bundle --minify --legal-comments=none --outdir=dist --target=chrome124 --log-level=warning && esbuild src/i18n-web.js --bundle --minify --format=iife --legal-comments=none --outfile=server/web/i18n.js --target=es2019 --log-level=warning",
     "start": "npm run build && electron .",
     "dist": "npm run build && electron-packager . \"TT Note\" --platform=win32 --arch=x64 --out=release --overwrite --icon=assets/icon.ico --ignore=\"^/(node_modules|src|release|tools|README.md)|\\.(zip|rar|7z|log)$\"",
@@ -39,6 +40,7 @@
     "electron-builder": "^26.18.0",
     "esbuild": "^0.28.2",
     "png-to-ico": "^3.0.2",
+    "qrcode-generator": "^2.0.4",
     "sharp": "^0.35.5"
   },
   "author": "Matheus M Perondi",

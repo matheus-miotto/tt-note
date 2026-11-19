@@ -23,19 +23,8 @@ const canEl = () => {
 const HEART = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>';
 const STAR = '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg>';
 
-// ---- Pix "copia e cola" (BR Code estático) ----
-const tlv = (id, v) => id + String(v.length).padStart(2, '0') + v;
-const ascii = (s, n) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^A-Za-z0-9 ]/g, '').toUpperCase().slice(0, n);
-function crc16(s) {
-  let c = 0xffff;
-  for (let i = 0; i < s.length; i++) { c ^= s.charCodeAt(i) << 8; for (let k = 0; k < 8; k++) c = c & 0x8000 ? ((c << 1) ^ 0x1021) & 0xffff : (c << 1) & 0xffff; }
-  return c.toString(16).toUpperCase().padStart(4, '0');
-}
-export function pixPayload(key, name, city) {
-  const p = tlv('00', '01') + tlv('26', tlv('00', 'br.gov.bcb.pix') + tlv('01', key)) + tlv('52', '0000') + tlv('53', '986') + tlv('58', 'BR')
-    + tlv('59', ascii(name, 25) || 'TT NOTE') + tlv('60', ascii(city, 15) || 'BRASIL') + tlv('62', tlv('05', '***')) + '6304';
-  return p + crc16(p);
-}
+import { pixPayload, qrSvg } from './pix.js';
+export { pixPayload };
 
 export const supportAvailable = () => !!(cfg.pix || cfg.repo);
 
@@ -71,14 +60,15 @@ export function openSupport({ api }) {
     card.textContent = '';
     const hero = h('div', 'sp-hero sp-small'); hero.append(canEl());
     card.append(x, hero, h('div', 'sp-hi', 'Obrigado pelo Monster!'));
-    card.append(h('div', 'sp-msg', 'Pague por Pix com a chave abaixo (cole no app do seu banco). O valor você escolhe.'));
+    card.append(h('div', 'sp-msg', 'Pague por Pix lendo o QR Code ou colando a chave abaixo no app do seu banco. O valor você escolhe.'));
+    const qr = h('div', 'sp-qr', qrSvg(pixPayload(cfg.pix, cfg.pixName, cfg.pixCity), 190)); qr.title = t('Aponte a câmera do app do seu banco');
     const key = h('div', 'sp-key'); key.textContent = cfg.pix; key.setAttribute('data-notr', '');
     const row = h('div', 'sp-btns');
     const c1 = h('button', 'sp-main sp-compact', 'Copiar a chave'); c1.onclick = () => { copyText(cfg.pix); c1.textContent = t('✓ Copiado'); setTimeout(() => (c1.textContent = t('Copiar a chave')), 1600); };
     const c2 = h('button', 'sp-ghost', 'Copiar Pix copia e cola'); c2.onclick = () => { copyText(pixPayload(cfg.pix, cfg.pixName, cfg.pixCity)); c2.textContent = t('✓ Copiado'); setTimeout(() => (c2.textContent = t('Copiar Pix copia e cola')), 1600); };
     row.append(c1, c2);
     const back = h('button', 'sp-bye', 'Voltar'); back.onclick = home;
-    card.append(key, row, back);
+    card.append(qr, h('div', 'sp-qrnote', 'Ou leia o QR Code no app do seu banco'), key, row, back);
   };
   home();
   document.body.append(dlg);

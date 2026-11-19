@@ -277,3 +277,25 @@ Get-FileHash "TT Note Setup 1.45.0.exe" -Algorithm SHA256
 O resultado precisa ser **igual** ao hash publicado; se for diferente, o arquivo foi alterado e não deve ser instalado. O hash é gerado sozinho ao rodar `npm run installer` (`tools/hash.js`). O instalador ainda não é assinado digitalmente; a conferência pelo hash é a garantia de que ele é o oficial.
 
 O pacote do app também é **protegido contra adulteração** (`tools/harden.js`, ligado no `npm run installer`): o programa só roda de dentro do `app.asar` e confere a integridade dele, então editar o conteúdo instalado (por exemplo a chave Pix da janela "Apoie o projeto") faz o programa se recusar a abrir. O arquivo `support.config.json` não vai dentro do instalador: os valores já estão compilados no código do app.
+
+## Apoie o TT Note
+
+Espero que ache este APP útil! Se quiser apoiar meu trabalho, pode me pagar um Monster ou me dar um elogio. Obrigado!
+
+— Matheus
+
+- ⭐ **Me dê um elogio:** deixe uma estrela neste repositório.
+- 💡 **Me dê sugestões:** [abra uma issue](../../issues/new/choose).
+- 🤝 **Contribua:** veja o [CONTRIBUTING](CONTRIBUTING.md).
+- ⚡ **Me pague um Monster:** pague por Pix lendo o QR Code ou colando a chave abaixo no app do seu banco. O valor você escolhe.
+
+<p align="center">
+  <img src="docs/pix-qr.svg" alt="QR Code do Pix" width="220" />
+</p>
+
+<p align="center">
+  Chave Pix: <code>26dcfe6c-ff47-4114-9280-a386bcdc7224</code><br>
+  Titular: MATHEUS M PERONDI
+</p>
+
+Prefere o Pix copia e cola? O código está em [docs/pix-copia-e-cola.txt](docs/pix-copia-e-cola.txt).

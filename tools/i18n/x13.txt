@@ -3,3 +3,6 @@ Abrir a pasta dos registros de debug§Open the debug logs folder§Abrir la carpe
 Abrir o registro de debug (debug.log)§Open the debug log (debug.log)§Abrir el registro de depuración (debug.log)
 Modo debug ligado: os registros ficam em {0}§Debug mode on: logs are saved in {0}§Modo depuración activado: los registros se guardan en {0}
 Modo debug desligado§Debug mode off§Modo depuración desactivado
+Ou leia o QR Code no app do seu banco§Or scan the QR code in your bank app§O lee el código QR en la app de tu banco
+Aponte a câmera do app do seu banco§Point your bank app's camera at it§Apunta la cámara de la app de tu banco
+Pague por Pix lendo o QR Code ou colando a chave abaixo no app do seu banco. O valor você escolhe.§Pay by Pix by scanning the QR code or pasting the key below in your bank's app. You choose the amount.§Paga por Pix leyendo el código QR o pegando la clave de abajo en la app de tu banco. Tú eliges el valor.
